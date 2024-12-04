@@ -3468,7 +3468,6 @@ They are included in the Application Profile because they form the range of prop
 
 </section>
 
-<!-- outcommented Datatypes as there are none in the HVD specification 
     <section>
         <h2>
             Datatypes
@@ -3496,7 +3495,6 @@ They are included in the Application Profile because they form the range of prop
 
 
 </section>
--->
 
 <!--
 <section class="informative">
@@ -3543,7 +3541,30 @@ They are included in the Application Profile because they form the range of prop
 -->
 
  
-  
+  <section id="controlled-vocs" class="informative">
+  <h2>Controlled Vocabularies</h2>
+
+
+The usage of controlled vocabularies in RRMV conforms to the best practices as set by the Publications Office. 
+In the context of this specification, classes mapped on the URI <code>skos:Concept</code> always indicate the usage of some controlled vocabulary.
+<p/>
+In addition, the following controlled vocabularies MUST be used for the properties listed in the table below. 
+The <i>MUST be used</i> interpretation means that the range value space of the property is closed under the controlled vocabulary. 
+Validation systems SHOULD produce errors.
+
+        <table id="table-cv" class="simple">
+            <thead><tr><th>Property URI</th><th>Used for Class</th><th>Vocabulary name</th><th>Vocabulary URI</th><th>Usage note</th></tr></thead>
+            <tbody>
+<tr><td>rrmv:hasType</td><td><a href="#Action%20Result">Action Result</a></td><td><a href="">Action Result Type</a></td><td>This controlled vocabulary is under construction.</td><td></td></tr>
+            </tbody>
+            </table>
+
+
+
+
+
+</section>
+
   
   <section class="informative">
 <h2>Example</h2>
