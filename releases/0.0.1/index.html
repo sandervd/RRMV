@@ -186,7 +186,7 @@
       prevVersionURI: "https://semiceu.github.io/rrmv/releases/0.0.1/",
       latestVersion: "https://semiceu.github.io/Reporting-Requirements-Metadata-Vocabulary/releases/0.0.1",
       specStatus: "base",
-      publishDate: "2024-11-21",
+      publishDate: "2024-12-04",
       editors: myeditors,
       authors: myauthors,
       otherLinks: [
@@ -226,7 +226,7 @@
         height: 140,
         id: "semic-logo",
       },],
-      subtitle: "Onbekend",
+      subtitle: "SEMIC Working Draft",
       generatedSubtitle: "",
       additionalCopyrightHolders: "",
       localBiblio: {
@@ -383,9 +383,9 @@
     <h2>Status</h2>
         <p>
 <!-- readd when SEMIC has a codelist about it process 
-	This application profile has the status <a href="Working Draft">Onbekend</a> published at 2024-11-21.
+	This application profile has the status <a href="Working Draft">SEMIC Working Draft</a> published at 2024-12-04.
 -->
-	This application profile has the status Onbekend published at 2024-11-21.
+	This application profile has the status SEMIC Working Draft published at 2024-12-04.
         </p>
         <p>
             Information about the process and the decisions involved in the creation of this specification are consultable at the <a href="RRMV">Changelog</a>.
@@ -465,11 +465,10 @@ The UML diagram illustrates the specification described in this document.
 For readability purposes the representation has been condensed as follows:
 <ul>
 <li> The figure contains the key classes with some important supporting classes. Other object properties (relationships) are listed as properties on the UML class with their target range.</li>
-<li> The classes <a href="#Catalogue">Catalogue</a>, <a href="#CatalogueRecord">Catalogue Record</a> and <a href="#CataloguedResource">Catalogued Resource</a> are included to see more easily the connection with DCAT-AP.</li>
+<li> The ELI classes <a href="#Expression">Expression</a>, <a href="#Work">Work</a> and <a href="#Manifestation">Manifestation</a> are included to see the connection with legislation.</li>
 </ul>
 The cardinalities and qualifications are included in the figure.
 </p><p>
-For readibility of this document as an annex to DCAT-AP, the core relationships between classes are included.
 </p>
 
     <div id="overview">
@@ -3555,7 +3554,7 @@ Validation systems SHOULD produce errors.
         <table id="table-cv" class="simple">
             <thead><tr><th>Property URI</th><th>Used for Class</th><th>Vocabulary name</th><th>Vocabulary URI</th><th>Usage note</th></tr></thead>
             <tbody>
-<tr><td>rrmv:hasType</td><td><a href="#Action%20Result">Action Result</a></td><td><a href="">Action Result Type</a></td><td>This controlled vocabulary is under construction.</td><td></td></tr>
+<tr><td>rrmv:hasType</td><td><a href="#ActionResult">Action Result</a></td><td><a href="">Action Result Type</a></td><td>This controlled vocabulary is under construction.</td><td></td></tr>
             </tbody>
             </table>
 
@@ -3640,7 +3639,85 @@ The legislation is then only a reference, and not the target artefacts to work w
 
 </section>
 
-  
+  <section class="informative">
+  <h2>Support for implementation</h2>
+
+Implementing the RRMV data specification in a data exchange between two systems raises also technical questions.
+<p/>
+
+<h4>JSON-LD context file</h4>
+
+One common technical question is the format in which the data is being exchanged. 
+For RRMV conformance, it is not mandatory that this happens in a RDF serialisation, but the exchanged format SHOULD be unambiguously be transformable into RDF.
+For the format JSON, a popular format to exchange data between systems, RRMV provides a <a href="./context/rrmv.jsonld">JSON-LD context file</a>. 
+JSON-LD is a W3C Recommendation [[json-ld11]] that provided a standard approach to interpret JSON structures as RDF.
+The provided JSON-LD context file can be used by implementers to base their data exchange upon, and so create a DCAT-AP conformant data exchange.
+This JSON-LD context is not normative, i.e. other JSON-LD contexts are allowed to create a a conformant DCAT-AP data exchange.
+<p/>
+The JSON-LD context file downloadable <a href="./context/rrmv.jsonld">here</a>.
+
+<!--
+<p/>
+<h4>Identifiers</h4>
+For implementers, the requirement to being able to exchange data as RDF impacts the design of the exchange format and the data management. 
+One aspect, the use of identifiers,  needs special attention as it influences the interpretation by others. 
+DCAT-AP is used mostly in a harvesting network: where one catalogue harvests from other. 
+By this process, the DCAT-AP metadata descriptions spread through the harvesting network. 
+In contrast to "classical" data exchange patterns where by default identifiers are locally scoped to the exchange context, the RDF format implicitly assumes global, public accessible identifiers (URIs).
+Harvesting enforces the latter. 
+More on this identifier challenge and possible solution approaches are documented in the <a href="https://github.com/SEMICeu/DCAT-AP/blob/2.x.y-draft/releases/2.x.y/usageguide-identifiers.md">the guidelines on identifier management in DCAT-AP</a>.
+--!>
+
+
+<p/>
+<h4>Validation</h4>
+To verify if the data exchange is (technically) conformant to DCAT-AP, the exchanged data can be validated using the provided SHACL shapes. 
+SHACL [[shacl]] is a W3C Recommendation to express constraints on a RDF knowledge graph. 
+The provided SHACL shapes allow to check whether data expressed in a RDF serialization is valid.
+As it should be possible for RRMV conformance to transform the data exchange in RDF, these SHACL shapes can be used in any data exchange context.
+However, likewise the use of the JSON-LD context, the provided SHACL shapes provide only a start point for implementers. 
+<p/>
+
+<!--
+The shapes that can be derived from the RRMV formal specification have the following usage limitations.
+Shapes may check situations that never occur in the implemented data exchange and result in messages that confuse publishers, or they are too general and more detailed checks should be implemented. 
+For example, the nature of a licence is recommended by DCAT-AP, but most DCAT-AP exchanges assume that based on the URI of the licence this information is known. 
+Thus the check that a licence should have a licence type is considered often not relevant for the individual publishers. 
+However they might support catalogue maintainers to guide individual publishers to use well-documented licence URIs.
+The case that a title cannot be an empty string and must have a value in a specific language are examples of more detailed constraints that are not present in the provided DCAT-AP SHACL shapes.
+<p/>
+More on the validation and the provided SHACL shapes can be found in section [[[#validation-of-dcat-ap]]].
+--!>
+
+<p/>
+
+
+
+
+
+
+
+
+</section>
+
+  <section id="validation" class="informative">
+<h2>Validation</h2>
+
+To support the assessment if the data statisfies the expressed requirements, the following SHACL templates are provided.
+
+The file <a href="/Reporting-Requirements-Metadata-Vocabulary/releases/0.0.1/shacl/rrmv-SHACL.ttl">rrmv-SHACL.ttl</a> is the generated SHACL representation.
+
+
+</section>
+
+
+<section id="owl-representation" class="informative">
+<h2>OWL Representation</h2>
+
+A OWL representation that corresponds to this specification can be found at <a href="https://code.europa.eu/regulatory-reporting/rrmv/-/blob/main/docs/current/rrmv-v2.owl?ref_type=heads">rrmv.owl</a>
+
+</section>
+
  
 
 <section id="quick-reference" class="appendix">
