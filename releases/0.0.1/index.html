@@ -529,6 +529,7 @@ The cardinalities and qualifications are included in the figure.
 			      <a href="#Expression">Expression</a> |
 			      <a href="#Frequency">Frequency</a> |
 			      <a href="#Instant">Instant</a> |
+			      <a href="#Literal">Literal</a> |
 			      <a href="#Manifestation">Manifestation</a> |
 			      <a href="#Organization">Organization</a> |
 			      <a href="#PeriodofTime">Period of Time</a> |
@@ -1209,6 +1210,8 @@ Therefore it may vary over time when new versions of DCAT-AP are created.
 
     </div>
 </section>
+
+
 
 
 
@@ -2145,10 +2148,7 @@ They are included in the Application Profile because they form the range of prop
                                 <td>
                                     
                                         
-                                            <a href="#rdfs%3ALiteral"
-                                               data-toggle="tooltip"
-                                               data-content="http://www.w3.org/2000/01/rdf-schema#Literal"
-                                               data-placement="right">rdfs:Literal</a>
+                                            <a href="#Literal" data-placement="right">Literal</a>
                                         
                                     
                                 </td>
@@ -2758,6 +2758,55 @@ They are included in the Application Profile because they form the range of prop
 
    
         <section>
+            <h3 id="Literal">
+                <a href="http://www.w3.org/2000/01/rdf-schema#Literal"
+                   data-toggle="tooltip"
+                   data-content="http://www.w3.org/2000/01/rdf-schema#Literal"
+                   data-placement="right">Literal</a>
+
+            </h3>
+	        <!-- XXX an image in the h3 will break the rendering of the Table Of Contents of Respec -->
+		<!-- outcomment github feedback possibility
+                <a href="https://github.com/SEMICeu/Reporting-Requirements-Metadata-Vocabulary/issues/new?title=Issue%20for%20Literal&body=Explain%20your%20issue"}}>
+                   <img src="html/callout.png" loading="lazy" alt="(create issue)" width="20" height="20"/>
+		</a>
+		-->
+            <dl>
+                <dt>
+                    Definition
+                </dt>
+                <dd>
+                    A literal value such as a string or integer; Literals may be typed, e.g. as a date according to xsd:date. Literals that contain human-readable text have an optional language tag as defined by BCP 4715.
+                </dd>
+                
+                
+                
+                    <dt>
+                        Properties
+                    </dt>
+                    
+                    <dd>
+                        This specification does not impose any additional requirements to properties for this entity.
+                    </dd>
+                
+            </dl>
+        </div>
+        
+
+                   
+
+	  
+
+
+    </div>
+</section>
+
+
+
+
+
+   
+        <section>
             <h3 id="Manifestation">
                 <a href="http://data.europa.eu/eli/ontology#Manifestation"
                    data-toggle="tooltip"
@@ -3100,7 +3149,7 @@ They are included in the Application Profile because they form the range of prop
                         
                             <tr id="PeriodofTime.isincomplete"
                                 typeof="rdfs:Property"
-                                resource="http://fixme.com#isIncomplete"
+                                resource="http://data.europa.eu/2qy/rrmv#isIncomplete"
                                 class="class mandatory">
 <!--
                                 <td>
@@ -3110,9 +3159,9 @@ They are included in the Application Profile because they form the range of prop
                                 </td>
 --->
                                 <td>
-                                        <a href="http://fixme.com#isIncomplete"
+                                        <a href="http://data.europa.eu/2qy/rrmv#isIncomplete"
                                            data-toggle="tooltip"
-                                           data-content="http://fixme.com#isIncomplete"
+                                           data-content="http://data.europa.eu/2qy/rrmv#isIncomplete"
                                            data-placement="right">
                                         is incomplete</a>
                                 </td>
@@ -4507,6 +4556,17 @@ The properties are grouped under headings <it>mandatory, recommended, optional</
 			</tr>
 		
 				
+					<tr>
+						<td><a href="#Literal">Literal</a></td>
+						<td><div class="shorten">http://www.w3.org/2000/01/rdf-schema#Literal</div></td>
+						<td></td>
+						<td></td>
+						<td></td>
+					</tr>
+				
+			</tr>
+		
+				
 					
 						
 					
@@ -4570,7 +4630,7 @@ The properties are grouped under headings <it>mandatory, recommended, optional</
 								<td><div class="shorten">http://www.w3.org/2006/time#ProperInterval</div></td>
 								<td></td>
 								<td><a href="#PeriodofTime.isincomplete">is incomplete </a></td>
-								<td><div class="shorten">http://fixme.com#isIncomplete</div></td>
+								<td><div class="shorten">http://data.europa.eu/2qy/rrmv#isIncomplete</div></td>
 							</tr>
 						
 					
