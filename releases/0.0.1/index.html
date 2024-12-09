@@ -515,18 +515,20 @@ The cardinalities and qualifications are included in the figure.
                             <br />
                             |
 			      <a href="#Action">Action</a> |
+			      <a href="#ActionResult">Action Result</a> |
 			      <a href="#Request">Request</a> |
                         </p>
                         <p>
                             The main entities are supported by:
                             <br />
                             |
-			      <a href="#ActionResult">Action Result</a> |
 			      <a href="#Agent">Agent</a> |
 			      <a href="#AgentRole">Agent Role</a> |
 			      <a href="#AgentType">Agent Type</a> |
+			      <a href="#Concept">Concept</a> |
 			      <a href="#Expression">Expression</a> |
 			      <a href="#Frequency">Frequency</a> |
+			      <a href="#Instant">Instant</a> |
 			      <a href="#Manifestation">Manifestation</a> |
 			      <a href="#Organization">Organization</a> |
 			      <a href="#PeriodofTime">Period of Time</a> |
@@ -1004,6 +1006,216 @@ Therefore it may vary over time when new versions of DCAT-AP are created.
 
 
 
+   
+        <section>
+            <h3 id="ActionResult">
+                <a href="http://data.europa.eu/2qy/rrmv#ActionResult"
+                   data-toggle="tooltip"
+                   data-content="http://data.europa.eu/2qy/rrmv#ActionResult"
+                   data-placement="right">Action Result</a>
+
+            </h3>
+	        <!-- XXX an image in the h3 will break the rendering of the Table Of Contents of Respec -->
+		<!-- outcomment github feedback possibility
+                <a href="https://github.com/SEMICeu/Reporting-Requirements-Metadata-Vocabulary/issues/new?title=Issue%20for%20ActionResult&body=Explain%20your%20issue"}}>
+                   <img src="html/callout.png" loading="lazy" alt="(create issue)" width="20" height="20"/>
+		</a>
+		-->
+            <dl>
+                <dt>
+                    Definition
+                </dt>
+                <dd>
+                    The outcome of an Action
+                </dd>
+                
+                
+                    <dt>
+                        Usage Note
+                    </dt>
+                    <dd>
+                        It could be an activity (e.g., to do something) or an physical or digital entiity (e.g., report).
+                    </dd>
+                
+                
+                    <dt>
+                        Properties
+                    </dt>
+                    
+                        <dd>
+                            For this entity the following properties are defined: <a href="#ActionResult.hastitle">has title</a>
+                            , <a href="#ActionResult.hastype">has type</a>
+                            .
+                    </dd>
+                
+            </dl>
+        </div>
+        
+            <div class="u-table-overflow">
+                <table class="data-table simple" id="table-mandatory-classes">
+                    <thead>
+                        <tr class="data-table__header">
+<!--
+                            <th class="data-table__header-title--sortable" style="width:5%">
+                            </th>
+--->
+                            <th class="data-table__header-title--sortable data-table__header-title--sortable-active" style="width:12%">
+                                Property
+                            </th>
+                            <th class="data-table__header-title--sortable" style="width:12%">
+                                Range
+                            </th>
+                            <th class="data-table__header-title--sortable" style="width:6%">
+                                Card
+                            </th>
+                            <th class="data-table__header-title--sortable" style="width:30%">
+                                Definition 
+                            </th>
+                            <th class="data-table__header-title--sortable" style="width:30%">
+                                Usage
+                            </th>
+			    <!--
+                            <th class="data-table__header-title--sortable" style="width:3%">
+                                Codelist
+                            </th>
+			    -->
+			    <!--
+                            <th class="data-table__header-title--sortable" style="width:3%">
+                                DCAT
+                            </th>
+			    -->
+                            <th class="data-table__header-title--sortable" style="width:3%">
+                                Reuse
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody class="supertype">
+                        
+                            <tr id="ActionResult.hastitle"
+                                typeof="rdfs:Property"
+                                resource="http://data.europa.eu/2qy/rrmv#hasTitle"
+                                class="class mandatory">
+<!--
+                                <td>
+				    <a href="https://github.com/SEMICeu/Reporting-Requirements-Metadata-Vocabulary/issues/new?title=Issue%20for%20has title%20in%20Action Result&body=Explain%20your%20issue%20for%20https://semiceu.github.io/Reporting-Requirements-Metadata-Vocabulary/releases/0.0.1%23ActionResult.hastitle" target="_blank" rel="noopener noreferrer" >
+                                        <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
+                                    </a>
+                                </td>
+--->
+                                <td>
+                                        <a href="http://data.europa.eu/2qy/rrmv#hasTitle"
+                                           data-toggle="tooltip"
+                                           data-content="http://data.europa.eu/2qy/rrmv#hasTitle"
+                                           data-placement="right">
+                                        has title</a>
+                                </td>
+                                <td>
+                                    
+                                        
+                                            <a href="#xsd%3Astring" data-placement="right">xsd:string</a>
+                                        
+                                    
+                                </td>
+                                <td>
+                                    0..*
+                                </td>
+                                <td property="rdfs:comment">
+                                    Title of the Action.
+                                </td>
+                                <td property="skos:scopeNote">
+                                    
+                                </td>
+				<!--
+                                <td>
+                                    
+                                </td>
+				-->
+				<!--
+                                <td>
+                                    
+                                </td>
+				-->
+                                <td>
+                                    
+                                       
+				        P
+				       
+				    
+                                </td>
+                            </tr>
+                        
+                            <tr id="ActionResult.hastype"
+                                typeof="rdfs:Property"
+                                resource="http://data.europa.eu/2qy/rrmv#hasType"
+                                class="class mandatory">
+<!--
+                                <td>
+				    <a href="https://github.com/SEMICeu/Reporting-Requirements-Metadata-Vocabulary/issues/new?title=Issue%20for%20has type%20in%20Action Result&body=Explain%20your%20issue%20for%20https://semiceu.github.io/Reporting-Requirements-Metadata-Vocabulary/releases/0.0.1%23ActionResult.hastype" target="_blank" rel="noopener noreferrer" >
+                                        <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
+                                    </a>
+                                </td>
+--->
+                                <td>
+                                        <a href="http://data.europa.eu/2qy/rrmv#hasType"
+                                           data-toggle="tooltip"
+                                           data-content="http://data.europa.eu/2qy/rrmv#hasType"
+                                           data-placement="right">
+                                        has type</a>
+                                </td>
+                                <td>
+                                    
+                                        
+                                            <a href="#ResultType" data-placement="right">Result Type</a>
+                                        
+                                    
+                                </td>
+                                <td>
+                                    0..*
+                                </td>
+                                <td property="rdfs:comment">
+                                    This property connects the Action Result to the Action Result Type to which it belongs.
+                                </td>
+                                <td property="skos:scopeNote">
+                                    
+                                </td>
+				<!--
+                                <td>
+                                    
+                                </td>
+				-->
+				<!--
+                                <td>
+                                    
+                                </td>
+				-->
+                                <td>
+                                    
+                                       
+				        P
+				       
+				    
+                                </td>
+                            </tr>
+                        
+                    </tbody>
+                </table>
+            </div>
+        
+
+                   
+
+	  
+
+
+    </div>
+</section>
+
+
+
+
+
+
+
 
 
 
@@ -1216,7 +1428,7 @@ Therefore it may vary over time when new versions of DCAT-AP are created.
                         
                             <tr id="Request.hasfrequency"
                                 typeof="rdfs:Property"
-                                resource="http://data.europa.eu/2qy/rrmv#rrmv:hasFrequency"
+                                resource="http://data.europa.eu/2qy/rrmv#hasFrequency"
                                 class="class mandatory">
 <!--
                                 <td>
@@ -1226,9 +1438,9 @@ Therefore it may vary over time when new versions of DCAT-AP are created.
                                 </td>
 --->
                                 <td>
-                                        <a href="http://data.europa.eu/2qy/rrmv#rrmv:hasFrequency"
+                                        <a href="http://data.europa.eu/2qy/rrmv#hasFrequency"
                                            data-toggle="tooltip"
-                                           data-content="http://data.europa.eu/2qy/rrmv#rrmv:hasFrequency"
+                                           data-content="http://data.europa.eu/2qy/rrmv#hasFrequency"
                                            data-placement="right">
                                         has frequency</a>
                                 </td>
@@ -1288,10 +1500,7 @@ Therefore it may vary over time when new versions of DCAT-AP are created.
                                 <td>
                                     
                                         
-                                            <a href="#skos%3AConcept"
-                                               data-toggle="tooltip"
-                                               data-content="http://www.w3.org/2004/02/skos/core#Concept"
-                                               data-placement="right">skos:Concept</a>
+                                            <a href="#Concept" data-placement="right">Concept</a>
                                         
                                     
                                 </td>
@@ -1577,212 +1786,6 @@ They are included in the Application Profile because they form the range of prop
 
 
 
-   
-        <section>
-            <h3 id="ActionResult">
-                <a href="http://data.europa.eu/2qy/rrmv#ActionResult"
-                   data-toggle="tooltip"
-                   data-content="http://data.europa.eu/2qy/rrmv#ActionResult"
-                   data-placement="right">Action Result</a>
-
-            </h3>
-	        <!-- XXX an image in the h3 will break the rendering of the Table Of Contents of Respec -->
-		<!-- outcomment github feedback possibility
-                <a href="https://github.com/SEMICeu/Reporting-Requirements-Metadata-Vocabulary/issues/new?title=Issue%20for%20ActionResult&body=Explain%20your%20issue"}}>
-                   <img src="html/callout.png" loading="lazy" alt="(create issue)" width="20" height="20"/>
-		</a>
-		-->
-            <dl>
-                <dt>
-                    Definition
-                </dt>
-                <dd>
-                    The outcome of an Action
-                </dd>
-                
-                
-                    <dt>
-                        Usage Note
-                    </dt>
-                    <dd>
-                        It could be an activity (e.g., to do something) or an physical or digital entiity (e.g., report).
-                    </dd>
-                
-                
-                    <dt>
-                        Properties
-                    </dt>
-                    
-                        <dd>
-                            For this entity the following properties are defined: <a href="#ActionResult.hastitle">has title</a>
-                            , <a href="#ActionResult.hastype">has type</a>
-                            .
-                    </dd>
-                
-            </dl>
-        </div>
-        
-            <div class="u-table-overflow">
-                <table class="data-table simple" id="table-mandatory-classes">
-                    <thead>
-                        <tr class="data-table__header">
-<!--
-                            <th class="data-table__header-title--sortable" style="width:5%">
-                            </th>
---->
-                            <th class="data-table__header-title--sortable data-table__header-title--sortable-active" style="width:12%">
-                                Property
-                            </th>
-                            <th class="data-table__header-title--sortable" style="width:12%">
-                                Range
-                            </th>
-                            <th class="data-table__header-title--sortable" style="width:6%">
-                                Card
-                            </th>
-                            <th class="data-table__header-title--sortable" style="width:30%">
-                                Definition 
-                            </th>
-                            <th class="data-table__header-title--sortable" style="width:30%">
-                                Usage
-                            </th>
-			    <!--
-                            <th class="data-table__header-title--sortable" style="width:3%">
-                                Codelist
-                            </th>
-			    -->
-			    <!--
-                            <th class="data-table__header-title--sortable" style="width:3%">
-                                DCAT
-                            </th>
-			    -->
-                            <th class="data-table__header-title--sortable" style="width:3%">
-                                Reuse
-                            </th>
-                        </tr>
-                    </thead>
-                    <tbody class="supertype">
-                        
-                            <tr id="ActionResult.hastitle"
-                                typeof="rdfs:Property"
-                                resource="http://data.europa.eu/2qy/rrmv#hasTitle"
-                                class="class mandatory">
-<!--
-                                <td>
-				    <a href="https://github.com/SEMICeu/Reporting-Requirements-Metadata-Vocabulary/issues/new?title=Issue%20for%20has title%20in%20Action Result&body=Explain%20your%20issue%20for%20https://semiceu.github.io/Reporting-Requirements-Metadata-Vocabulary/releases/0.0.1%23ActionResult.hastitle" target="_blank" rel="noopener noreferrer" >
-                                        <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
-                                    </a>
-                                </td>
---->
-                                <td>
-                                        <a href="http://data.europa.eu/2qy/rrmv#hasTitle"
-                                           data-toggle="tooltip"
-                                           data-content="http://data.europa.eu/2qy/rrmv#hasTitle"
-                                           data-placement="right">
-                                        has title</a>
-                                </td>
-                                <td>
-                                    
-                                        
-                                            <a href="#xsd%3Astring" data-placement="right">xsd:string</a>
-                                        
-                                    
-                                </td>
-                                <td>
-                                    0..*
-                                </td>
-                                <td property="rdfs:comment">
-                                    Title of the Action.
-                                </td>
-                                <td property="skos:scopeNote">
-                                    
-                                </td>
-				<!--
-                                <td>
-                                    
-                                </td>
-				-->
-				<!--
-                                <td>
-                                    
-                                </td>
-				-->
-                                <td>
-                                    
-                                       
-				        P
-				       
-				    
-                                </td>
-                            </tr>
-                        
-                            <tr id="ActionResult.hastype"
-                                typeof="rdfs:Property"
-                                resource="http://data.europa.eu/2qy/rrmv#hasType"
-                                class="class mandatory">
-<!--
-                                <td>
-				    <a href="https://github.com/SEMICeu/Reporting-Requirements-Metadata-Vocabulary/issues/new?title=Issue%20for%20has type%20in%20Action Result&body=Explain%20your%20issue%20for%20https://semiceu.github.io/Reporting-Requirements-Metadata-Vocabulary/releases/0.0.1%23ActionResult.hastype" target="_blank" rel="noopener noreferrer" >
-                                        <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
-                                    </a>
-                                </td>
---->
-                                <td>
-                                        <a href="http://data.europa.eu/2qy/rrmv#hasType"
-                                           data-toggle="tooltip"
-                                           data-content="http://data.europa.eu/2qy/rrmv#hasType"
-                                           data-placement="right">
-                                        has type</a>
-                                </td>
-                                <td>
-                                    
-                                        
-                                            <a href="#ResultType" data-placement="right">Result Type</a>
-                                        
-                                    
-                                </td>
-                                <td>
-                                    0..*
-                                </td>
-                                <td property="rdfs:comment">
-                                    This property connects the Action Result to the Action Result Type to which it belongs.
-                                </td>
-                                <td property="skos:scopeNote">
-                                    
-                                </td>
-				<!--
-                                <td>
-                                    
-                                </td>
-				-->
-				<!--
-                                <td>
-                                    
-                                </td>
-				-->
-                                <td>
-                                    
-                                       
-				        P
-				       
-				    
-                                </td>
-                            </tr>
-                        
-                    </tbody>
-                </table>
-            </div>
-        
-
-                   
-
-	  
-
-
-    </div>
-</section>
-
-
-
 
 
    
@@ -2009,7 +2012,7 @@ They are included in the Application Profile because they form the range of prop
                     <dt>
                         Subclass of
                         <dt>
-                            <dd> <a href="http://www.w3.org/2004/02/skos/core#Concept">Concept</a>
+                            <dd> <a href="#Concept">Concept</a>
                                 
                         </dd>
                     
@@ -2023,6 +2026,163 @@ They are included in the Application Profile because they form the range of prop
                 
             </dl>
         </div>
+        
+
+                   
+
+	  
+
+
+    </div>
+</section>
+
+
+
+
+
+   
+        <section>
+            <h3 id="Concept">
+                <a href="http://www.w3.org/2004/02/skos/core#Concept"
+                   data-toggle="tooltip"
+                   data-content="http://www.w3.org/2004/02/skos/core#Concept"
+                   data-placement="right">Concept</a>
+
+            </h3>
+	        <!-- XXX an image in the h3 will break the rendering of the Table Of Contents of Respec -->
+		<!-- outcomment github feedback possibility
+                <a href="https://github.com/SEMICeu/Reporting-Requirements-Metadata-Vocabulary/issues/new?title=Issue%20for%20Concept&body=Explain%20your%20issue"}}>
+                   <img src="html/callout.png" loading="lazy" alt="(create issue)" width="20" height="20"/>
+		</a>
+		-->
+            <dl>
+                <dt>
+                    Definition
+                </dt>
+                <dd>
+                    An idea or notion; a unit of thought.
+                </dd>
+                
+                
+                    <dt>
+                        Usage Note
+                    </dt>
+                    <dd>
+                         However, what constitutes a unit of thought is subjective, and this definition is meant to be suggestive, rather than restrictive. 
+                    </dd>
+                
+                
+                    <dt>
+                        Properties
+                    </dt>
+                    
+                        <dd>
+                            For this entity the following properties are defined: <a href="#Concept.preferredlabel">preferred label</a>
+                            .
+                    </dd>
+                
+            </dl>
+        </div>
+        
+            <div class="u-table-overflow">
+                <table class="data-table simple" id="table-mandatory-classes">
+                    <thead>
+                        <tr class="data-table__header">
+<!--
+                            <th class="data-table__header-title--sortable" style="width:5%">
+                            </th>
+--->
+                            <th class="data-table__header-title--sortable data-table__header-title--sortable-active" style="width:12%">
+                                Property
+                            </th>
+                            <th class="data-table__header-title--sortable" style="width:12%">
+                                Range
+                            </th>
+                            <th class="data-table__header-title--sortable" style="width:6%">
+                                Card
+                            </th>
+                            <th class="data-table__header-title--sortable" style="width:30%">
+                                Definition 
+                            </th>
+                            <th class="data-table__header-title--sortable" style="width:30%">
+                                Usage
+                            </th>
+			    <!--
+                            <th class="data-table__header-title--sortable" style="width:3%">
+                                Codelist
+                            </th>
+			    -->
+			    <!--
+                            <th class="data-table__header-title--sortable" style="width:3%">
+                                DCAT
+                            </th>
+			    -->
+                            <th class="data-table__header-title--sortable" style="width:3%">
+                                Reuse
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody class="supertype">
+                        
+                            <tr id="Concept.preferredlabel"
+                                typeof="rdfs:Property"
+                                resource="http://www.w3.org/2004/02/skos/core#prefLabel"
+                                class="class mandatory">
+<!--
+                                <td>
+				    <a href="https://github.com/SEMICeu/Reporting-Requirements-Metadata-Vocabulary/issues/new?title=Issue%20for%20preferred label%20in%20Concept&body=Explain%20your%20issue%20for%20https://semiceu.github.io/Reporting-Requirements-Metadata-Vocabulary/releases/0.0.1%23Concept.preferredlabel" target="_blank" rel="noopener noreferrer" >
+                                        <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
+                                    </a>
+                                </td>
+--->
+                                <td>
+                                        <a href="http://www.w3.org/2004/02/skos/core#prefLabel"
+                                           data-toggle="tooltip"
+                                           data-content="http://www.w3.org/2004/02/skos/core#prefLabel"
+                                           data-placement="right">
+                                        preferred label</a>
+                                </td>
+                                <td>
+                                    
+                                        
+                                            <a href="#rdfs%3ALiteral"
+                                               data-toggle="tooltip"
+                                               data-content="http://www.w3.org/2000/01/rdf-schema#Literal"
+                                               data-placement="right">rdfs:Literal</a>
+                                        
+                                    
+                                </td>
+                                <td>
+                                    1..n
+                                </td>
+                                <td property="rdfs:comment">
+                                    A preferred label of the concept.
+                                </td>
+                                <td property="skos:scopeNote">
+                                    This property can be repeated for parallel language versions of the label.
+                                </td>
+				<!--
+                                <td>
+                                    
+                                </td>
+				-->
+				<!--
+                                <td>
+                                    
+                                </td>
+				-->
+                                <td>
+                                    
+                                       
+				        P
+				       
+				    
+                                </td>
+                            </tr>
+                        
+                    </tbody>
+                </table>
+            </div>
         
 
                    
@@ -2445,10 +2605,7 @@ They are included in the Application Profile because they form the range of prop
                                 <td>
                                     
                                         
-                                            <a href="#skos%3AConcept"
-                                               data-toggle="tooltip"
-                                               data-content="http://www.w3.org/2004/02/skos/core#Concept"
-                                               data-placement="right">skos:Concept</a>
+                                            <a href="#Concept" data-placement="right">Concept</a>
                                         
                                     
                                 </td>
@@ -2536,6 +2693,55 @@ They are included in the Application Profile because they form the range of prop
                     </tbody>
                 </table>
             </div>
+        
+
+                   
+
+	  
+
+
+    </div>
+</section>
+
+
+
+
+
+   
+        <section>
+            <h3 id="Instant">
+                <a href="https://www.w3.org/2006/time#Instant"
+                   data-toggle="tooltip"
+                   data-content="https://www.w3.org/2006/time#Instant"
+                   data-placement="right">Instant</a>
+
+            </h3>
+	        <!-- XXX an image in the h3 will break the rendering of the Table Of Contents of Respec -->
+		<!-- outcomment github feedback possibility
+                <a href="https://github.com/SEMICeu/Reporting-Requirements-Metadata-Vocabulary/issues/new?title=Issue%20for%20Instant&body=Explain%20your%20issue"}}>
+                   <img src="html/callout.png" loading="lazy" alt="(create issue)" width="20" height="20"/>
+		</a>
+		-->
+            <dl>
+                <dt>
+                    Definition
+                </dt>
+                <dd>
+                    A temporal entity with zero extent or duration 
+                </dd>
+                
+                
+                
+                    <dt>
+                        Properties
+                    </dt>
+                    
+                    <dd>
+                        This specification does not impose any additional requirements to properties for this entity.
+                    </dd>
+                
+            </dl>
+        </div>
         
 
                    
@@ -2860,10 +3066,7 @@ They are included in the Application Profile because they form the range of prop
                                 <td>
                                     
                                         
-                                            <a href="#Instant"
-                                               data-toggle="tooltip"
-                                               data-content="https://www.w3.org/2006/time#Instant"
-                                               data-placement="right">Instant</a>
+                                            <a href="#Instant" data-placement="right">Instant</a>
                                         
                                     
                                 </td>
@@ -2969,10 +3172,7 @@ They are included in the Application Profile because they form the range of prop
                                 <td>
                                     
                                         
-                                            <a href="#Instant"
-                                               data-toggle="tooltip"
-                                               data-content="https://www.w3.org/2006/time#Instant"
-                                               data-placement="right">Instant</a>
+                                            <a href="#Instant" data-placement="right">Instant</a>
                                         
                                     
                                 </td>
@@ -3107,7 +3307,7 @@ They are included in the Application Profile because they form the range of prop
                     <dt>
                         Subclass of
                         <dt>
-                            <dd> <a href="http://www.w3.org/2004/02/skos/core#Concept">Concept</a>
+                            <dd> <a href="#Concept">Concept</a>
                                 
                         </dd>
                     
@@ -3310,7 +3510,7 @@ They are included in the Application Profile because they form the range of prop
                     <dt>
                         Subclass of
                         <dt>
-                            <dd> <a href="http://www.w3.org/2004/02/skos/core#Concept">Concept</a>
+                            <dd> <a href="#Concept">Concept</a>
                                 
                         </dd>
                     
@@ -3366,7 +3566,7 @@ They are included in the Application Profile because they form the range of prop
                     <dt>
                         Subclass of
                         <dt>
-                            <dd> <a href="http://www.w3.org/2004/02/skos/core#Concept">Concept</a>
+                            <dd> <a href="#Concept">Concept</a>
                                 
                         </dd>
                     
@@ -3429,7 +3629,7 @@ They are included in the Application Profile because they form the range of prop
                     <dt>
                         Subclass of
                         <dt>
-                            <dd> <a href="http://www.w3.org/2004/02/skos/core#Concept">Concept</a>
+                            <dd> <a href="#Concept">Concept</a>
                                 
                         </dd>
                     
@@ -3804,7 +4004,31 @@ Validation systems SHOULD produce errors.
 
 
 
+<p class="ednote" title="Frequency">
+The EU Vocabularies contains a codelist for <a href="https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/frequency">frequencies</a>.
+It should be considered if this codelist is not better suited to address the usecase of the class Frequency.
+</p>
 
+<p class="ednote" title="Action Result Type">
+Considered instances are ReportInProgress, report, actionResult, plan, standard.
+</p>
+
+<p class="ednote" title="Role Type">
+Considered instances are bearer, addressee, addresser, proposer, implementor.
+</p>
+
+<p class="ednote" title="Agent Type">
+Considered instances are company, individual, association, publicAdminisitration, agency.
+</p>
+
+
+<p class="ednote" title="Status">
+Considered instances are completed, implemented, suspended, activated, postponed, reiterated, duplicated, deleted.
+</p>
+
+<p class="ednote" title="Temporal Function">
+Considered entitities are deadline, validity.
+</p>
 
 </section>
 
@@ -4156,6 +4380,27 @@ The properties are grouped under headings <it>mandatory, recommended, optional</
 					
 						
 					
+					
+						
+					
+					
+						
+							<tr>
+								<td><a href="#Concept">Concept</a></td>
+								<td><div class="shorten">http://www.w3.org/2004/02/skos/core#Concept</div></td>
+								<td></td>
+								<td><a href="#Concept.preferredlabel">preferred label </a></td>
+								<td><div class="shorten">http://www.w3.org/2004/02/skos/core#prefLabel</div></td>
+							</tr>
+						
+					
+				
+			</tr>
+		
+				
+					
+						
+					
 						
 					
 						
@@ -4247,6 +4492,17 @@ The properties are grouped under headings <it>mandatory, recommended, optional</
 							</tr>
 						
 					
+				
+			</tr>
+		
+				
+					<tr>
+						<td><a href="#Instant">Instant</a></td>
+						<td><div class="shorten">https://www.w3.org/2006/time#Instant</div></td>
+						<td></td>
+						<td></td>
+						<td></td>
+					</tr>
 				
 			</tr>
 		
@@ -4404,7 +4660,7 @@ The properties are grouped under headings <it>mandatory, recommended, optional</
 								<td><div class="shorten">http://data.europa.eu/2qy/rrmv#Request</div></td>
 								<td></td>
 								<td><a href="#Request.hasfrequency">has frequency </a></td>
-								<td><div class="shorten">http://data.europa.eu/2qy/rrmv#rrmv:hasFrequency</div></td>
+								<td><div class="shorten">http://data.europa.eu/2qy/rrmv#hasFrequency</div></td>
 							</tr>
 						
 					
@@ -4669,6 +4925,7 @@ Past and current contributors are :
 {'pref':'prov:', 'ns': 'http://www.w3.org/ns/prov#'},
 {'pref':'rdf:', 'ns': 'http://www.w3.org/1999/02/22-rdf-syntax-ns#'},
 {'pref':'rdfs:', 'ns': 'http://www.w3.org/2000/01/rdf-schema#'},
+{'pref':'rrmv:', 'ns': 'http://data.europa.eu/2qy/rrmv#'},
 {'pref':'skos:', 'ns': 'http://www.w3.org/2004/02/skos/core#'},
 {'pref':'spdx:', 'ns': 'http://spdx.org/rdf/terms#'},
 {'pref':'time:', 'ns': 'http://www.w3.org/2006/time#'},
