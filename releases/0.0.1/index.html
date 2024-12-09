@@ -540,6 +540,12 @@ The cardinalities and qualifications are included in the figure.
                         </p>
                 
                 
+                        <p>
+                            And supported by these datatypes:
+                            <br />
+                            | <a href="#xsd%3AanyURI">xsd:anyURI</a> | <a href="#xsd%3Aboolean">xsd:boolean</a> | <a href="#xsd%3Astring">xsd:string</a> |
+                        </p>
+                
     </div>
     <div>
         <a href="/Reporting-Requirements-Metadata-Vocabulary/releases/0.0.1/html/overview.jpg"
@@ -737,10 +743,7 @@ Therefore it may vary over time when new versions of DCAT-AP are created.
                                 <td>
                                     
                                         
-                                            <a href="#xsd%3Astring"
-                                               data-toggle="tooltip"
-                                               data-content="http://www.w3.org/2001/XMLSchema#string"
-                                               data-placement="right">xsd:string</a>
+                                            <a href="#xsd%3Astring" data-placement="right">xsd:string</a>
                                         
                                     
                                 </td>
@@ -827,7 +830,7 @@ Therefore it may vary over time when new versions of DCAT-AP are created.
                         
                             <tr id="Action.hasresult"
                                 typeof="rdfs:Property"
-                                resource="http://data.europa.eu/2qy/rrmv#rrmv:hasResult"
+                                resource="http://data.europa.eu/2qy/rrmv#hasTitle"
                                 class="class mandatory">
 <!--
                                 <td>
@@ -837,9 +840,9 @@ Therefore it may vary over time when new versions of DCAT-AP are created.
                                 </td>
 --->
                                 <td>
-                                        <a href="http://data.europa.eu/2qy/rrmv#rrmv:hasResult"
+                                        <a href="http://data.europa.eu/2qy/rrmv#hasTitle"
                                            data-toggle="tooltip"
-                                           data-content="http://data.europa.eu/2qy/rrmv#rrmv:hasResult"
+                                           data-content="http://data.europa.eu/2qy/rrmv#hasTitle"
                                            data-placement="right">
                                         has result</a>
                                 </td>
@@ -1160,7 +1163,7 @@ Therefore it may vary over time when new versions of DCAT-AP are created.
                         
                             <tr id="Request.hasannotation"
                                 typeof="rdfs:Property"
-                                resource="http://data.europa.eu/2qy/rrmv#rrmv:hasAnnotation"
+                                resource="http://data.europa.eu/2qy/rrmv#hasAnnotation"
                                 class="class mandatory">
 <!--
                                 <td>
@@ -1170,19 +1173,16 @@ Therefore it may vary over time when new versions of DCAT-AP are created.
                                 </td>
 --->
                                 <td>
-                                        <a href="http://data.europa.eu/2qy/rrmv#rrmv:hasAnnotation"
+                                        <a href="http://data.europa.eu/2qy/rrmv#hasAnnotation"
                                            data-toggle="tooltip"
-                                           data-content="http://data.europa.eu/2qy/rrmv#rrmv:hasAnnotation"
+                                           data-content="http://data.europa.eu/2qy/rrmv#hasAnnotation"
                                            data-placement="right">
                                         has annotation</a>
                                 </td>
                                 <td>
                                     
                                         
-                                            <a href="#xsd%3Astring"
-                                               data-toggle="tooltip"
-                                               data-content="http://www.w3.org/2001/XMLSchema#string"
-                                               data-placement="right">xsd:string</a>
+                                            <a href="#xsd%3Astring" data-placement="right">xsd:string</a>
                                         
                                     
                                 </td>
@@ -1190,10 +1190,10 @@ Therefore it may vary over time when new versions of DCAT-AP are created.
                                     0..*
                                 </td>
                                 <td property="rdfs:comment">
-                                    Annotation related to the Action or Request made by the domain expert.
+                                    A note added by way of comment or explanation.
                                 </td>
                                 <td property="skos:scopeNote">
-                                    
+                                    This property is included to capture any information of value identified by a domain expert and that is valuable to be shared with other experts.
                                 </td>
 				<!--
                                 <td>
@@ -1216,7 +1216,7 @@ Therefore it may vary over time when new versions of DCAT-AP are created.
                         
                             <tr id="Request.hastopic"
                                 typeof="rdfs:Property"
-                                resource="http://data.europa.eu/2qy/rrmv#rrmv:hasTopic"
+                                resource="http://data.europa.eu/2qy/rrmv#hasTopic"
                                 class="class mandatory">
 <!--
                                 <td>
@@ -1226,9 +1226,9 @@ Therefore it may vary over time when new versions of DCAT-AP are created.
                                 </td>
 --->
                                 <td>
-                                        <a href="http://data.europa.eu/2qy/rrmv#rrmv:hasTopic"
+                                        <a href="http://data.europa.eu/2qy/rrmv#hasTopic"
                                            data-toggle="tooltip"
-                                           data-content="http://data.europa.eu/2qy/rrmv#rrmv:hasTopic"
+                                           data-content="http://data.europa.eu/2qy/rrmv#hasTopic"
                                            data-placement="right">
                                         has topic</a>
                                 </td>
@@ -1325,7 +1325,7 @@ Therefore it may vary over time when new versions of DCAT-AP are created.
                         
                             <tr id="Request.hasURI"
                                 typeof="rdfs:Property"
-                                resource="http://data.europa.eu/2qy/rrmv#rrmv:hasUri"
+                                resource="http://data.europa.eu/2qy/rrmv#hasURI"
                                 class="class mandatory">
 <!--
                                 <td>
@@ -1335,19 +1335,16 @@ Therefore it may vary over time when new versions of DCAT-AP are created.
                                 </td>
 --->
                                 <td>
-                                        <a href="http://data.europa.eu/2qy/rrmv#rrmv:hasUri"
+                                        <a href="http://data.europa.eu/2qy/rrmv#hasURI"
                                            data-toggle="tooltip"
-                                           data-content="http://data.europa.eu/2qy/rrmv#rrmv:hasUri"
+                                           data-content="http://data.europa.eu/2qy/rrmv#hasURI"
                                            data-placement="right">
                                         has URI</a>
                                 </td>
                                 <td>
                                     
                                         
-                                            <a href="#xsd%3AanyURI"
-                                               data-toggle="tooltip"
-                                               data-content="http://www.w3.org/2001/XMLSchema#anyURI"
-                                               data-placement="right">xsd:anyURI</a>
+                                            <a href="#xsd%3AanyURI" data-placement="right">xsd:anyURI</a>
                                         
                                     
                                 </td>
@@ -1434,7 +1431,7 @@ Therefore it may vary over time when new versions of DCAT-AP are created.
                         
                             <tr id="Request.produces"
                                 typeof="rdfs:Property"
-                                resource="http://data.europa.eu/2qy/rrmv#rrmv:produces"
+                                resource="http://data.europa.eu/2qy/rrmv#produces"
                                 class="class mandatory">
 <!--
                                 <td>
@@ -1444,9 +1441,9 @@ Therefore it may vary over time when new versions of DCAT-AP are created.
                                 </td>
 --->
                                 <td>
-                                        <a href="http://data.europa.eu/2qy/rrmv#rrmv:produces"
+                                        <a href="http://data.europa.eu/2qy/rrmv#produces"
                                            data-toggle="tooltip"
-                                           data-content="http://data.europa.eu/2qy/rrmv#rrmv:produces"
+                                           data-content="http://data.europa.eu/2qy/rrmv#produces"
                                            data-placement="right">
                                         produces</a>
                                 </td>
@@ -1600,9 +1597,16 @@ They are included in the Application Profile because they form the range of prop
                     Definition
                 </dt>
                 <dd>
-                    The Result of an Action. It could be an activity (e.g., to do something) or an output (e.g., report).
+                    The outcome of an Action
                 </dd>
                 
+                
+                    <dt>
+                        Usage Note
+                    </dt>
+                    <dd>
+                        It could be an activity (e.g., to do something) or an physical or digital entiity (e.g., report).
+                    </dd>
                 
                 
                     <dt>
@@ -1679,10 +1683,7 @@ They are included in the Application Profile because they form the range of prop
                                 <td>
                                     
                                         
-                                            <a href="#xsd%3Astring"
-                                               data-toggle="tooltip"
-                                               data-content="http://www.w3.org/2001/XMLSchema#string"
-                                               data-placement="right">xsd:string</a>
+                                            <a href="#xsd%3Astring" data-placement="right">xsd:string</a>
                                         
                                     
                                 </td>
@@ -1716,7 +1717,7 @@ They are included in the Application Profile because they form the range of prop
                         
                             <tr id="ActionResult.hastype"
                                 typeof="rdfs:Property"
-                                resource="http://data.europa.eu/2qy/rrmv#rrmv:hasType"
+                                resource="http://data.europa.eu/2qy/rrmv#hasType"
                                 class="class mandatory">
 <!--
                                 <td>
@@ -1726,9 +1727,9 @@ They are included in the Application Profile because they form the range of prop
                                 </td>
 --->
                                 <td>
-                                        <a href="http://data.europa.eu/2qy/rrmv#rrmv:hasType"
+                                        <a href="http://data.europa.eu/2qy/rrmv#hasType"
                                            data-toggle="tooltip"
-                                           data-content="http://data.europa.eu/2qy/rrmv#rrmv:hasType"
+                                           data-content="http://data.europa.eu/2qy/rrmv#hasType"
                                            data-placement="right">
                                         has type</a>
                                 </td>
@@ -2297,10 +2298,7 @@ They are included in the Application Profile because they form the range of prop
                                 <td>
                                     
                                         
-                                            <a href="#xsd%3AanyURI"
-                                               data-toggle="tooltip"
-                                               data-content="http://www.w3.org/2001/XMLSchema#anyURI"
-                                               data-placement="right">xsd:anyURI</a>
+                                            <a href="#xsd%3AanyURI" data-placement="right">xsd:anyURI</a>
                                         
                                     
                                 </td>
@@ -2500,6 +2498,10 @@ They are included in the Application Profile because they form the range of prop
                                 </td>
                                 <td>
                                     
+                                        
+                                            <a href="#xsd%3Astring" data-placement="right">xsd:string</a>
+                                        
+                                    
                                 </td>
                                 <td>
                                     1
@@ -2548,6 +2550,10 @@ They are included in the Application Profile because they form the range of prop
                                         </a>
                                 </td>
                                 <td>
+                                    
+                                        
+                                            <a href="#xsd%3Astring" data-placement="right">xsd:string</a>
+                                        
                                     
                                 </td>
                                 <td>
@@ -2942,7 +2948,7 @@ They are included in the Application Profile because they form the range of prop
                         
                             <tr id="PeriodofTime.isincomplete"
                                 typeof="rdfs:Property"
-                                resource="http://fixme.com#rrmv:isIncomplete"
+                                resource="http://fixme.com#isIncomplete"
                                 class="class mandatory">
 <!--
                                 <td>
@@ -2952,19 +2958,16 @@ They are included in the Application Profile because they form the range of prop
                                 </td>
 --->
                                 <td>
-                                        <a href="http://fixme.com#rrmv:isIncomplete"
+                                        <a href="http://fixme.com#isIncomplete"
                                            data-toggle="tooltip"
-                                           data-content="http://fixme.com#rrmv:isIncomplete"
+                                           data-content="http://fixme.com#isIncomplete"
                                            data-placement="right">
                                         is incomplete</a>
                                 </td>
                                 <td>
                                     
                                         
-                                            <a href="#xsd%3Aboolean"
-                                               data-toggle="tooltip"
-                                               data-content="http://www.w3.org/2001/XMLSchema#boolean"
-                                               data-placement="right">xsd:boolean</a>
+                                            <a href="#xsd%3Aboolean" data-placement="right">xsd:boolean</a>
                                         
                                     
                                 </td>
@@ -3147,7 +3150,7 @@ They are included in the Application Profile because they form the range of prop
                     Definition
                 </dt>
                 <dd>
-                    Result Type. SKOS Concept.
+                    A kind of Result
                 </dd>
                 
                 
@@ -3262,7 +3265,7 @@ They are included in the Application Profile because they form the range of prop
                         
                             <tr id="Role.hastype"
                                 typeof="rdfs:Property"
-                                resource="http://data.europa.eu/2qy/rrmv#rrmv:hasType"
+                                resource="http://data.europa.eu/2qy/rrmv#hasType"
                                 class="class mandatory">
 <!--
                                 <td>
@@ -3272,9 +3275,9 @@ They are included in the Application Profile because they form the range of prop
                                 </td>
 --->
                                 <td>
-                                        <a href="http://data.europa.eu/2qy/rrmv#rrmv:hasType"
+                                        <a href="http://data.europa.eu/2qy/rrmv#hasType"
                                            data-toggle="tooltip"
-                                           data-content="http://data.europa.eu/2qy/rrmv#rrmv:hasType"
+                                           data-content="http://data.europa.eu/2qy/rrmv#hasType"
                                            data-placement="right">
                                         has type</a>
                                 </td>
@@ -3333,9 +3336,9 @@ They are included in the Application Profile because they form the range of prop
    
         <section>
             <h3 id="RoleType">
-                <a href="http://example.com/rrmv/RoleType"
+                <a href="http://data.europa.eu/2qy/rrmv#RoleType"
                    data-toggle="tooltip"
-                   data-content="http://example.com/rrmv/RoleType"
+                   data-content="http://data.europa.eu/2qy/rrmv#RoleType"
                    data-placement="right">Role Type</a>
 
             </h3>
@@ -3730,6 +3733,54 @@ They are included in the Application Profile because they form the range of prop
 	    </thead>
 	    <tbody class="supertype">
             
+		<tr><td>
+                   <a href="https://github.com/SEMICeu/Reporting-Requirements-Metadata-Vocabulary/issues/new?title=Issue%20for%20Xsd:anyuri&body=Explain%20your%20issue"}}>
+                     <img src="html/callout.png" loading="lazy" alt="(create issue)" width="50" height="50"/>
+		   </a>
+		</td><td>
+                
+                    <div id="xsd%3AanyURI">
+                        <a href="http://www.w3.org/2001/XMLSchema#anyURI"
+                           data-toggle="tooltip"
+                           data-content="http://www.w3.org/2001/XMLSchema#anyURI"
+                           data-placement="right">xsd:anyURI</a>
+                    </div>
+                
+		</td><td>
+                    An anyURI represents an Internationalized Resource Identifier Reference (IRI). 
+		</td></tr>
+		<tr><td>
+                   <a href="https://github.com/SEMICeu/Reporting-Requirements-Metadata-Vocabulary/issues/new?title=Issue%20for%20Xsd:boolean&body=Explain%20your%20issue"}}>
+                     <img src="html/callout.png" loading="lazy" alt="(create issue)" width="50" height="50"/>
+		   </a>
+		</td><td>
+                
+                    <div id="xsd%3Aboolean">
+                        <a href="http://www.w3.org/2001/XMLSchema#boolean"
+                           data-toggle="tooltip"
+                           data-content="http://www.w3.org/2001/XMLSchema#boolean"
+                           data-placement="right">xsd:boolean</a>
+                    </div>
+                
+		</td><td>
+                    A boolean represents the values of two-valued logic.
+		</td></tr>
+		<tr><td>
+                   <a href="https://github.com/SEMICeu/Reporting-Requirements-Metadata-Vocabulary/issues/new?title=Issue%20for%20Xsd:string&body=Explain%20your%20issue"}}>
+                     <img src="html/callout.png" loading="lazy" alt="(create issue)" width="50" height="50"/>
+		   </a>
+		</td><td>
+                
+                    <div id="xsd%3Astring">
+                        <a href="http://www.w3.org/2001/XMLSchema#string"
+                           data-toggle="tooltip"
+                           data-content="http://www.w3.org/2001/XMLSchema#string"
+                           data-placement="right">xsd:string</a>
+                    </div>
+                
+		</td><td>
+                    The string datatype represents character strings in XML.
+		</td></tr>
             </tbody>
 	</table>
 
@@ -4044,7 +4095,7 @@ The properties are grouped under headings <it>mandatory, recommended, optional</
 								<td><div class="shorten">http://data.europa.eu/2qy/rrmv#Action</div></td>
 								<td></td>
 								<td><a href="#Action.hasresult">has result </a></td>
-								<td><div class="shorten">http://data.europa.eu/2qy/rrmv#rrmv:hasResult</div></td>
+								<td><div class="shorten">http://data.europa.eu/2qy/rrmv#hasTitle</div></td>
 							</tr>
 						
 					
@@ -4099,7 +4150,7 @@ The properties are grouped under headings <it>mandatory, recommended, optional</
 								<td><div class="shorten">http://data.europa.eu/2qy/rrmv#ActionResult</div></td>
 								<td></td>
 								<td><a href="#ActionResult.hastype">has type </a></td>
-								<td><div class="shorten">http://data.europa.eu/2qy/rrmv#rrmv:hasType</div></td>
+								<td><div class="shorten">http://data.europa.eu/2qy/rrmv#hasType</div></td>
 							</tr>
 						
 					
@@ -4325,7 +4376,7 @@ The properties are grouped under headings <it>mandatory, recommended, optional</
 								<td><div class="shorten">http://www.w3.org/2006/time#ProperInterval</div></td>
 								<td></td>
 								<td><a href="#PeriodofTime.isincomplete">is incomplete </a></td>
-								<td><div class="shorten">http://fixme.com#rrmv:isIncomplete</div></td>
+								<td><div class="shorten">http://fixme.com#isIncomplete</div></td>
 							</tr>
 						
 					
@@ -4405,7 +4456,7 @@ The properties are grouped under headings <it>mandatory, recommended, optional</
 								<td><div class="shorten">http://data.europa.eu/2qy/rrmv#Request</div></td>
 								<td></td>
 								<td><a href="#Request.hasannotation">has annotation </a></td>
-								<td><div class="shorten">http://data.europa.eu/2qy/rrmv#rrmv:hasAnnotation</div></td>
+								<td><div class="shorten">http://data.europa.eu/2qy/rrmv#hasAnnotation</div></td>
 							</tr>
 						
 					
@@ -4415,7 +4466,7 @@ The properties are grouped under headings <it>mandatory, recommended, optional</
 								<td><div class="shorten">http://data.europa.eu/2qy/rrmv#Request</div></td>
 								<td></td>
 								<td><a href="#Request.hastopic">has topic </a></td>
-								<td><div class="shorten">http://data.europa.eu/2qy/rrmv#rrmv:hasTopic</div></td>
+								<td><div class="shorten">http://data.europa.eu/2qy/rrmv#hasTopic</div></td>
 							</tr>
 						
 					
@@ -4435,7 +4486,7 @@ The properties are grouped under headings <it>mandatory, recommended, optional</
 								<td><div class="shorten">http://data.europa.eu/2qy/rrmv#Request</div></td>
 								<td></td>
 								<td><a href="#Request.hasURI">has URI </a></td>
-								<td><div class="shorten">http://data.europa.eu/2qy/rrmv#rrmv:hasUri</div></td>
+								<td><div class="shorten">http://data.europa.eu/2qy/rrmv#hasURI</div></td>
 							</tr>
 						
 					
@@ -4455,7 +4506,7 @@ The properties are grouped under headings <it>mandatory, recommended, optional</
 								<td><div class="shorten">http://data.europa.eu/2qy/rrmv#Request</div></td>
 								<td></td>
 								<td><a href="#Request.produces">produces </a></td>
-								<td><div class="shorten">http://data.europa.eu/2qy/rrmv#rrmv:produces</div></td>
+								<td><div class="shorten">http://data.europa.eu/2qy/rrmv#produces</div></td>
 							</tr>
 						
 					
@@ -4497,7 +4548,7 @@ The properties are grouped under headings <it>mandatory, recommended, optional</
 								<td><div class="shorten">http://example.com/rrmv/Role</div></td>
 								<td></td>
 								<td><a href="#Role.hastype">has type </a></td>
-								<td><div class="shorten">http://data.europa.eu/2qy/rrmv#rrmv:hasType</div></td>
+								<td><div class="shorten">http://data.europa.eu/2qy/rrmv#hasType</div></td>
 							</tr>
 						
 					
@@ -4507,7 +4558,7 @@ The properties are grouped under headings <it>mandatory, recommended, optional</
 				
 					<tr>
 						<td><a href="#RoleType">Role Type</a></td>
-						<td><div class="shorten">http://example.com/rrmv/RoleType</div></td>
+						<td><div class="shorten">http://data.europa.eu/2qy/rrmv#RoleType</div></td>
 						<td></td>
 						<td></td>
 						<td></td>
