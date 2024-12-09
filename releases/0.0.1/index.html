@@ -671,7 +671,7 @@ Therefore it may vary over time when new versions of DCAT-AP are created.
                         
                             <tr id="Action.hasagentrole"
                                 typeof="rdfs:Property"
-                                resource="http://data.europa.eu/2qy/rrmv#rrmv:hasAgentRole"
+                                resource="http://data.europa.eu/2qy/rrmv#hasAgentRole"
                                 class="class mandatory">
 <!--
                                 <td>
@@ -681,9 +681,9 @@ Therefore it may vary over time when new versions of DCAT-AP are created.
                                 </td>
 --->
                                 <td>
-                                        <a href="http://data.europa.eu/2qy/rrmv#rrmv:hasAgentRole"
+                                        <a href="http://data.europa.eu/2qy/rrmv#hasAgentRole"
                                            data-toggle="tooltip"
-                                           data-content="http://data.europa.eu/2qy/rrmv#rrmv:hasAgentRole"
+                                           data-content="http://data.europa.eu/2qy/rrmv#hasAgentRole"
                                            data-placement="right">
                                         has agent role</a>
                                 </td>
@@ -698,10 +698,10 @@ Therefore it may vary over time when new versions of DCAT-AP are created.
                                     0..*
                                 </td>
                                 <td property="rdfs:comment">
-                                    This property connects the executed Action to the Agent that was involved in its exectuion.
+                                    The involvement of an agent in a role within this action.
                                 </td>
                                 <td property="skos:scopeNote">
-                                    
+                                    The involvement of the agent may be time dependent.
                                 </td>
 				<!--
                                 <td>
@@ -777,7 +777,7 @@ Therefore it may vary over time when new versions of DCAT-AP are created.
                         
                             <tr id="Action.hasnext"
                                 typeof="rdfs:Property"
-                                resource="http://data.europa.eu/2qy/rrmv#rrmv:hasNext"
+                                resource="http://data.europa.eu/2qy/rrmv#hasNext"
                                 class="class mandatory">
 <!--
                                 <td>
@@ -787,9 +787,9 @@ Therefore it may vary over time when new versions of DCAT-AP are created.
                                 </td>
 --->
                                 <td>
-                                        <a href="http://data.europa.eu/2qy/rrmv#rrmv:hasNext"
+                                        <a href="http://data.europa.eu/2qy/rrmv#hasNext"
                                            data-toggle="tooltip"
-                                           data-content="http://data.europa.eu/2qy/rrmv#rrmv:hasNext"
+                                           data-content="http://data.europa.eu/2qy/rrmv#hasNext"
                                            data-placement="right">
                                         has next</a>
                                 </td>
@@ -830,7 +830,7 @@ Therefore it may vary over time when new versions of DCAT-AP are created.
                         
                             <tr id="Action.hasresult"
                                 typeof="rdfs:Property"
-                                resource="http://data.europa.eu/2qy/rrmv#hasTitle"
+                                resource="http://data.europa.eu/2qy/rrmv#hasResult"
                                 class="class mandatory">
 <!--
                                 <td>
@@ -840,9 +840,9 @@ Therefore it may vary over time when new versions of DCAT-AP are created.
                                 </td>
 --->
                                 <td>
-                                        <a href="http://data.europa.eu/2qy/rrmv#hasTitle"
+                                        <a href="http://data.europa.eu/2qy/rrmv#hasResult"
                                            data-toggle="tooltip"
-                                           data-content="http://data.europa.eu/2qy/rrmv#hasTitle"
+                                           data-content="http://data.europa.eu/2qy/rrmv#hasResult"
                                            data-placement="right">
                                         has result</a>
                                 </td>
@@ -883,7 +883,7 @@ Therefore it may vary over time when new versions of DCAT-AP are created.
                         
                             <tr id="Action.hasstatus"
                                 typeof="rdfs:Property"
-                                resource="http://data.europa.eu/2qy/rrmv#rrmv:hasStatus"
+                                resource="http://data.europa.eu/2qy/rrmv#hasStatus"
                                 class="class mandatory">
 <!--
                                 <td>
@@ -893,9 +893,9 @@ Therefore it may vary over time when new versions of DCAT-AP are created.
                                 </td>
 --->
                                 <td>
-                                        <a href="http://data.europa.eu/2qy/rrmv#rrmv:hasStatus"
+                                        <a href="http://data.europa.eu/2qy/rrmv#hasStatus"
                                            data-toggle="tooltip"
-                                           data-content="http://data.europa.eu/2qy/rrmv#rrmv:hasStatus"
+                                           data-content="http://data.europa.eu/2qy/rrmv#hasStatus"
                                            data-placement="right">
                                         has status</a>
                                 </td>
@@ -1056,10 +1056,10 @@ Therefore it may vary over time when new versions of DCAT-AP are created.
                         <dd>
                             For this entity the following properties are defined: <a href="#Request.changes">changes</a>
                             , <a href="#Request.hasannotation">has annotation</a>
+                            , <a href="#Request.hasfrequency">has frequency</a>
                             , <a href="#Request.hastopic">has topic</a>
-                            , <a href="#Request.hasunit">has unit</a>
                             , <a href="#Request.hasURI">has URI</a>
-                            , <a href="#Request.hasvalue">has value</a>
+                            , <a href="#Request.ispartof">is part of</a>
                             , <a href="#Request.produces">produces</a>
                             , <a href="#Request.relatedto">related to</a>
                             .
@@ -1214,6 +1214,59 @@ Therefore it may vary over time when new versions of DCAT-AP are created.
                                 </td>
                             </tr>
                         
+                            <tr id="Request.hasfrequency"
+                                typeof="rdfs:Property"
+                                resource="http://data.europa.eu/2qy/rrmv#rrmv:hasFrequency"
+                                class="class mandatory">
+<!--
+                                <td>
+				    <a href="https://github.com/SEMICeu/Reporting-Requirements-Metadata-Vocabulary/issues/new?title=Issue%20for%20has frequency%20in%20Request&body=Explain%20your%20issue%20for%20https://semiceu.github.io/Reporting-Requirements-Metadata-Vocabulary/releases/0.0.1%23Request.hasfrequency" target="_blank" rel="noopener noreferrer" >
+                                        <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
+                                    </a>
+                                </td>
+--->
+                                <td>
+                                        <a href="http://data.europa.eu/2qy/rrmv#rrmv:hasFrequency"
+                                           data-toggle="tooltip"
+                                           data-content="http://data.europa.eu/2qy/rrmv#rrmv:hasFrequency"
+                                           data-placement="right">
+                                        has frequency</a>
+                                </td>
+                                <td>
+                                    
+                                        
+                                            <a href="#Frequency" data-placement="right">Frequency</a>
+                                        
+                                    
+                                </td>
+                                <td>
+                                    0..*
+                                </td>
+                                <td property="rdfs:comment">
+                                    The frequency in which the request is to be executed in case of repetitive mandate.
+                                </td>
+                                <td property="skos:scopeNote">
+                                    
+                                </td>
+				<!--
+                                <td>
+                                    
+                                </td>
+				-->
+				<!--
+                                <td>
+                                    
+                                </td>
+				-->
+                                <td>
+                                    
+                                       
+				        P
+				       
+				    
+                                </td>
+                            </tr>
+                        
                             <tr id="Request.hastopic"
                                 typeof="rdfs:Property"
                                 resource="http://data.europa.eu/2qy/rrmv#hasTopic"
@@ -1247,59 +1300,6 @@ Therefore it may vary over time when new versions of DCAT-AP are created.
                                 </td>
                                 <td property="rdfs:comment">
                                     The topic of the request.
-                                </td>
-                                <td property="skos:scopeNote">
-                                    
-                                </td>
-				<!--
-                                <td>
-                                    
-                                </td>
-				-->
-				<!--
-                                <td>
-                                    
-                                </td>
-				-->
-                                <td>
-                                    
-                                       
-				        P
-				       
-				    
-                                </td>
-                            </tr>
-                        
-                            <tr id="Request.hasunit"
-                                typeof="rdfs:Property"
-                                resource="http://data.europa.eu/2qy/rrmv#rrmv:hasUnit"
-                                class="class mandatory">
-<!--
-                                <td>
-				    <a href="https://github.com/SEMICeu/Reporting-Requirements-Metadata-Vocabulary/issues/new?title=Issue%20for%20has unit%20in%20Request&body=Explain%20your%20issue%20for%20https://semiceu.github.io/Reporting-Requirements-Metadata-Vocabulary/releases/0.0.1%23Request.hasunit" target="_blank" rel="noopener noreferrer" >
-                                        <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
-                                    </a>
-                                </td>
---->
-                                <td>
-                                        <a href="http://data.europa.eu/2qy/rrmv#rrmv:hasUnit"
-                                           data-toggle="tooltip"
-                                           data-content="http://data.europa.eu/2qy/rrmv#rrmv:hasUnit"
-                                           data-placement="right">
-                                        has unit</a>
-                                </td>
-                                <td>
-                                    
-                                        
-                                            <a href="#Frequency" data-placement="right">Frequency</a>
-                                        
-                                    
-                                </td>
-                                <td>
-                                    0..*
-                                </td>
-                                <td property="rdfs:comment">
-                                    The property linking a Request with the Frequency and expressing the unit of this frequency.
                                 </td>
                                 <td property="skos:scopeNote">
                                     
@@ -1376,39 +1376,39 @@ Therefore it may vary over time when new versions of DCAT-AP are created.
                                 </td>
                             </tr>
                         
-                            <tr id="Request.hasvalue"
+                            <tr id="Request.ispartof"
                                 typeof="rdfs:Property"
-                                resource="http://data.europa.eu/2qy/rrmv#rrmv:hasValue"
+                                resource="http://purl.org/dc/terms/isPartOf"
                                 class="class mandatory">
 <!--
                                 <td>
-				    <a href="https://github.com/SEMICeu/Reporting-Requirements-Metadata-Vocabulary/issues/new?title=Issue%20for%20has value%20in%20Request&body=Explain%20your%20issue%20for%20https://semiceu.github.io/Reporting-Requirements-Metadata-Vocabulary/releases/0.0.1%23Request.hasvalue" target="_blank" rel="noopener noreferrer" >
+				    <a href="https://github.com/SEMICeu/Reporting-Requirements-Metadata-Vocabulary/issues/new?title=Issue%20for%20is part of%20in%20Request&body=Explain%20your%20issue%20for%20https://semiceu.github.io/Reporting-Requirements-Metadata-Vocabulary/releases/0.0.1%23Request.ispartof" target="_blank" rel="noopener noreferrer" >
                                         <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
                                     </a>
                                 </td>
 --->
                                 <td>
-                                        <a href="http://data.europa.eu/2qy/rrmv#rrmv:hasValue"
+                                        <a href="http://purl.org/dc/terms/isPartOf"
                                            data-toggle="tooltip"
-                                           data-content="http://data.europa.eu/2qy/rrmv#rrmv:hasValue"
+                                           data-content="http://purl.org/dc/terms/isPartOf"
                                            data-placement="right">
-                                        has value</a>
+                                        is part of</a>
                                 </td>
                                 <td>
                                     
                                         
-                                            <a href="#Frequency" data-placement="right">Frequency</a>
+                                            <a href="#Expression" data-placement="right">Expression</a>
                                         
                                     
                                 </td>
                                 <td>
-                                    0..*
+                                    0..1
                                 </td>
                                 <td property="rdfs:comment">
-                                    The property linking a Request a Frequency expressing the value of the unit of the frequency (e.g., 2 is the value, quarter is the unit).
+                                     	A related resource in which the described resource is physically or logically included.
                                 </td>
                                 <td property="skos:scopeNote">
-                                    
+                                    Replaced eli:is_part_of with dct:isPartOf because of the domain constraint. TBD.
                                 </td>
 				<!--
                                 <td>
@@ -1664,7 +1664,7 @@ They are included in the Application Profile because they form the range of prop
                         
                             <tr id="ActionResult.hastitle"
                                 typeof="rdfs:Property"
-                                resource="http://data.europa.eu/2qy/rrmv#rrmv:hasTitle"
+                                resource="http://data.europa.eu/2qy/rrmv#hasTitle"
                                 class="class mandatory">
 <!--
                                 <td>
@@ -1674,9 +1674,9 @@ They are included in the Application Profile because they form the range of prop
                                 </td>
 --->
                                 <td>
-                                        <a href="http://data.europa.eu/2qy/rrmv#rrmv:hasTitle"
+                                        <a href="http://data.europa.eu/2qy/rrmv#hasTitle"
                                            data-toggle="tooltip"
-                                           data-content="http://data.europa.eu/2qy/rrmv#rrmv:hasTitle"
+                                           data-content="http://data.europa.eu/2qy/rrmv#hasTitle"
                                            data-placement="right">
                                         has title</a>
                                 </td>
@@ -1854,7 +1854,7 @@ They are included in the Application Profile because they form the range of prop
                     Definition
                 </dt>
                 <dd>
-                    The property linking a Agent to Role.
+                    A supportive class connecting agents with a role they play.
                 </dd>
                 
                 
@@ -1864,8 +1864,7 @@ They are included in the Application Profile because they form the range of prop
                     </dt>
                     
                         <dd>
-                            For this entity the following properties are defined: <a href="#AgentRole.foragent">for agent</a>
-                            , <a href="#AgentRole.withrole">with role</a>
+                            For this entity the following properties are defined: <a href="#AgentRole.withrole">with role</a>
                             .
                     </dd>
                 
@@ -1912,62 +1911,9 @@ They are included in the Application Profile because they form the range of prop
                     </thead>
                     <tbody class="supertype">
                         
-                            <tr id="AgentRole.foragent"
-                                typeof="rdfs:Property"
-                                resource="http://example.com/rrmv/forAgent"
-                                class="class mandatory">
-<!--
-                                <td>
-				    <a href="https://github.com/SEMICeu/Reporting-Requirements-Metadata-Vocabulary/issues/new?title=Issue%20for%20for agent%20in%20Agent Role&body=Explain%20your%20issue%20for%20https://semiceu.github.io/Reporting-Requirements-Metadata-Vocabulary/releases/0.0.1%23AgentRole.foragent" target="_blank" rel="noopener noreferrer" >
-                                        <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
-                                    </a>
-                                </td>
---->
-                                <td>
-                                        <a href="http://example.com/rrmv/forAgent"
-                                           data-toggle="tooltip"
-                                           data-content="http://example.com/rrmv/forAgent"
-                                           data-placement="right">
-                                        for agent</a>
-                                </td>
-                                <td>
-                                    
-                                        
-                                            <a href="#Agent" data-placement="right">Agent</a>
-                                        
-                                    
-                                </td>
-                                <td>
-                                    0..*
-                                </td>
-                                <td property="rdfs:comment">
-                                    The property linking a particular Role to Agent.
-                                </td>
-                                <td property="skos:scopeNote">
-                                    
-                                </td>
-				<!--
-                                <td>
-                                    
-                                </td>
-				-->
-				<!--
-                                <td>
-                                    
-                                </td>
-				-->
-                                <td>
-                                    
-                                       
-				        P
-				       
-				    
-                                </td>
-                            </tr>
-                        
                             <tr id="AgentRole.withrole"
                                 typeof="rdfs:Property"
-                                resource="http://data.europa.eu/2qy/rrmv#rrmv:withRole"
+                                resource="http://data.europa.eu/2qy/rrmv#withRole"
                                 class="class mandatory">
 <!--
                                 <td>
@@ -1977,9 +1923,9 @@ They are included in the Application Profile because they form the range of prop
                                 </td>
 --->
                                 <td>
-                                        <a href="http://data.europa.eu/2qy/rrmv#rrmv:withRole"
+                                        <a href="http://data.europa.eu/2qy/rrmv#withRole"
                                            data-toggle="tooltip"
-                                           data-content="http://data.europa.eu/2qy/rrmv#rrmv:withRole"
+                                           data-content="http://data.europa.eu/2qy/rrmv#withRole"
                                            data-placement="right">
                                         with role</a>
                                 </td>
@@ -2430,8 +2376,8 @@ They are included in the Application Profile because they form the range of prop
                     </dt>
                     
                         <dd>
-                            For this entity the following properties are defined: <a href="#Frequency.undefined"></a>
-                            , <a href="#Frequency.undefined"></a>
+                            For this entity the following properties are defined: <a href="#Frequency.hasunit">has unit</a>
+                            , <a href="#Frequency.value">value</a>
                             .
                     </dd>
                 
@@ -2478,28 +2424,31 @@ They are included in the Application Profile because they form the range of prop
                     </thead>
                     <tbody class="supertype">
                         
-                            <tr id="Frequency.undefined"
+                            <tr id="Frequency.hasunit"
                                 typeof="rdfs:Property"
-                                resource="http://data.europa.eu/2qy/rrmv#rrmv:hasUnit"
+                                resource="http://data.europa.eu/2qy/rrmv#hasUnit"
                                 class="class mandatory">
 <!--
                                 <td>
-				    <a href="https://github.com/SEMICeu/Reporting-Requirements-Metadata-Vocabulary/issues/new?title=Issue%20for%20%20in%20Frequency&body=Explain%20your%20issue%20for%20https://semiceu.github.io/Reporting-Requirements-Metadata-Vocabulary/releases/0.0.1%23Frequency.undefined" target="_blank" rel="noopener noreferrer" >
+				    <a href="https://github.com/SEMICeu/Reporting-Requirements-Metadata-Vocabulary/issues/new?title=Issue%20for%20has unit%20in%20Frequency&body=Explain%20your%20issue%20for%20https://semiceu.github.io/Reporting-Requirements-Metadata-Vocabulary/releases/0.0.1%23Frequency.hasunit" target="_blank" rel="noopener noreferrer" >
                                         <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
                                     </a>
                                 </td>
 --->
                                 <td>
-                                        <a href="http://data.europa.eu/2qy/rrmv#rrmv:hasUnit"
+                                        <a href="http://data.europa.eu/2qy/rrmv#hasUnit"
                                            data-toggle="tooltip"
-                                           data-content="http://data.europa.eu/2qy/rrmv#rrmv:hasUnit"
+                                           data-content="http://data.europa.eu/2qy/rrmv#hasUnit"
                                            data-placement="right">
-                                        </a>
+                                        has unit</a>
                                 </td>
                                 <td>
                                     
                                         
-                                            <a href="#xsd%3Astring" data-placement="right">xsd:string</a>
+                                            <a href="#skos%3AConcept"
+                                               data-toggle="tooltip"
+                                               data-content="http://www.w3.org/2004/02/skos/core#Concept"
+                                               data-placement="right">skos:Concept</a>
                                         
                                     
                                 </td>
@@ -2510,7 +2459,7 @@ They are included in the Application Profile because they form the range of prop
                                     
                                 </td>
                                 <td property="skos:scopeNote">
-                                    
+                                    e.g. Quarter
                                 </td>
 				<!--
                                 <td>
@@ -2531,23 +2480,23 @@ They are included in the Application Profile because they form the range of prop
                                 </td>
                             </tr>
                         
-                            <tr id="Frequency.undefined"
+                            <tr id="Frequency.value"
                                 typeof="rdfs:Property"
-                                resource="http://data.europa.eu/2qy/rrmv#rrmv:value"
+                                resource="http://data.europa.eu/2qy/rrmv#value"
                                 class="class mandatory">
 <!--
                                 <td>
-				    <a href="https://github.com/SEMICeu/Reporting-Requirements-Metadata-Vocabulary/issues/new?title=Issue%20for%20%20in%20Frequency&body=Explain%20your%20issue%20for%20https://semiceu.github.io/Reporting-Requirements-Metadata-Vocabulary/releases/0.0.1%23Frequency.undefined" target="_blank" rel="noopener noreferrer" >
+				    <a href="https://github.com/SEMICeu/Reporting-Requirements-Metadata-Vocabulary/issues/new?title=Issue%20for%20value%20in%20Frequency&body=Explain%20your%20issue%20for%20https://semiceu.github.io/Reporting-Requirements-Metadata-Vocabulary/releases/0.0.1%23Frequency.value" target="_blank" rel="noopener noreferrer" >
                                         <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
                                     </a>
                                 </td>
 --->
                                 <td>
-                                        <a href="http://data.europa.eu/2qy/rrmv#rrmv:value"
+                                        <a href="http://data.europa.eu/2qy/rrmv#value"
                                            data-toggle="tooltip"
-                                           data-content="http://data.europa.eu/2qy/rrmv#rrmv:value"
+                                           data-content="http://data.europa.eu/2qy/rrmv#value"
                                            data-placement="right">
-                                        </a>
+                                        value</a>
                                 </td>
                                 <td>
                                     
@@ -2560,7 +2509,7 @@ They are included in the Application Profile because they form the range of prop
                                     1
                                 </td>
                                 <td property="rdfs:comment">
-                                    
+                                    The value of the frequency.
                                 </td>
                                 <td property="skos:scopeNote">
                                     
@@ -3843,12 +3792,15 @@ In addition, the following controlled vocabularies MUST be used for the properti
 The <i>MUST be used</i> interpretation means that the range value space of the property is closed under the controlled vocabulary. 
 Validation systems SHOULD produce errors.
 
-        <table id="table-cv" class="simple">
-            <thead><tr><th>Property URI</th><th>Used for Class</th><th>Vocabulary name</th><th>Vocabulary URI</th><th>Usage note</th></tr></thead>
-            <tbody>
-<tr><td>rrmv:hasType</td><td><a href="#ActionResult">Action Result</a></td><td><a href="">Action Result Type</a></td><td>This controlled vocabulary is under construction.</td><td></td></tr>
-            </tbody>
-            </table>
+<table id="table-cv" class="simple">
+   <thead><tr><th>Property URI</th><th>Used for Class</th><th>Vocabulary name</th><th>Vocabulary URI</th><th>Usage note</th></tr></thead>
+   <tbody>
+   <tr><td>rrmv:hasType</td><td><a href="#ActionResult">Action Result</a></td><td><a href="">Action Result Type</a></td><td>This controlled vocabulary is under construction.</td><td></td></tr>
+   <tr><td>rrmv:hasType</td><td><a href="#Role">Role</a></td><td><a href="">Role Type</a></td><td>This controlled vocabulary is under construction.</td><td></td></tr>
+   <tr><td>rrmv:hasType</td><td><a href="#Agent">Agent</a></td><td><a href="">Agent Type</a></td><td>This controlled vocabulary is under construction.</td><td></td></tr>
+   <tr><td>rrmv:hasstatus</td><td><a href="#Action">Action</a></td><td><a href="">Status</a></td><td>This controlled vocabulary is under construction.</td><td></td></tr>
+   </tbody>
+</table>
 
 
 
@@ -4065,7 +4017,7 @@ The properties are grouped under headings <it>mandatory, recommended, optional</
 								<td><div class="shorten">http://data.europa.eu/2qy/rrmv#Action</div></td>
 								<td></td>
 								<td><a href="#Action.hasagentrole">has agent role </a></td>
-								<td><div class="shorten">http://data.europa.eu/2qy/rrmv#rrmv:hasAgentRole</div></td>
+								<td><div class="shorten">http://data.europa.eu/2qy/rrmv#hasAgentRole</div></td>
 							</tr>
 						
 					
@@ -4085,7 +4037,7 @@ The properties are grouped under headings <it>mandatory, recommended, optional</
 								<td><div class="shorten">http://data.europa.eu/2qy/rrmv#Action</div></td>
 								<td></td>
 								<td><a href="#Action.hasnext">has next </a></td>
-								<td><div class="shorten">http://data.europa.eu/2qy/rrmv#rrmv:hasNext</div></td>
+								<td><div class="shorten">http://data.europa.eu/2qy/rrmv#hasNext</div></td>
 							</tr>
 						
 					
@@ -4095,7 +4047,7 @@ The properties are grouped under headings <it>mandatory, recommended, optional</
 								<td><div class="shorten">http://data.europa.eu/2qy/rrmv#Action</div></td>
 								<td></td>
 								<td><a href="#Action.hasresult">has result </a></td>
-								<td><div class="shorten">http://data.europa.eu/2qy/rrmv#hasTitle</div></td>
+								<td><div class="shorten">http://data.europa.eu/2qy/rrmv#hasResult</div></td>
 							</tr>
 						
 					
@@ -4105,7 +4057,7 @@ The properties are grouped under headings <it>mandatory, recommended, optional</
 								<td><div class="shorten">http://data.europa.eu/2qy/rrmv#Action</div></td>
 								<td></td>
 								<td><a href="#Action.hasstatus">has status </a></td>
-								<td><div class="shorten">http://data.europa.eu/2qy/rrmv#rrmv:hasStatus</div></td>
+								<td><div class="shorten">http://data.europa.eu/2qy/rrmv#hasStatus</div></td>
 							</tr>
 						
 					
@@ -4140,7 +4092,7 @@ The properties are grouped under headings <it>mandatory, recommended, optional</
 								<td><div class="shorten">http://data.europa.eu/2qy/rrmv#ActionResult</div></td>
 								<td></td>
 								<td><a href="#ActionResult.hastitle">has title </a></td>
-								<td><div class="shorten">http://data.europa.eu/2qy/rrmv#rrmv:hasTitle</div></td>
+								<td><div class="shorten">http://data.europa.eu/2qy/rrmv#hasTitle</div></td>
 							</tr>
 						
 					
@@ -4172,23 +4124,9 @@ The properties are grouped under headings <it>mandatory, recommended, optional</
 					
 						
 					
-						
-					
 					
 						
 					
-						
-					
-					
-						
-							<tr>
-								<td><a href="#AgentRole">Agent Role</a></td>
-								<td><div class="shorten">http://data.europa.eu/2qy/rrmv#AgentRole</div></td>
-								<td></td>
-								<td><a href="#AgentRole.foragent">for agent </a></td>
-								<td><div class="shorten">http://example.com/rrmv/forAgent</div></td>
-							</tr>
-						
 					
 						
 							<tr>
@@ -4196,7 +4134,7 @@ The properties are grouped under headings <it>mandatory, recommended, optional</
 								<td><div class="shorten">http://data.europa.eu/2qy/rrmv#AgentRole</div></td>
 								<td></td>
 								<td><a href="#AgentRole.withrole">with role </a></td>
-								<td><div class="shorten">http://data.europa.eu/2qy/rrmv#rrmv:withRole</div></td>
+								<td><div class="shorten">http://data.europa.eu/2qy/rrmv#withRole</div></td>
 							</tr>
 						
 					
@@ -4294,8 +4232,8 @@ The properties are grouped under headings <it>mandatory, recommended, optional</
 								<td><a href="#Frequency">Frequency</a></td>
 								<td><div class="shorten">http://data.europa.eu/2qy/rrmv#Frequency</div></td>
 								<td></td>
-								<td><a href="#Frequency.undefined"> </a></td>
-								<td><div class="shorten">http://data.europa.eu/2qy/rrmv#rrmv:hasUnit</div></td>
+								<td><a href="#Frequency.hasunit">has unit </a></td>
+								<td><div class="shorten">http://data.europa.eu/2qy/rrmv#hasUnit</div></td>
 							</tr>
 						
 					
@@ -4304,8 +4242,8 @@ The properties are grouped under headings <it>mandatory, recommended, optional</
 								<td><a href="#Frequency">Frequency</a></td>
 								<td><div class="shorten">http://data.europa.eu/2qy/rrmv#Frequency</div></td>
 								<td></td>
-								<td><a href="#Frequency.undefined"> </a></td>
-								<td><div class="shorten">http://data.europa.eu/2qy/rrmv#rrmv:value</div></td>
+								<td><a href="#Frequency.value">value </a></td>
+								<td><div class="shorten">http://data.europa.eu/2qy/rrmv#value</div></td>
 							</tr>
 						
 					
@@ -4465,8 +4403,8 @@ The properties are grouped under headings <it>mandatory, recommended, optional</
 								<td><a href="#Request">Request</a></td>
 								<td><div class="shorten">http://data.europa.eu/2qy/rrmv#Request</div></td>
 								<td></td>
-								<td><a href="#Request.hastopic">has topic </a></td>
-								<td><div class="shorten">http://data.europa.eu/2qy/rrmv#hasTopic</div></td>
+								<td><a href="#Request.hasfrequency">has frequency </a></td>
+								<td><div class="shorten">http://data.europa.eu/2qy/rrmv#rrmv:hasFrequency</div></td>
 							</tr>
 						
 					
@@ -4475,8 +4413,8 @@ The properties are grouped under headings <it>mandatory, recommended, optional</
 								<td><a href="#Request">Request</a></td>
 								<td><div class="shorten">http://data.europa.eu/2qy/rrmv#Request</div></td>
 								<td></td>
-								<td><a href="#Request.hasunit">has unit </a></td>
-								<td><div class="shorten">http://data.europa.eu/2qy/rrmv#rrmv:hasUnit</div></td>
+								<td><a href="#Request.hastopic">has topic </a></td>
+								<td><div class="shorten">http://data.europa.eu/2qy/rrmv#hasTopic</div></td>
 							</tr>
 						
 					
@@ -4495,8 +4433,8 @@ The properties are grouped under headings <it>mandatory, recommended, optional</
 								<td><a href="#Request">Request</a></td>
 								<td><div class="shorten">http://data.europa.eu/2qy/rrmv#Request</div></td>
 								<td></td>
-								<td><a href="#Request.hasvalue">has value </a></td>
-								<td><div class="shorten">http://data.europa.eu/2qy/rrmv#rrmv:hasValue</div></td>
+								<td><a href="#Request.ispartof">is part of </a></td>
+								<td><div class="shorten">http://purl.org/dc/terms/isPartOf</div></td>
 							</tr>
 						
 					
