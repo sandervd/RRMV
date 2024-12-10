@@ -4235,7 +4235,126 @@ A OWL representation that corresponds to this specification can be found at <a h
 
 </section>
 
-  
+  <section id="changerequests" class="informative">
+
+This section documents possible change requests that are performed or can be performed.
+
+<h2>performed Change Requests</h2>
+
+<h3 id="cr2">Include a minimum requirement of tags and notes, including a definition, a label, a URI</h3>
+The information in the model has been completed and made coherent to the best extend.
+This activity also aligned the visual representation of the OWL model with the RDF representation.
+In the visual representation some properties where not present (e.g.hasTitle) but also not all properties and classes has a proper documentation.
+
+<h4 id="cr2a">Provide good definitions</h4>
+The proposed RRMV does has not completely annotated all properties and classes with definitions.
+The proposed definitions are updated as follows:
+    <ul>
+      <li>Splitting between definitional information and usage information in two categories: definition and usagenotes</li>
+      <li>In case of absence of definition and the uri of the term is an existing term from an external vocabulary, that definition is taken.</li>
+      <li>Apply the guidelines for Good definitions as much as possible. E.g. remove non-informative information such as <i>This property ...</i></li>
+      <li>Make the definitions as much as possible stand-alone and non-circular</li>
+    </ul>
+
+<h4 id="cr2b">The model contains URIs, however, they are not persistent.</h4>
+Any selfmaintained terms (properties and classes) the uri namespace <code>http://data.europa.eu/2qy/rrmv</code> is assigned.
+
+<h3 id="cr3">Include semantic versioning of the model (x.y.z) </h3>
+The specification got a semantic version assigned. Note that the version numbering and the coherency between all artefacts needs to be ensured.
+It is recommended to apply verrsioning according to source control approach. 
+Renaming files and includeing version numbers in filenames should be avoided.
+That creates an substantial overhead for the publication.
+
+<h3 id="cr4">Separate information on usage of a concept from the definition to a usage note</h3>
+As mentioned in the CR 2, the definitions and usage note information are seperated.
+
+<h3 id="cr5">Separate code list from the model to make their lifecycle management independent</h3>
+Added the codelists to section [[[#controlled-vocs]]].
+<p class="ednote" title="use of dct:type">
+The property rrmv:hasType is not discriminating between the constraints of the domains Action Result, Role, Agent. 
+That makes it equivalent to the generic property dct:type.
+<p/>
+Proposal 1. replace rrmv:hasType with dct:type
+Proposal 2: replace rrmv:hasType with 3 subproperties of dct:type.
+<p/>
+As long no additional constraints like additional usage constraints, such as <i> in case X, then Y must be provided</i> or cardinality constraints with a qualified usage for a specific codelist, proposal 1 is fine. However for implementers of an editorial interface Proposal 2 may be more stable and attractive.
+</p>
+
+<p class="ednote" title="URI for code in codelists">
+It is recommended to manage the URIs for the codelists in a separate namespace.
+This ensures the stability of the RRMV as specification, while at the same time usage evolution is possible.
+<br/>
+SEMIC recommendes to mimic the approach by the Publications Office as codelist management is the core activity the PO EU Vocabularies team. 
+Therefore is good to follow the minimum requirements and ensure that the URI change in the future when the RRMV is officially released 
+is a straightforward change.
+</p>
+
+
+<h3 id="cr6">Improve definitions</h3>
+Applied together with CR.2 and CR.4
+
+<h3 id="cr7">Reduce the number of connectors and associated classes by using attributes</h3>
+In this context, are the following considerations to be noted:
+
+1. All Type classes can be replaced with Skos:Concept. The specific name, e.g. Agent Type, is not more than the name of the codelist to be used. 
+   the relationship rdf:type or skos:inScheme are equivalent in use. 
+   To increase the readibility and stress the intention that is is a codelist, using skos:Concept is sufficient.
+
+2. Frequency can be replaced with a codelist from the Publications Office.
+
+In case this information has to be recorded as the identified annotations prior consolidation to the codelists then they must be kept but then a mapping property should be provided.
+
+
+<h3 id="cr7">Reduce the number of connectors and associated classes by using attributes</h3>
+
+<p class="ednote">
+The following properties are changed
+
+<ul>
+ <li> rrmv:hasTitle becomes dct:title </li>
+
+
+
+</p>
+
+
+
+<h3 id="cr8">Consider “Request” as a separate entity from eli:LegalExpression</h3>
+The diagram has been reorganised in two layers: An upper layer is the ELI layer and the bottom layer is RRMV.
+The motivation of this separation is to ensure a distinction between the Legislation and its interpretation in the context of RRMV.
+
+<p class="ednote" title="">
+The separation should also be considered for the usage of the ELI properties such as eli:cites, eli:changes, eli:relates_to. 
+These properties have as domain an ELI class, i.e. eli:Expression. 
+And as consequence the Request and Action are also eli:Exprressions. 
+This breaks the intention of seperation.
+
+If these properties are to be reused from ELI, it is recommended to provide a section on how the ELI ontology is being reused.
+As this may raise questions by both reusers of the SEMIC community (who would consider this kind of reuse problematic) aswell from 
+the ELI community (cfr Jaroslaw) who consider RRMV in the original form as an extension of ELI. And thus breaking the agreements of the usage of ELI
+</p>
+
+<h3 id="cr8">Introduction of the ExecutionRequest, ExecutionAction and ExecutionActionResult </h3>
+This is applied in a seperate next version to avoid interference with other changes.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</section>
+
  
 
 <section id="quick-reference" class="appendix">
