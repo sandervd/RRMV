@@ -546,7 +546,7 @@ The cardinalities and qualifications are included in the figure.
                         <p>
                             And supported by these datatypes:
                             <br />
-                            | <a href="#xsd%3AanyURI">xsd:anyURI</a> | <a href="#xsd%3Aboolean">xsd:boolean</a> | <a href="#xsd%3Astring">xsd:string</a> |
+                            | <a href="#langString">langString</a> | <a href="#xsd%3AanyURI">xsd:anyURI</a> | <a href="#xsd%3Aboolean">xsd:boolean</a> | <a href="#xsd%3Astring">xsd:string</a> |
                         </p>
                 
     </div>
@@ -746,7 +746,7 @@ Therefore it may vary over time when new versions of DCAT-AP are created.
                                 <td>
                                     
                                         
-                                            <a href="#xsd%3Astring" data-placement="right">xsd:string</a>
+                                            <a href="#langString" data-placement="right">langString</a>
                                         
                                     
                                 </td>
@@ -754,7 +754,7 @@ Therefore it may vary over time when new versions of DCAT-AP are created.
                                     0..*
                                 </td>
                                 <td property="rdfs:comment">
-                                    a note added by way of comment or explanation.
+                                    A note added by way of comment or explanation.
                                 </td>
                                 <td property="skos:scopeNote">
                                     This property is included to capture any information of value identified by a domain expert and that is valuable to be shared with other experts.
@@ -1094,7 +1094,7 @@ Therefore it may vary over time when new versions of DCAT-AP are created.
                         
                             <tr id="ActionResult.hastitle"
                                 typeof="rdfs:Property"
-                                resource="http://data.europa.eu/2qy/rrmv#hasTitle"
+                                resource="http://purl.org/dc/terms/title"
                                 class="class mandatory">
 <!--
                                 <td>
@@ -1104,16 +1104,16 @@ Therefore it may vary over time when new versions of DCAT-AP are created.
                                 </td>
 --->
                                 <td>
-                                        <a href="http://data.europa.eu/2qy/rrmv#hasTitle"
+                                        <a href="http://purl.org/dc/terms/title"
                                            data-toggle="tooltip"
-                                           data-content="http://data.europa.eu/2qy/rrmv#hasTitle"
+                                           data-content="http://purl.org/dc/terms/title"
                                            data-placement="right">
                                         has title</a>
                                 </td>
                                 <td>
                                     
                                         
-                                            <a href="#xsd%3Astring" data-placement="right">xsd:string</a>
+                                            <a href="#langString" data-placement="right">langString</a>
                                         
                                     
                                 </td>
@@ -1121,7 +1121,7 @@ Therefore it may vary over time when new versions of DCAT-AP are created.
                                     0..*
                                 </td>
                                 <td property="rdfs:comment">
-                                    Title of the Action.
+                                    Title of the action result
                                 </td>
                                 <td property="skos:scopeNote">
                                     
@@ -1397,7 +1397,7 @@ Therefore it may vary over time when new versions of DCAT-AP are created.
                                 <td>
                                     
                                         
-                                            <a href="#xsd%3Astring" data-placement="right">xsd:string</a>
+                                            <a href="#langString" data-placement="right">langString</a>
                                         
                                     
                                 </td>
@@ -2710,9 +2710,9 @@ They are included in the Application Profile because they form the range of prop
    
         <section>
             <h3 id="Instant">
-                <a href="https://www.w3.org/2006/time#Instant"
+                <a href="http://www.w3.org/2006/time#Instant"
                    data-toggle="tooltip"
-                   data-content="https://www.w3.org/2006/time#Instant"
+                   data-content="http://www.w3.org/2006/time#Instant"
                    data-placement="right">Instant</a>
 
             </h3>
@@ -3932,6 +3932,22 @@ They are included in the Application Profile because they form the range of prop
 	    <tbody class="supertype">
             
 		<tr><td>
+                   <a href="https://github.com/SEMICeu/Reporting-Requirements-Metadata-Vocabulary/issues/new?title=Issue%20for%20Langstring&body=Explain%20your%20issue"}}>
+                     <img src="html/callout.png" loading="lazy" alt="(create issue)" width="50" height="50"/>
+		   </a>
+		</td><td>
+                
+                    <div id="langString">
+                        <a href="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+                           data-toggle="tooltip"
+                           data-content="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+                           data-placement="right">langString</a>
+                    </div>
+                
+		</td><td>
+                    The datatype of language-tagged string values.
+		</td></tr>
+		<tr><td>
                    <a href="https://github.com/SEMICeu/Reporting-Requirements-Metadata-Vocabulary/issues/new?title=Issue%20for%20Xsd:anyuri&body=Explain%20your%20issue"}}>
                      <img src="html/callout.png" loading="lazy" alt="(create issue)" width="50" height="50"/>
 		   </a>
@@ -4312,6 +4328,8 @@ The following properties are changed
 
 <ul>
  <li> rrmv:hasTitle becomes dct:title </li>
+ <li> replace range xsd:string with a language aware string literal as range. </li>
+</ul>
 
 
 
@@ -4485,7 +4503,7 @@ The properties are grouped under headings <it>mandatory, recommended, optional</
 								<td><div class="shorten">http://data.europa.eu/2qy/rrmv#ActionResult</div></td>
 								<td></td>
 								<td><a href="#ActionResult.hastitle">has title </a></td>
-								<td><div class="shorten">http://data.europa.eu/2qy/rrmv#hasTitle</div></td>
+								<td><div class="shorten">http://purl.org/dc/terms/title</div></td>
 							</tr>
 						
 					
@@ -4667,7 +4685,7 @@ The properties are grouped under headings <it>mandatory, recommended, optional</
 				
 					<tr>
 						<td><a href="#Instant">Instant</a></td>
-						<td><div class="shorten">https://www.w3.org/2006/time#Instant</div></td>
+						<td><div class="shorten">http://www.w3.org/2006/time#Instant</div></td>
 						<td></td>
 						<td></td>
 						<td></td>
@@ -5024,62 +5042,43 @@ Past and current contributors are :
      
      
            
-	 	Cristina Ioana Condurat
-		, 
+	 	Cristina Ioana Condurat, 
            
-	 	Vidas Daudaravicius
-		, 
+	 	Vidas Daudaravicius, 
            
-	 	Lorena Hernandez
-		, 
+	 	Lorena Hernandez, 
            
-	 	Serge Le Gal
-		, 
+	 	Serge Le Gal, 
            
-	 	Kuban Michal
-		, 
+	 	Kuban Michal, 
            
-	 	Giuseppe Ascone Modica
-		, 
+	 	Giuseppe Ascone Modica, 
            
-	 	Koen Tzeni Myriam
-		, 
+	 	Koen Tzeni Myriam, 
            
-	 	Fernando Nubla Durango
-		, 
+	 	Fernando Nubla Durango, 
            
-	 	Joao Diogo Nunes Cartaxo
-		, 
+	 	Joao Diogo Nunes Cartaxo, 
            
-	 	Stefan Paduraru
-		, 
+	 	Stefan Paduraru, 
            
-	 	Monica Posada
-		, 
+	 	Monica Posada, 
            
-	 	Tamas Schlemmer
-		, 
+	 	Tamas Schlemmer, 
            
-	 	Georges Serrano
-		, 
+	 	Georges Serrano, 
            
-	 	Robin Smith
-		, 
+	 	Robin Smith, 
            
-	 	Cristina Stanciulescu
-		, 
+	 	Cristina Stanciulescu, 
            
-	 	Mario Tenreiro
-		, 
+	 	Mario Tenreiro, 
            
-	 	Tomas Vagner
-		, 
+	 	Tomas Vagner, 
            
-	 	Celina Valverde
-		, 
+	 	Celina Valverde, 
            
 	 	Jean-Christophe Willain
-		
           
      
 
