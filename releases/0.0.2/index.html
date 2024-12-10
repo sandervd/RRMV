@@ -347,13 +347,17 @@
     <h2>Summary</h2>
 
 
-The Regulatory Reporting Metadata Vocabulary is a vocabulary to express regulary reporting information that is expressed in legislation. 
-It is developed in the context of the SORTIS initiative. 
-The purpose of this vocabulary is to provide the minimum necessary concepts to describe a reporting request, originating from a legal resource, 
-the resulting action and several key concepts related to its execution. 
-Through this vocabulary, redundancies will be eliminated and reporting requirements will be harmonised to assist policy officers. 
-The aim should be to reduce such burdens by 25%, without undermining the related policy objectives. 
-    
+<p>The Regulatory Reporting Metadata Vocabulary is a vocabulary developed in the context of the SORTIS initiative. 
+To provide attribution and reference to all actors, the RRMV model can be found in an RDF format (Turtle) and below in a visual representation:</p>  
+    <p>The purpose of this page is to provide stakeholders access to the RRMV specification.</p>  
+	         <div>
+        <a href="https://github.com/SEMICeu/uri.semic.eu-thema/blob/rrmv_002/site-skeleton/rrmv/SORTISmodel.png" target="_blank">
+            <img src="https://github.com/SEMICeu/uri.semic.eu-thema/blob/rrmv_002/site-skeleton/rrmv/SORTISmodel.png"/>
+        </a>
+    </div>
+    <p>On this page, you will find the UML diagram of the RRMV, the main entities that form the core of the Application Profile (i.e. action and request), 
+	    and supportive entities (i.e. the action result, agent, agent role, expression, frequency...). 
+	    Finally, there are also different examples displayed relating to requests with legislation.</p>
         
 </section>
 
@@ -363,34 +367,64 @@ The aim should be to reduce such burdens by 25%, without undermining the related
         Introduction
     </h2>
     
-
-<p>As EU policies evolve, the demand for data in the form of reporting requirements from Member States and other stakeholders continues to grow. This may potentially lead to an increase in the regulatory reporting burden, as stakeholders need to increasingly monitor regulations to be fully compliant with them.</p>  
-  
-<p>To address this issue, the European Commission, in its <a href="https://commission.europa.eu/system/files/2023-03/Communication_Long-term-competitiveness.pdf">16 March 2023 Communication on the Long-term competitiveness of the EU</a>, committed to "make a fresh push to rationalize and simplify reporting requirements for companies and administrations with first proposals for each of the green, digital and economic thematic areas before the autumn. The aim should be to reduce such burdens by 25%, without undermining the related policy objectives.”</p>  
-  
-<p>In line with this effort, streamlining regulatory reporting burdens has been identified as a critical policy need for the European Commission's proposals. The European Commission aims to eliminate redundancies and harmonise reporting requirements to assist policy officers in understanding existing frameworks in detail. By avoiding duplicate requests and considering factors such as dates and reporting frequencies, the Commission seeks to optimise new requirements effectively.</p>  
-  
-<p>These efforts translated into the <a href="https://interoperable-europe.ec.europa.eu/collection/better-legislation-smoother-implementation/news/streamlining-regulatory-reporting-sortis-project-results">Study on Regulatory Reporting Standards (SORTIS)</a>, a combined effort of the University of Bologna, the University of Liège, and the European Commission. The project aimed to define a vocabulary to standardise and organise regulatory reporting metadata of EU legislations and to develop standard formulations to be able to identify the appropriate data of reporting requirements.</p>  
-  
-<p>The results of this study included a definition of a model known as Reporting Requirements Metadata Vocabulary (RRMV). This model aimed at defining the set of concepts and categories contained in reporting requirements within existing EU legislations and define their properties and the relations between them. It could serve as a base for interoperable reporting requirements monitoring solutions that could extract information and automatically feed regulatory reporting databases across different policy domains to be accessed by stakeholders.</p>  
-  
-<p>The aim of the model is to assist in the policy drafting process by automatically feeding a reporting requirements monitoring solution in turn minimising the duplication of reporting requirements.</p> 
-
-
+The aim of the RRMV specification is defined as follows: To standardise the manner of drafting reporting requirements in legislation, through a metadata vocabulary.</p>  
+    <p>In essence, the RRMV proposes a model that allows to gather information of reporting requirements from legislation. The authors, editors and contributors defined the RRMV intended uses to point to concrete and actionable Use Cases:</p>  
+      
+    <ul>  
+        <li>  
+            <strong>UC 1:</strong> Extract structured information about reporting requirements from existing legislation including what, by whom, to whom, etc. 
+		The goal of this Use Case is to systematically extract key elements of reporting requirements within legal texts and annotate them accordingly 
+		allowing further detailed analysis about potential overlaps, redundancies, or inconsistencies in mandated data flows.  
+        </li>  
+        <li>  
+            <strong>UC 2:</strong> Identify reporting due dates and essential planning information, including conditional start dates, milestones, and derogations. 
+		This Use Case focuses on annotating conditional start dates, key milestones, and any applicable derogations of reporting requirements. 
+		The objective is to provide clear and actionable timelines and conditions of the obligations set in reporting requirement 
+		clauses allowing further detailed analysis about potential overlaps, redundancies, or inconsistencies in temporal aspects.  
+        </li>  
+        <li>  
+            <strong>UC 3:</strong> Identify changes in reporting requirements of new versions of legislations affecting reporting requirements. 
+		This Use Case involves continuously monitoring the versioning of legislations to ensure the metadata extracted (UC1) remains up to date. 
+		The goal is to identify the Modifications set in a specific article located in the legal text affecting reporting requirements, 
+		providing a snapshot of the change in terms of data flow or temporal aspects.  
+        </li>  
+        <li>  
+            <strong>UC 4:</strong> Extract exceptions and legal relationships pertaining to applicable reporting requirements. 
+		The Use Case focuses on detecting clauses that affect the applicability of reporting requirements at a given moment in time 
+		(meaning inferring on exception, suspension, or abrogation decisions related to existing reporting requirements).  
+        </li>  
+    </ul>  
 <h3>Context</h3>
-<p>This document describes the Regulatory Reporting Metadata Vocabulary that was developed in the context of the SORTIS initiative.</p>  
-    <p>To provide attribution and reference to all actors, the RRMV model as developed under the SORTIS study can be found in an RDF format (Turtle) and below in a visual representation:</p>  
-         <div>
-        <a href="https://github.com/SEMICeu/Reporting-Requirements-Metadata-Vocabulary/releases/0.0.1/html/OriginalSORTISmodel.png" target="_blank">
-            <img src="https://github.com/SEMICeu/Reporting-Requirements-Metadata-Vocabulary/releases/0.0.1/html/OriginalSORTISmodel.png"/>
-        </a>
-    </div>
-<p>The purpose of this vocabulary is to provide the minimum necessary concepts to describe a request, originating from a legal resource, the resulting action, and several key concepts related to its execution.</p
 
+<p>As EU policies evolve, the demand for data in the form of reporting requirements from Member States and other stakeholders continues to grow. 
+	This may potentially lead to an increase in the regulatory reporting burden, as stakeholders need to increasingly monitor regulations to be fully compliant with them.</p>  
+  
+    <p>To address this issue, the European Commission, in its 16 March 2023 <a href="https://commission.europa.eu/system/files/2023-03/Communication_Long-term-competitiveness.pdf">Communication on the Long-term competitiveness of the EU</a>, 
+	    committed to "make a fresh push to rationalize and simplify reporting requirements for companies and administrations with first proposals for each of the green,
+	    digital and economic thematic areas before the autumn. 
+	    The aim should be to reduce such burdens by 25%, without undermining the related policy objectives.”</p>  
+  
+    <p>In line with this effort, streamlining regulatory reporting burdens has been identified as a critical policy need for the European Commission's proposals. 
+	    The European Commission aims to eliminate redundancies and harmonise reporting requirements to assist policy officers in understanding existing frameworks in detail. 
+	    By avoiding duplicate requests and considering factors such as dates and reporting frequencies, 
+	    the Commission seeks to optimise new requirements effectively.</p>  
+  
+    <p>These efforts translated into the <a href="https://interoperable-europe.ec.europa.eu/collection/better-legislation-smoother-implementation/news/streamlining-regulatory-reporting-sortis-project-results">Study on Regulatory Reporting Standards (SORTIS)</a>, 
+	    a combined effort of the University of Bologna, the University of Liège, and the European Commission. 
+	    The project aimed to define a vocabulary to standardise and organise regulatory reporting metadata of EU legislations and to develop standard formulations 
+	    to be able to identify the appropriate data of reporting requirements.</p>  
+  
+    <p>The results of this study included a definition of a model known as Reporting Requirements Metadata Vocabulary (RRMV). 
+	    This model aimed at defining the set of concepts and categories contained in reporting requirements within existing 
+	    EU legislations and define their properties and the relations between them. 
+	    It could serve as a base for interoperable reporting requirements monitoring solutions that could extract information and automatically
+	    feed regulatory reporting databases across different policy domains to be accessed by stakeholders.</p>  
+	
 <h3>Scope</h3>
 
-<p>The scope of the Reporting Requirements Metadata Vocabulary model is defined as the following: To standardize and organize regulatory reporting metadata of EU legislations through a defined vocabulary.</p>  
- 
+The scope of the Reporting Requirements Metadata Vocabulary model is defined as the following: 
+	The aim of the RRMV is to standardize and organize regulatory reporting metadata of EU legislations through a defined vocabulary.</p>  
+    <p>There are also a few items considered out of scope such as, the automation of the RRMV.</p>  
 
 
 <h3>Background references</h3>
