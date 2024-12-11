@@ -1,0 +1,101 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix eli: <http://data.europa.eu/eli/ontology#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rrmv: <http://data.europa.eu/2qy/rrmv#> .
+@prefix rrmv-codes: <http://data.europa.eu/2qy/rrmv-codes#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix time: <http://www.w3.org/2006/time#>.
+@prefix example: <https://system.org/example#> .
+
+example:Request0032024R0900 a rrmv:Request ;
+    rrmv:hasAnnotation "Providers of political advertising services shall ensure that the contractual arrangements concluded for the provision of a political advertising service require the sponsor, or providers of advertising services acting on behalf of sponsors, to provide the declaration in accordance with paragraph 1 of this Article and the relevant information necessary to comply with Articles 9(1), 11(1) and 12(1). That information shall be transmitted in a complete and accurate manner and without undue delay."@en ;
+    rrmv:hasURI example:Request0032024R0900 ;
+    rrmv:produces example:Action0032024R0900 ;
+    dcterms:isPartOf <http://data.europa.eu/eli/reg/2024/900/oj> ;
+    dcterms:isPartOf <http://data.europa.eu/eli/reg/2024/900/oj/article/007/paragraph/002> .
+
+example:Request0132024R0900 a rrmv:Request ;
+    rrmv:hasAnnotation "Sponsors shall provide and ensure the accuracy of the information necessary for the providers of political advertising services to comply with Article 9(1), points (a), (d), (e) and (f), Article 11(1), points (a) to (d), and Article 12(1), points (a), (b), (c), (e), (h) and (k), before or during the period of publication, delivery, or dissemination of the political advertisement. Where a sponsor, or a provider of advertising services acting on behalf of a sponsor, becomes aware that information which it has transmitted has changed, it shall ensure that updated information is transmitted to the relevant provider of political advertising services in a timely, complete and accurate manner. Where a sponsor, or a provider of advertising services acting on behalf of a sponsor, becomes aware that any information transmitted to or published by the political advertising publisher is incomplete or inaccurate, it shall contact, without undue delay, the political advertising publisher concerned and shall transmit completed or corrected information to that political advertising publisher."@en ;
+    rrmv:hasUri example:Request0132024R0900 ;
+    rrmv:produces example:Action0132024R0900 ;
+    dcterms:isPartOf <http://data.europa.eu/eli/reg/2024/900/oj> ;
+    dcterms:isPartOf <http://data.europa.eu/eli/reg/2024/900/oj/article/007/paragraph/003> .
+
+
+example:Request0232024R0900 a rrmv:Request ;
+    rrmv:hasAnnotation "Providers of political advertising services shall ensure that the information referred to in Article 9(1) is transmitted in a timely, complete and accurate manner to political advertising publishers to enable them to comply with their obligations under this Regulation. Each provider of political advertising services shall transmit the information referred to in the first subparagraph during the provision of the relevant service and in accordance with best practice and industry standards and, where technically possible, by means of a standardised automated process. When the political advertising publisher is the only provider of political advertising services, the sponsor shall transmit the relevant information to the political advertising publisher."@en ;
+    rrmv:produces example:Action0232024R0900,
+        example:Action0332024R0900 ;
+    dcterms:isPartOf <http://data.europa.eu/eli/reg/2024/900/oj> ;
+    dcterms:isPartOf <http://data.europa.eu/eli/reg/2024/900/oj/article/010/paragraph/001> .
+
+example:Action0032024R0900 a rrmv:Action ;
+    rrmv:hasActionResult example:ActionResult032024R0900 ;
+    rrmv:hasAnnotation "That information shall be transmitted in a complete and accurate manner and without undue delay."@en .
+
+example:ActionResult032024R0900 a rrmv:ActionResult ;
+    rrmv:hasAnnotation "That information"@en .
+
+example:Action0132024R0900 a rrmv:Action ;
+    rrmv:hasAnnotation "Where a sponsor, or a provider of advertising services acting on behalf of a sponsor, becomes aware that any information transmitted to or published by the political advertising publisher is incomplete or inaccurate, it shall contact, without undue delay, the political advertising publisher concerned and shall transmit completed or corrected information to that political advertising publisher."@en .
+
+example:Action0232024R0900 a rrmv:Action ;
+    rrmv:atTime example:PeriodOfTime232024R0900 ;
+    rrmv:hasActionResult example:ActionResult232024R0900 ;
+    rrmv:hasAgentRole example:Action2AgentRoleAddressee032024R0900,
+        example:Action2AgentRoleAddressee132024R0900,
+        example:Action2AgentRoleAddressee232024R0900,
+        example:Action2AgentRoleAddressee332024R0900,
+        example:Action2AgentRoleAddressee432024R0900,
+        example:Action2AgentRoleAddressee532024R0900,
+        example:Action2AgentRoleAddresser032024R0900,
+        example:Action2AgentRoleAddresser132024R0900 ;
+    rrmv:hasAnnotation "Each provider of political advertising services shall transmit the information referred to in the first subparagraph during the provision of the relevant service and in accordance with best practice and industry standards and, where technically possible, by means of a standardised automated process."@en .
+
+example:ActionResult232024R0900 a rrmv:ActionResult ;
+    rrmv:hasAnnotation "the information referred"@en .
+
+example:PeriodOfTime232024R0900 a  time:ProperInterval;
+    rrmv:hasAnnotation "during the provision of the relevant service and in accordance with best practice and industry standards and , where technically possible"@en.
+
+example:Action2AgentRoleAddressee032024R0900 a rrmv:AgentRole ;
+    rrmv:forAgent example:Agent232024R0900 ;
+    rrmv:withRole rrmv-codes:addressee .
+
+example:Agent232024R0900 a eli:Agent ;
+    rrmv:hasAnnotation "the_first_subparagraph"@en .
+
+example:Action0332024R0900 a rrmv:Action ;
+    rrmv:hasActionResult example:ActionResult332024R0900 ;
+    rrmv:hasAgentRole example:Action3AgentRoleAddressee032024R0900,
+        example:Action3AgentRoleAddresser032024R0900 ;
+    rrmv:hasAnnotation "When the political advertising publisher is the only provider of political advertising services, the sponsor shall transmit the relevant information to the political advertising publisher."@en .
+
+example:ActionResult332024R0900 a rrmv:ActionResult ;
+    rrmv:hasAnnotation "the relevant information"@en .
+
+example:Action3AgentRoleAddressee032024R0900 a rrmv:AgentRole ;
+    rrmv:forAgent example:Agent932024R0900 ;
+    rrmv:withRole rrmv-codes:addressee .
+
+example:Action3AgentRoleAddresser032024R0900 a rrmv:AgentRole ;
+    rrmv:forAgent example:Agent832024R0900 ;
+    rrmv:withRole rrmv-codes:addresser .
+
+example:Agent932024R0900 a eli:Agent ;
+    rrmv:hasAnnotation "the_political_advertising_publisher"@en . 
+
+example:Agent832024R0900 a eli:Agent ;
+    rrmv:hasAnnotation "the_sponsor"@en .
+
+rrmv-codes:addresser a  rrmv:RoleType ;
+   a skos:Concept.
+
+rrmv-codes:addressee a rrmv:RoleType ;
+   a skos:Concept.
+
+rrmv-codes:bearer a  rrmv:RoleType ;
+   a skos:Concept.
+
+
