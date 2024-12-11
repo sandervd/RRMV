@@ -51,14 +51,15 @@
 		, 
 		
 		   {
-		    name: "Alexander Potloot",
+		    name: "Pavlina Fragkou",
 		      
 		      
-		    company: "PwC EU Services",
+		    company: "European Commission",
 		      
 		      
 		    }
-			, 
+		, 
+		
 		   {
 		    name: "Andrea Giovanni Nuzzolese",
 		      
@@ -67,6 +68,17 @@
 		      
 		      
 		    }
+		, 
+		
+		   {
+		    name: "Alexander Potloot",
+		      
+		      
+		    company: "PwC EU Services",
+		      
+		      
+		    }
+		
 		
              
         
@@ -81,6 +93,15 @@
 	    
 	    
 		
+		   {
+		    name: "Zsófia Dudás",
+		      
+		      
+		    company: "PwC EU Services",
+		      
+		      
+		    }
+		, 
 		
 		   {
 		    name: "Cecile Guasch",
@@ -130,16 +151,7 @@
 		      
 		      
 		    }
-			, 
-			   {
-		    name: "Zsófia Dudás",
-		      
-		      
-		    company: "PwC EU Services",
-		      
-		      
-		    }
-	
+		
 		
              
         
@@ -298,7 +310,12 @@
           "title" : " FRBRoo model; Element set of the Functional Requirements for Bibliographic Records object-oriented extension to the the CIDOC Conceptual Reference Model (CRM)",
           "publisher" : "LIDATEC (a subcommittee of the IFLA Advisory Committee on Standards)"
 
-        }
+        },
+        "ELI-IMPL" : {
+          "href" : "https://op.europa.eu/documents/2050822/2138819/ELI+-+A+Technical+Implementation+Guide.pdf",
+          "title" : "ELI A technical implementation guide Author", 
+          "publisher": "ELI Task Force"
+	}
 
       }
     };
@@ -335,7 +352,6 @@
     <h2>Summary</h2>
 
 
-<p>The Regulatory Reporting Metadata Vocabulary is a vocabulary developed in the context of the SORTIS initiative. 
 To provide attribution and reference to all actors, the RRMV model can be found in an RDF format (Turtle) and below in a visual representation:</p>  
 	<div>  
     <a href="https://raw.githubusercontent.com/SEMICeu/uri.semic.eu-thema/rrmv_002/site-skeleton/rrmv/SORTISmodel.png" target="_blank">  
@@ -356,6 +372,7 @@ To provide attribution and reference to all actors, the RRMV model can be found 
         Introduction
     </h2>
     
+
 The aim of the RRMV specification is defined as follows: To standardise the manner of drafting reporting requirements in legislation, through a metadata vocabulary.</p>  
     <p>In essence, the RRMV proposes a model that allows to gather information of reporting requirements from legislation. The authors, editors and contributors defined the RRMV intended uses to point to concrete and actionable Use Cases:</p>  
       
@@ -416,8 +433,6 @@ The scope of the Reporting Requirements Metadata Vocabulary model is defined as 
     <p>There are also a few items considered out of scope such as, the automation of the RRMV.</p>  
 
 
-<h3>Background references</h3>
-[[owl-time]]
 
 
 
@@ -4309,15 +4324,6 @@ As mentioned in the CR 2, the definitions and usage note information are seperat
 
 <h3 id="cr5">Separate code list from the model to make their lifecycle management independent</h3>
 Added the codelists to section [[[#controlled-vocs]]].
-<p class="ednote" title="use of dct:type">
-The property rrmv:hasType is not discriminating between the constraints of the domains Action Result, Role, Agent. 
-That makes it equivalent to the generic property dct:type.
-<p/>
-Proposal 1. replace rrmv:hasType with dct:type
-Proposal 2: replace rrmv:hasType with 3 subproperties of dct:type.
-<p/>
-As long no additional constraints like additional usage constraints, such as <i> in case X, then Y must be provided</i> or cardinality constraints with a qualified usage for a specific codelist, proposal 1 is fine. However for implementers of an editorial interface Proposal 2 may be more stable and attractive.
-</p>
 
 <p class="ednote" title="URI for code in codelists">
 It is recommended to manage the URIs for the codelists in a separate namespace.
@@ -4352,10 +4358,11 @@ The following properties are changed
 <ul>
  <li> rrmv:hasTitle becomes dct:title </li>
  <li> replace range xsd:string with a language aware string literal as range. </li>
+ <li> replace rrmv:hasTemporalEntity with rrmv:hasUnit </li>
+ <li> the property rrmv:hasTemporalEntity and class TemporalEntity are replaced with rrmv:hasUnit refering to a to be determined codelist</li>
+ <li> the class PeriodOfTime is aligned with the SEMIC Core Vocs decision to follow the W3C vocabulary [[owl-time]] for temporal information.</li>
+ <li> any ELI class has a URI according to the ELI usage conventions. Therefore the property rrmv:hasURI is removed from these classes.</li>
 </ul>
-
-
-
 </p>
 
 
@@ -4376,9 +4383,66 @@ the ELI community (cfr Jaroslaw) who consider RRMV in the original form as an ex
 </p>
 
 <h3 id="cr8">Introduction of the ExecutionRequest, ExecutionAction and ExecutionActionResult </h3>
-This is applied in a seperate next version to avoid interference with other changes.
+This is applied in a separate next version to avoid interference with other changes.
 
 
+<h3 id="cr9">New Change Requests</h3>
+
+
+<h4 id="cr9a">Temporal information </h4>
+In the model a Request has a frequency and an Action happens at a time.
+The sentence "6 months after the directive enters into force, the MS must provide a report containing ... every two years."
+In this sentence the frequency is "every two years", while "6 months after the directive enters into force" is the start date.
+The question resides why this information is associated with the Action and the frequency is associated with the more conceptual entity Request.
+
+
+<h4 id="cr9b">Temporal information:Frequency </h4>
+The EU Vocabularies contains a codelist for <a href="https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/frequency">frequencies</a>.
+It should be considered if this codelist is not better suited to address the usecase of the class Frequency.
+
+
+<h4 id="cr9c">annotations </h4>
+The process of dectecting the RRMV concepts in legislation is a two step process. 
+The first is textual analysis in which the relevant text in the legistation is identified and associated with the RRMV concepts.
+Based on this textual representation each RRMV concept is then turned into a machine readible representation.
+<p/>
+In the current RRMV this first phase is not universally applied. It seems as if an Agent could be determined as machine readible 
+information without this text analysis.
+<p/>
+Proposal to create a metaclass: rrmv:TextualAnalysis which intention is to capture all information to enable text to structured information transformation.
+Introducing this supporting class will make the model more readible, condense and it makes abstraction of the indiviual transformation case.
+E.g. The same input information is available for Actions as for Frequencies or Agents.
+<p/>
+Additionally the current approach applies a copying approach. Namely the identified highlighted text is stored in an annotation.
+There exists an approach to have the hightlighted annotations not stored in an extracted way but as a reference in the text: <a href="https://persistence.uni-leipzig.org/nlp2rdf/ontologies/nif-core/nif-core.html">NIF</a>.
+
+
+<h4 id="cr9d">use of dct:type instead of own minted properties</h4>
+
+The property rrmv:hasType is not discriminating between the constraints of the domains Action Result, Role, Agent. 
+That makes it equivalent to the generic property dct:type.
+<p/>
+Proposal 1. replace rrmv:hasType with dct:type
+Proposal 2: replace rrmv:hasType with 3 subproperties of dct:type.
+<p/>
+As long no additional constraints like additional usage constraints, such as <i> in case X, then Y must be provided</i> or cardinality constraints with a qualified usage for a specific codelist, proposal 1 is fine. However for implementers of an editorial interface Proposal 2 may be more stable and attractive.
+</p>
+
+
+<h4 id="cr9e">property hasURI to be replaced with adms:identifier</h4>
+The property rrmv:hasURI is introduced problably with the intension to ensure the instance has a public ID.
+However as pointed out by the review of Jaroslaw, ELI has its onw rules for the URIs [[ELI-IMPL]]. 
+Moreover in the ELI context it is mandatory that each leglistaltion has a PURI assigned. 
+At least top level, article and paragraph level are optional. But the structure of the ELI URI is fixed by the ELI community.
+It hence has no added value to add rrmv:hasURI to an ELI class. 
+<p>
+In addition the property hasURI raises questions about its intention and use. Can it have a different value than the URI of the instance?
+If so what is the distinction. If not, what is the added value of this property?
+<p>
+Proposal: To replace it with the generic adms:identifier property that allows to support multiple contextualized identifiers for the same entity.
+
+
+<h4 id="cr9f">harmonising eli:Agent and foaf:Agent (Core Vocabularies)</a>
 
 
 
