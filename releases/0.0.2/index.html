@@ -513,14 +513,15 @@ This specification uses the following prefixes to shorten the URIs for readibili
             <thead><tr><th>Prefix</th><th>Namespace IRI</th></tr></thead>
             <tbody>
             <tr><td><code>adms</code></td><td><code>http://www.w3.org/ns/adms#</code></td></tr>
-            <tr><td><code>dcat</code></td><td><code>http://www.w3.org/ns/dcat#</code></td></tr>
-            <tr><td><code>dcatap</code></td><td><code>http://data.europa.eu/r5r/</code></td></tr>
             <tr><td><code>dct</code></td><td><code>http://purl.org/dc/terms/</code></td></tr>
+            <tr><td><code>eli</code></td><td><code>http://data.europa.eu/eli/ontology#</code></td></tr>
             <tr><td><code>foaf</code></td><td><code>http://xmlns.com/foaf/0.1/</code></td></tr>
             <tr><td><code>rdf</code></td><td><code>http://www.w3.org/1999/02/22-rdf-syntax-ns#</code></td></tr>
             <tr><td><code>rdfs</code></td><td><code>http://www.w3.org/2000/01/rdf-schema#</code></td></tr>
+            <tr><td><code>rrmv</code></td><td><code>http://data.europa.eu/2qy/rrmv#</code></td></tr>
+            <tr><td><code>rrmv-codes</code></td><td><code>http://data.europa.eu/2qy/rrmv-codes#</code></td></tr>
             <tr><td><code>skos</code></td><td><code>http://www.w3.org/2004/02/skos/core#</code></td></tr>
-            <tr><td><code>vcard</code></td><td><code>http://www.w3.org/2006/vcard/ns#</code></td></tr>
+            <tr><td><code>time</code></td><td><code>http://www.w3.org/2006/time#</code></td></tr>
             <tr><td><code>xsd</code></td><td><code>http://www.w3.org/2001/XMLSchema#</code></td></tr>
             </tbody>
         </table>
@@ -2597,7 +2598,7 @@ They are included in the Application Profile because they form the range of prop
                                     1
                                 </td>
                                 <td property="rdfs:comment">
-                                    
+                                    The unit of the Frequency
                                 </td>
                                 <td property="skos:scopeNote">
                                     e.g. Quarter
@@ -4091,7 +4092,6 @@ to ensure a clear understanding of the model.
 
 <h3>A Request expressed in a legislation</h3>
 
-
 <div class="h3 examples" id="example_request">Example 1 - Relating a Request with legislation</div>
 
 
@@ -4119,7 +4119,7 @@ For the sake of readibility the examples assume that the URI is the identifier o
 
 <h3> Annotation example </h3
 
-<div>
+<aside class="example" title="Annotation for legislation CELEX:32024R0900">
 <pre class="nohighlight turtle">
 
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -4224,7 +4224,7 @@ rrmv-codes:bearer a  rrmv:RoleType ;
 
 
 </pre>
-</div>
+</aside>
 
 
 
