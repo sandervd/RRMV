@@ -2678,7 +2678,7 @@ They are included in the Application Profile because they form the range of prop
                                     
                                 </td>
                                 <td>
-                                    1
+                                    0..1
                                 </td>
                                 <td property="rdfs:comment">
                                     The unit of the Frequency
@@ -2731,7 +2731,7 @@ They are included in the Application Profile because they form the range of prop
                                     
                                 </td>
                                 <td>
-                                    1
+                                    0..1
                                 </td>
                                 <td property="rdfs:comment">
                                     The value of the frequency.
@@ -3113,7 +3113,9 @@ They are included in the Application Profile because they form the range of prop
                     </dt>
                     
                         <dd>
-                            For this entity the following properties are defined: <a href="#PeriodofTime.endtime">end time</a>
+                            For this entity the following properties are defined: <a href="#PeriodofTime.duration">duration</a>
+                            , <a href="#PeriodofTime.endtime">end time</a>
+                            , <a href="#PeriodofTime.hasfunction">has function</a>
                             , <a href="#PeriodofTime.isincomplete">is incomplete</a>
                             , <a href="#PeriodofTime.starttime">start time</a>
                             .
@@ -3162,6 +3164,55 @@ They are included in the Application Profile because they form the range of prop
                     </thead>
                     <tbody class="supertype">
                         
+                            <tr id="PeriodofTime.duration"
+                                typeof="rdfs:Property"
+                                resource="http://www.w3.org/2006/time#hasTemporalDuration"
+                                class="class mandatory">
+<!--
+                                <td>
+				    <a href="https://github.com/SEMICeu/Reporting-Requirements-Metadata-Vocabulary/issues/new?title=Issue%20for%20duration%20in%20Period of Time&body=Explain%20your%20issue%20for%20https://semiceu.github.io/Reporting-Requirements-Metadata-Vocabulary/releases/0.0.2%23PeriodofTime.duration" target="_blank" rel="noopener noreferrer" >
+                                        <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
+                                    </a>
+                                </td>
+--->
+                                <td>
+                                        <a href="http://www.w3.org/2006/time#hasTemporalDuration"
+                                           data-toggle="tooltip"
+                                           data-content="http://www.w3.org/2006/time#hasTemporalDuration"
+                                           data-placement="right">
+                                        duration</a>
+                                </td>
+                                <td>
+                                    
+                                </td>
+                                <td>
+                                    0..1
+                                </td>
+                                <td property="rdfs:comment">
+                                    Duration of a temporal entity
+                                </td>
+                                <td property="skos:scopeNote">
+                                    
+                                </td>
+				<!--
+                                <td>
+                                    
+                                </td>
+				-->
+				<!--
+                                <td>
+                                    
+                                </td>
+				-->
+                                <td>
+                                    
+                                       
+				        P
+				       
+				    
+                                </td>
+                            </tr>
+                        
                             <tr id="PeriodofTime.endtime"
                                 typeof="rdfs:Property"
                                 resource="http://www.w3.org/2006/time#hasEnd"
@@ -3188,13 +3239,66 @@ They are included in the Application Profile because they form the range of prop
                                     
                                 </td>
                                 <td>
-                                    1
+                                    0..1
                                 </td>
                                 <td property="rdfs:comment">
                                     Time instant at which the Period was terminated. 
                                 </td>
                                 <td property="skos:scopeNote">
                                     
+                                </td>
+				<!--
+                                <td>
+                                    
+                                </td>
+				-->
+				<!--
+                                <td>
+                                    
+                                </td>
+				-->
+                                <td>
+                                    
+                                       
+				        P
+				       
+				    
+                                </td>
+                            </tr>
+                        
+                            <tr id="PeriodofTime.hasfunction"
+                                typeof="rdfs:Property"
+                                resource="http://data.europa.eu/2qy/rrmv#hasFunction"
+                                class="class mandatory">
+<!--
+                                <td>
+				    <a href="https://github.com/SEMICeu/Reporting-Requirements-Metadata-Vocabulary/issues/new?title=Issue%20for%20has function%20in%20Period of Time&body=Explain%20your%20issue%20for%20https://semiceu.github.io/Reporting-Requirements-Metadata-Vocabulary/releases/0.0.2%23PeriodofTime.hasfunction" target="_blank" rel="noopener noreferrer" >
+                                        <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
+                                    </a>
+                                </td>
+--->
+                                <td>
+                                        <a href="http://data.europa.eu/2qy/rrmv#hasFunction"
+                                           data-toggle="tooltip"
+                                           data-content="http://data.europa.eu/2qy/rrmv#hasFunction"
+                                           data-placement="right">
+                                        has function</a>
+                                </td>
+                                <td>
+                                    
+                                        
+                                            <a href="#TemporalFunction" data-placement="right">Temporal Function</a>
+                                        
+                                    
+                                </td>
+                                <td>
+                                    0..*
+                                </td>
+                                <td property="rdfs:comment">
+                                    The function the temporal infomation plays 
+                                </td>
+                                <td property="skos:scopeNote">
+                                    For instance as deadline, moment of entering into force, etc.
                                 </td>
 				<!--
                                 <td>
@@ -3241,7 +3345,7 @@ They are included in the Application Profile because they form the range of prop
                                     
                                 </td>
                                 <td>
-                                    0..*
+                                    0..1
                                 </td>
                                 <td property="rdfs:comment">
                                     The temporal information is incomplete.
@@ -3294,7 +3398,7 @@ They are included in the Application Profile because they form the range of prop
                                     
                                 </td>
                                 <td>
-                                    1
+                                    0..1
                                 </td>
                                 <td property="rdfs:comment">
                                     Time instant at which the Period was initiated
@@ -3472,7 +3576,7 @@ They are included in the Application Profile because they form the range of prop
                     Definition
                 </dt>
                 <dd>
-                    Role is played by and Agent involved in the Request.
+                    Role played by an Agent involved in a Request.
                 </dd>
                 
                 
@@ -5004,6 +5108,14 @@ The properties are grouped under headings <it>mandatory, recommended, optional</
 					
 						
 					
+						
+					
+						
+					
+					
+						
+					
+						
 					
 						
 					
@@ -5017,8 +5129,28 @@ The properties are grouped under headings <it>mandatory, recommended, optional</
 								<td><a href="#PeriodofTime">Period of Time</a></td>
 								<td><div class="shorten">http://www.w3.org/2006/time#ProperInterval</div></td>
 								<td></td>
+								<td><a href="#PeriodofTime.duration">duration </a></td>
+								<td><div class="shorten">http://www.w3.org/2006/time#hasTemporalDuration</div></td>
+							</tr>
+						
+					
+						
+							<tr>
+								<td><a href="#PeriodofTime">Period of Time</a></td>
+								<td><div class="shorten">http://www.w3.org/2006/time#ProperInterval</div></td>
+								<td></td>
 								<td><a href="#PeriodofTime.endtime">end time </a></td>
 								<td><div class="shorten">http://www.w3.org/2006/time#hasEnd</div></td>
+							</tr>
+						
+					
+						
+							<tr>
+								<td><a href="#PeriodofTime">Period of Time</a></td>
+								<td><div class="shorten">http://www.w3.org/2006/time#ProperInterval</div></td>
+								<td></td>
+								<td><a href="#PeriodofTime.hasfunction">has function </a></td>
+								<td><div class="shorten">http://data.europa.eu/2qy/rrmv#hasFunction</div></td>
 							</tr>
 						
 					
