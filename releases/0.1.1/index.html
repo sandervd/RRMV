@@ -51,53 +51,20 @@
 		, 
 		
 		   {
-		    name: "Pavlina Fragkou",
-		      
-		      
-		    company: "European Commission",
-		      
-		      
-		    }
-		, 
-		
-		   {
-		    name: "Andrea Giovanni Nuzzolese",
-		      
-		      
-		    company: "University of Bologna",
-		      
-		      
-		    }
-		, 
-		
-		   {
-		    name: "Alexander Potloot",
-		      
-		      
-		    company: "PwC EU Services",
-		      
-		      
-		    }
-		
-		
-             
-        
-	
-	
-	
-		]
-
-	var myauthors = [
-	
-	
-	    
-	    
-		
-		   {
 		    name: "Zsófia Dudás",
 		      
 		      
 		    company: "PwC EU Services",
+		      
+		      
+		    }
+		, 
+		
+		   {
+		    name: "Pavlina Fragkou",
+		      
+		      
+		    company: "European Commission",
 		      
 		      
 		    }
@@ -124,10 +91,10 @@
 		, 
 		
 		   {
-		    name: "Monica Palmirani",
+		    name: "Alexander Potloot",
 		      
 		      
-		    company: "University of Bologna",
+		    company: "PwC EU Services",
 		      
 		      
 		    }
@@ -138,6 +105,39 @@
 		      
 		      
 		    company: "PwC EU Services",
+		      
+		      
+		    }
+		
+		
+             
+        
+	
+	
+	
+		]
+
+	var myauthors = [
+	
+	
+	    
+	    
+		
+		   {
+		    name: "Andrea Giovanni Nuzzolese",
+		      
+		      
+		    company: "University of Bologna",
+		      
+		      
+		    }
+		, 
+		
+		   {
+		    name: "Monica Palmirani",
+		      
+		      
+		    company: "University of Bologna",
 		      
 		      
 		    }
@@ -192,9 +192,9 @@
     var respecConfig = {
       postProcess: [quickreference],
       edDraftURI: "",
-      thisVersionURI: "https://semiceu.github.io/RRMV/releases/0.0.2",
-      prevVersionURI: "https://semiceu.github.io/rrmv/releases/0.0.1/",
-      latestVersion: "https://semiceu.github.io/RRMV/releases/0.0.2",
+      thisVersionURI: "https://semiceu.github.io/RRMV/releases/0.1.1",
+      prevVersionURI: "https://semiceu.github.io/rrmv/releases/0.0.2/",
+      latestVersion: "https://semiceu.github.io/RRMV/releases/0.1.1",
       specStatus: "base",
       publishDate: "2025-01-08",
       editors: myeditors,
@@ -208,8 +208,8 @@
         ,
         { key: " Previous version:",
           data: [
-            { value: "https://semiceu.github.io/rrmv/releases/0.0.1/",
-              href: "https://semiceu.github.io/rrmv/releases/0.0.1/"
+            { value: "https://semiceu.github.io/rrmv/releases/0.0.2/",
+              href: "https://semiceu.github.io/rrmv/releases/0.0.2/"
             }
           ]
         }
@@ -217,8 +217,8 @@
         ,
         { key: " This version:",
           data: [
-            { value: "https://semiceu.github.io/RRMV/releases/0.0.2",
-              href: "https://semiceu.github.io/RRMV/releases/0.0.2"
+            { value: "https://semiceu.github.io/RRMV/releases/0.1.1",
+              href: "https://semiceu.github.io/RRMV/releases/0.1.1"
             }
           ]
         }
@@ -354,14 +354,23 @@
 
 To provide attribution and reference to all actors, the RRMV model can be found in an RDF format (Turtle) and below in a visual representation:</p>  
 	<div>  
+<figure>
     <a href="https://raw.githubusercontent.com/SEMICeu/uri.semic.eu-thema/rrmv_002/site-skeleton/rrmv/SORTISmodel.png" target="_blank">  
         <img src="https://raw.githubusercontent.com/SEMICeu/uri.semic.eu-thema/rrmv_002/site-skeleton/rrmv/SORTISmodel.png" alt="SORTIS Model"/>  
+        
     </a>  
+    <figcaption>
+Model created by Monica Palmirani ( CIRSFID-AlmaAI – University of Bologna), 
+Ashwin Ittoo (University of Liege) and the European Commission on 05/09/2023 in the context of the project "SORTIS - Study On Regulatory reporting Standards"  
+</figcaption>
+
+</figure>
 </div>  
     <p>The purpose of this page is to provide stakeholders access to the RRMV specification.</p>  
 
-    <p>On this page, you will find the UML diagram of the RRMV, the main entities that form the core of the Application Profile (i.e. action and request), 
+    <p>In this specification, you find the main entities that form the core of the Application Profile (i.e. action and request), 
 	    and supportive entities (i.e. the action result, agent, agent role, expression, frequency...). 
+            They are denoted as semantic representation (RDF) with a coherent visual representation (UML).
 	    Finally, there are also different examples displayed relating to requests with legislation.</p>
         
 </section>
@@ -550,9 +559,9 @@ The cardinalities and qualifications are included in the figure.
 			      <a href="#AgentRole">Agent Role</a> |
 			      <a href="#AgentType">Agent Type</a> |
 			      <a href="#Concept">Concept</a> |
-			      <a href="#Expression">Expression</a> |
 			      <a href="#Frequency">Frequency</a> |
 			      <a href="#Instant">Instant</a> |
+			      <a href="#LegalExpression">Legal Expression</a> |
 			      <a href="#Literal">Literal</a> |
 			      <a href="#Manifestation">Manifestation</a> |
 			      <a href="#Organization">Organization</a> |
@@ -576,9 +585,9 @@ The cardinalities and qualifications are included in the figure.
                 
     </div>
     <div>
-        <a href="/RRMV/releases/0.0.2/html/overview.jpg"
+        <a href="/RRMV/releases/0.1.1/html/overview.jpg"
            target="_blank">
-            <img src="/RRMV/releases/0.0.2/html/overview.jpg"/>
+            <img src="/RRMV/releases/0.1.1/html/overview.jpg"/>
         </a>
     </div>
 </section>
@@ -703,7 +712,7 @@ Therefore it may vary over time when new versions of DCAT-AP are created.
                                 class="class mandatory">
 <!--
                                 <td>
-				    <a href="https://github.com/SEMICeu/RRMV/issues/new?title=Issue%20for%20has agent role%20in%20Action&body=Explain%20your%20issue%20for%20https://semiceu.github.io/RRMV/releases/0.0.2%23Action.hasagentrole" target="_blank" rel="noopener noreferrer" >
+				    <a href="https://github.com/SEMICeu/RRMV/issues/new?title=Issue%20for%20has agent role%20in%20Action&body=Explain%20your%20issue%20for%20https://semiceu.github.io/RRMV/releases/0.1.1%23Action.hasagentrole" target="_blank" rel="noopener noreferrer" >
                                         <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
                                     </a>
                                 </td>
@@ -756,7 +765,7 @@ Therefore it may vary over time when new versions of DCAT-AP are created.
                                 class="class mandatory">
 <!--
                                 <td>
-				    <a href="https://github.com/SEMICeu/RRMV/issues/new?title=Issue%20for%20has annotation%20in%20Action&body=Explain%20your%20issue%20for%20https://semiceu.github.io/RRMV/releases/0.0.2%23Action.hasannotation" target="_blank" rel="noopener noreferrer" >
+				    <a href="https://github.com/SEMICeu/RRMV/issues/new?title=Issue%20for%20has annotation%20in%20Action&body=Explain%20your%20issue%20for%20https://semiceu.github.io/RRMV/releases/0.1.1%23Action.hasannotation" target="_blank" rel="noopener noreferrer" >
                                         <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
                                     </a>
                                 </td>
@@ -809,7 +818,7 @@ Therefore it may vary over time when new versions of DCAT-AP are created.
                                 class="class mandatory">
 <!--
                                 <td>
-				    <a href="https://github.com/SEMICeu/RRMV/issues/new?title=Issue%20for%20has next%20in%20Action&body=Explain%20your%20issue%20for%20https://semiceu.github.io/RRMV/releases/0.0.2%23Action.hasnext" target="_blank" rel="noopener noreferrer" >
+				    <a href="https://github.com/SEMICeu/RRMV/issues/new?title=Issue%20for%20has next%20in%20Action&body=Explain%20your%20issue%20for%20https://semiceu.github.io/RRMV/releases/0.1.1%23Action.hasnext" target="_blank" rel="noopener noreferrer" >
                                         <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
                                     </a>
                                 </td>
@@ -862,7 +871,7 @@ Therefore it may vary over time when new versions of DCAT-AP are created.
                                 class="class mandatory">
 <!--
                                 <td>
-				    <a href="https://github.com/SEMICeu/RRMV/issues/new?title=Issue%20for%20has result%20in%20Action&body=Explain%20your%20issue%20for%20https://semiceu.github.io/RRMV/releases/0.0.2%23Action.hasresult" target="_blank" rel="noopener noreferrer" >
+				    <a href="https://github.com/SEMICeu/RRMV/issues/new?title=Issue%20for%20has result%20in%20Action&body=Explain%20your%20issue%20for%20https://semiceu.github.io/RRMV/releases/0.1.1%23Action.hasresult" target="_blank" rel="noopener noreferrer" >
                                         <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
                                     </a>
                                 </td>
@@ -915,7 +924,7 @@ Therefore it may vary over time when new versions of DCAT-AP are created.
                                 class="class mandatory">
 <!--
                                 <td>
-				    <a href="https://github.com/SEMICeu/RRMV/issues/new?title=Issue%20for%20has status%20in%20Action&body=Explain%20your%20issue%20for%20https://semiceu.github.io/RRMV/releases/0.0.2%23Action.hasstatus" target="_blank" rel="noopener noreferrer" >
+				    <a href="https://github.com/SEMICeu/RRMV/issues/new?title=Issue%20for%20has status%20in%20Action&body=Explain%20your%20issue%20for%20https://semiceu.github.io/RRMV/releases/0.1.1%23Action.hasstatus" target="_blank" rel="noopener noreferrer" >
                                         <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
                                     </a>
                                 </td>
@@ -968,7 +977,7 @@ Therefore it may vary over time when new versions of DCAT-AP are created.
                                 class="class mandatory">
 <!--
                                 <td>
-				    <a href="https://github.com/SEMICeu/RRMV/issues/new?title=Issue%20for%20related to%20in%20Action&body=Explain%20your%20issue%20for%20https://semiceu.github.io/RRMV/releases/0.0.2%23Action.relatedto" target="_blank" rel="noopener noreferrer" >
+				    <a href="https://github.com/SEMICeu/RRMV/issues/new?title=Issue%20for%20related to%20in%20Action&body=Explain%20your%20issue%20for%20https://semiceu.github.io/RRMV/releases/0.1.1%23Action.relatedto" target="_blank" rel="noopener noreferrer" >
                                         <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
                                     </a>
                                 </td>
@@ -1123,7 +1132,7 @@ Therefore it may vary over time when new versions of DCAT-AP are created.
                                 class="class mandatory">
 <!--
                                 <td>
-				    <a href="https://github.com/SEMICeu/RRMV/issues/new?title=Issue%20for%20has title%20in%20Action Result&body=Explain%20your%20issue%20for%20https://semiceu.github.io/RRMV/releases/0.0.2%23ActionResult.hastitle" target="_blank" rel="noopener noreferrer" >
+				    <a href="https://github.com/SEMICeu/RRMV/issues/new?title=Issue%20for%20has title%20in%20Action Result&body=Explain%20your%20issue%20for%20https://semiceu.github.io/RRMV/releases/0.1.1%23ActionResult.hastitle" target="_blank" rel="noopener noreferrer" >
                                         <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
                                     </a>
                                 </td>
@@ -1176,7 +1185,7 @@ Therefore it may vary over time when new versions of DCAT-AP are created.
                                 class="class mandatory">
 <!--
                                 <td>
-				    <a href="https://github.com/SEMICeu/RRMV/issues/new?title=Issue%20for%20has type%20in%20Action Result&body=Explain%20your%20issue%20for%20https://semiceu.github.io/RRMV/releases/0.0.2%23ActionResult.hastype" target="_blank" rel="noopener noreferrer" >
+				    <a href="https://github.com/SEMICeu/RRMV/issues/new?title=Issue%20for%20has type%20in%20Action Result&body=Explain%20your%20issue%20for%20https://semiceu.github.io/RRMV/releases/0.1.1%23ActionResult.hastype" target="_blank" rel="noopener noreferrer" >
                                         <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
                                     </a>
                                 </td>
@@ -1354,7 +1363,7 @@ Therefore it may vary over time when new versions of DCAT-AP are created.
                                 class="class mandatory">
 <!--
                                 <td>
-				    <a href="https://github.com/SEMICeu/RRMV/issues/new?title=Issue%20for%20changes%20in%20Request&body=Explain%20your%20issue%20for%20https://semiceu.github.io/RRMV/releases/0.0.2%23Request.changes" target="_blank" rel="noopener noreferrer" >
+				    <a href="https://github.com/SEMICeu/RRMV/issues/new?title=Issue%20for%20changes%20in%20Request&body=Explain%20your%20issue%20for%20https://semiceu.github.io/RRMV/releases/0.1.1%23Request.changes" target="_blank" rel="noopener noreferrer" >
                                         <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
                                     </a>
                                 </td>
@@ -1407,7 +1416,7 @@ Therefore it may vary over time when new versions of DCAT-AP are created.
                                 class="class mandatory">
 <!--
                                 <td>
-				    <a href="https://github.com/SEMICeu/RRMV/issues/new?title=Issue%20for%20has annotation%20in%20Request&body=Explain%20your%20issue%20for%20https://semiceu.github.io/RRMV/releases/0.0.2%23Request.hasannotation" target="_blank" rel="noopener noreferrer" >
+				    <a href="https://github.com/SEMICeu/RRMV/issues/new?title=Issue%20for%20has annotation%20in%20Request&body=Explain%20your%20issue%20for%20https://semiceu.github.io/RRMV/releases/0.1.1%23Request.hasannotation" target="_blank" rel="noopener noreferrer" >
                                         <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
                                     </a>
                                 </td>
@@ -1460,7 +1469,7 @@ Therefore it may vary over time when new versions of DCAT-AP are created.
                                 class="class mandatory">
 <!--
                                 <td>
-				    <a href="https://github.com/SEMICeu/RRMV/issues/new?title=Issue%20for%20has frequency%20in%20Request&body=Explain%20your%20issue%20for%20https://semiceu.github.io/RRMV/releases/0.0.2%23Request.hasfrequency" target="_blank" rel="noopener noreferrer" >
+				    <a href="https://github.com/SEMICeu/RRMV/issues/new?title=Issue%20for%20has frequency%20in%20Request&body=Explain%20your%20issue%20for%20https://semiceu.github.io/RRMV/releases/0.1.1%23Request.hasfrequency" target="_blank" rel="noopener noreferrer" >
                                         <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
                                     </a>
                                 </td>
@@ -1513,7 +1522,7 @@ Therefore it may vary over time when new versions of DCAT-AP are created.
                                 class="class mandatory">
 <!--
                                 <td>
-				    <a href="https://github.com/SEMICeu/RRMV/issues/new?title=Issue%20for%20has topic%20in%20Request&body=Explain%20your%20issue%20for%20https://semiceu.github.io/RRMV/releases/0.0.2%23Request.hastopic" target="_blank" rel="noopener noreferrer" >
+				    <a href="https://github.com/SEMICeu/RRMV/issues/new?title=Issue%20for%20has topic%20in%20Request&body=Explain%20your%20issue%20for%20https://semiceu.github.io/RRMV/releases/0.1.1%23Request.hastopic" target="_blank" rel="noopener noreferrer" >
                                         <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
                                     </a>
                                 </td>
@@ -1566,7 +1575,7 @@ Therefore it may vary over time when new versions of DCAT-AP are created.
                                 class="class mandatory">
 <!--
                                 <td>
-				    <a href="https://github.com/SEMICeu/RRMV/issues/new?title=Issue%20for%20has URI%20in%20Request&body=Explain%20your%20issue%20for%20https://semiceu.github.io/RRMV/releases/0.0.2%23Request.hasURI" target="_blank" rel="noopener noreferrer" >
+				    <a href="https://github.com/SEMICeu/RRMV/issues/new?title=Issue%20for%20has URI%20in%20Request&body=Explain%20your%20issue%20for%20https://semiceu.github.io/RRMV/releases/0.1.1%23Request.hasURI" target="_blank" rel="noopener noreferrer" >
                                         <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
                                     </a>
                                 </td>
@@ -1619,7 +1628,7 @@ Therefore it may vary over time when new versions of DCAT-AP are created.
                                 class="class mandatory">
 <!--
                                 <td>
-				    <a href="https://github.com/SEMICeu/RRMV/issues/new?title=Issue%20for%20is part of%20in%20Request&body=Explain%20your%20issue%20for%20https://semiceu.github.io/RRMV/releases/0.0.2%23Request.ispartof" target="_blank" rel="noopener noreferrer" >
+				    <a href="https://github.com/SEMICeu/RRMV/issues/new?title=Issue%20for%20is part of%20in%20Request&body=Explain%20your%20issue%20for%20https://semiceu.github.io/RRMV/releases/0.1.1%23Request.ispartof" target="_blank" rel="noopener noreferrer" >
                                         <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
                                     </a>
                                 </td>
@@ -1634,7 +1643,7 @@ Therefore it may vary over time when new versions of DCAT-AP are created.
                                 <td>
                                     
                                         
-                                            <a href="#Expression" data-placement="right">Expression</a>
+                                            <a href="#LegalExpression" data-placement="right">Legal Expression</a>
                                         
                                     
                                 </td>
@@ -1672,7 +1681,7 @@ Therefore it may vary over time when new versions of DCAT-AP are created.
                                 class="class mandatory">
 <!--
                                 <td>
-				    <a href="https://github.com/SEMICeu/RRMV/issues/new?title=Issue%20for%20produces%20in%20Request&body=Explain%20your%20issue%20for%20https://semiceu.github.io/RRMV/releases/0.0.2%23Request.produces" target="_blank" rel="noopener noreferrer" >
+				    <a href="https://github.com/SEMICeu/RRMV/issues/new?title=Issue%20for%20produces%20in%20Request&body=Explain%20your%20issue%20for%20https://semiceu.github.io/RRMV/releases/0.1.1%23Request.produces" target="_blank" rel="noopener noreferrer" >
                                         <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
                                     </a>
                                 </td>
@@ -1725,7 +1734,7 @@ Therefore it may vary over time when new versions of DCAT-AP are created.
                                 class="class mandatory">
 <!--
                                 <td>
-				    <a href="https://github.com/SEMICeu/RRMV/issues/new?title=Issue%20for%20related to%20in%20Request&body=Explain%20your%20issue%20for%20https://semiceu.github.io/RRMV/releases/0.0.2%23Request.relatedto" target="_blank" rel="noopener noreferrer" >
+				    <a href="https://github.com/SEMICeu/RRMV/issues/new?title=Issue%20for%20related to%20in%20Request&body=Explain%20your%20issue%20for%20https://semiceu.github.io/RRMV/releases/0.1.1%23Request.relatedto" target="_blank" rel="noopener noreferrer" >
                                         <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
                                     </a>
                                 </td>
@@ -1901,7 +1910,7 @@ They are included in the Application Profile because they form the range of prop
                                 class="class mandatory">
 <!--
                                 <td>
-				    <a href="https://github.com/SEMICeu/RRMV/issues/new?title=Issue%20for%20has type%20in%20Agent&body=Explain%20your%20issue%20for%20https://semiceu.github.io/RRMV/releases/0.0.2%23Agent.hastype" target="_blank" rel="noopener noreferrer" >
+				    <a href="https://github.com/SEMICeu/RRMV/issues/new?title=Issue%20for%20has type%20in%20Agent&body=Explain%20your%20issue%20for%20https://semiceu.github.io/RRMV/releases/0.1.1%23Agent.hastype" target="_blank" rel="noopener noreferrer" >
                                         <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
                                     </a>
                                 </td>
@@ -2048,7 +2057,7 @@ They are included in the Application Profile because they form the range of prop
                                 class="class mandatory">
 <!--
                                 <td>
-				    <a href="https://github.com/SEMICeu/RRMV/issues/new?title=Issue%20for%20with role%20in%20Agent Role&body=Explain%20your%20issue%20for%20https://semiceu.github.io/RRMV/releases/0.0.2%23AgentRole.withrole" target="_blank" rel="noopener noreferrer" >
+				    <a href="https://github.com/SEMICeu/RRMV/issues/new?title=Issue%20for%20with role%20in%20Agent Role&body=Explain%20your%20issue%20for%20https://semiceu.github.io/RRMV/releases/0.1.1%23AgentRole.withrole" target="_blank" rel="noopener noreferrer" >
                                         <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
                                     </a>
                                 </td>
@@ -2258,7 +2267,7 @@ They are included in the Application Profile because they form the range of prop
                                 class="class mandatory">
 <!--
                                 <td>
-				    <a href="https://github.com/SEMICeu/RRMV/issues/new?title=Issue%20for%20preferred label%20in%20Concept&body=Explain%20your%20issue%20for%20https://semiceu.github.io/RRMV/releases/0.0.2%23Concept.preferredlabel" target="_blank" rel="noopener noreferrer" >
+				    <a href="https://github.com/SEMICeu/RRMV/issues/new?title=Issue%20for%20preferred label%20in%20Concept&body=Explain%20your%20issue%20for%20https://semiceu.github.io/RRMV/releases/0.1.1%23Concept.preferredlabel" target="_blank" rel="noopener noreferrer" >
                                         <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
                                     </a>
                                 </td>
@@ -2285,261 +2294,6 @@ They are included in the Application Profile because they form the range of prop
                                 </td>
                                 <td property="skos:scopeNote">
                                     This property can be repeated for parallel language versions of the label.
-                                </td>
-				<!--
-                                <td>
-                                    
-                                </td>
-				-->
-				<!--
-                                <td>
-                                    
-                                </td>
-				-->
-                                <td>
-                                    
-                                       
-				        P
-				       
-				    
-                                </td>
-                            </tr>
-                        
-                    </tbody>
-                </table>
-            </div>
-        
-
-                   
-
-	  
-
-
-    </div>
-</section>
-
-
-
-
-
-   
-        <section>
-            <h3 id="Expression">
-                <a href="http://data.europa.eu/eli/ontology#Expression"
-                   data-toggle="tooltip"
-                   data-content="http://data.europa.eu/eli/ontology#Expression"
-                   data-placement="right">Expression</a>
-
-            </h3>
-	        <!-- XXX an image in the h3 will break the rendering of the Table Of Contents of Respec -->
-		<!-- outcomment github feedback possibility
-                <a href="https://github.com/SEMICeu/RRMV/issues/new?title=Issue%20for%20Expression&body=Explain%20your%20issue"}}>
-                   <img src="html/callout.png" loading="lazy" alt="(create issue)" width="20" height="20"/>
-		</a>
-		-->
-            <dl>
-                <dt>
-                    Definition
-                </dt>
-                <dd>
-                    The intellectual realisation of a Work in the form of identifiable immaterial objects, such as, but not limited to, text.
-                </dd>
-                
-                
-                
-                    <dt>
-                        Properties
-                    </dt>
-                    
-                        <dd>
-                            For this entity the following properties are defined: <a href="#Expression.cites">cites</a>
-                            , <a href="#Expression.embodies">embodies</a>
-                            , <a href="#Expression.ispartof">is part of</a>
-                            .
-                    </dd>
-                
-            </dl>
-        </div>
-        
-            <div class="u-table-overflow">
-                <table class="data-table simple" id="table-mandatory-classes">
-                    <thead>
-                        <tr class="data-table__header">
-<!--
-                            <th class="data-table__header-title--sortable" style="width:5%">
-                            </th>
---->
-                            <th class="data-table__header-title--sortable data-table__header-title--sortable-active" style="width:12%">
-                                Property
-                            </th>
-                            <th class="data-table__header-title--sortable" style="width:12%">
-                                Range
-                            </th>
-                            <th class="data-table__header-title--sortable" style="width:6%">
-                                Card
-                            </th>
-                            <th class="data-table__header-title--sortable" style="width:30%">
-                                Definition 
-                            </th>
-                            <th class="data-table__header-title--sortable" style="width:30%">
-                                Usage
-                            </th>
-			    <!--
-                            <th class="data-table__header-title--sortable" style="width:3%">
-                                Codelist
-                            </th>
-			    -->
-			    <!--
-                            <th class="data-table__header-title--sortable" style="width:3%">
-                                DCAT
-                            </th>
-			    -->
-                            <th class="data-table__header-title--sortable" style="width:3%">
-                                Reuse
-                            </th>
-                        </tr>
-                    </thead>
-                    <tbody class="supertype">
-                        
-                            <tr id="Expression.cites"
-                                typeof="rdfs:Property"
-                                resource="http://data.europa.eu/eli/ontology#cites"
-                                class="class mandatory">
-<!--
-                                <td>
-				    <a href="https://github.com/SEMICeu/RRMV/issues/new?title=Issue%20for%20cites%20in%20Expression&body=Explain%20your%20issue%20for%20https://semiceu.github.io/RRMV/releases/0.0.2%23Expression.cites" target="_blank" rel="noopener noreferrer" >
-                                        <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
-                                    </a>
-                                </td>
---->
-                                <td>
-                                        <a href="http://data.europa.eu/eli/ontology#cites"
-                                           data-toggle="tooltip"
-                                           data-content="http://data.europa.eu/eli/ontology#cites"
-                                           data-placement="right">
-                                        cites</a>
-                                </td>
-                                <td>
-                                    
-                                        
-                                            <a href="#Expression" data-placement="right">Expression</a>
-                                        
-                                    
-                                </td>
-                                <td>
-                                    0..*
-                                </td>
-                                <td property="rdfs:comment">
-                                    Citation in the text of the legislation. This may be at the legal resource or legal expression level, as required by the implementation context. This includes verbatim citation and citations in referrals.
-                                </td>
-                                <td property="skos:scopeNote">
-                                    
-                                </td>
-				<!--
-                                <td>
-                                    
-                                </td>
-				-->
-				<!--
-                                <td>
-                                    
-                                </td>
-				-->
-                                <td>
-                                    
-                                       
-				        P
-				       
-				    
-                                </td>
-                            </tr>
-                        
-                            <tr id="Expression.embodies"
-                                typeof="rdfs:Property"
-                                resource="http://data.europa.eu/eli/ontology#embodies"
-                                class="class mandatory">
-<!--
-                                <td>
-				    <a href="https://github.com/SEMICeu/RRMV/issues/new?title=Issue%20for%20embodies%20in%20Expression&body=Explain%20your%20issue%20for%20https://semiceu.github.io/RRMV/releases/0.0.2%23Expression.embodies" target="_blank" rel="noopener noreferrer" >
-                                        <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
-                                    </a>
-                                </td>
---->
-                                <td>
-                                        <a href="http://data.europa.eu/eli/ontology#embodies"
-                                           data-toggle="tooltip"
-                                           data-content="http://data.europa.eu/eli/ontology#embodies"
-                                           data-placement="right">
-                                        embodies</a>
-                                </td>
-                                <td>
-                                    
-                                        
-                                            <a href="#Manifestation" data-placement="right">Manifestation</a>
-                                        
-                                    
-                                </td>
-                                <td>
-                                    0..*
-                                </td>
-                                <td property="rdfs:comment">
-                                    Relates a manifestation to the expression that it embodies. Inverse of "is_embodied_by".
-                                </td>
-                                <td property="skos:scopeNote">
-                                    
-                                </td>
-				<!--
-                                <td>
-                                    
-                                </td>
-				-->
-				<!--
-                                <td>
-                                    
-                                </td>
-				-->
-                                <td>
-                                    
-                                       
-				        P
-				       
-				    
-                                </td>
-                            </tr>
-                        
-                            <tr id="Expression.ispartof"
-                                typeof="rdfs:Property"
-                                resource="http://data.europa.eu/eli/ontology#is_part_of"
-                                class="class mandatory">
-<!--
-                                <td>
-				    <a href="https://github.com/SEMICeu/RRMV/issues/new?title=Issue%20for%20is part of%20in%20Expression&body=Explain%20your%20issue%20for%20https://semiceu.github.io/RRMV/releases/0.0.2%23Expression.ispartof" target="_blank" rel="noopener noreferrer" >
-                                        <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
-                                    </a>
-                                </td>
---->
-                                <td>
-                                        <a href="http://data.europa.eu/eli/ontology#is_part_of"
-                                           data-toggle="tooltip"
-                                           data-content="http://data.europa.eu/eli/ontology#is_part_of"
-                                           data-placement="right">
-                                        is part of</a>
-                                </td>
-                                <td>
-                                    
-                                        
-                                            <a href="#Expression" data-placement="right">Expression</a>
-                                        
-                                    
-                                </td>
-                                <td>
-                                    0..*
-                                </td>
-                                <td property="rdfs:comment">
-                                    Indicates a work in which this one is physically included. Covers the case of text included in an Official Journal, or an article included in a text.
-                                </td>
-                                <td property="skos:scopeNote">
-                                    
                                 </td>
 				<!--
                                 <td>
@@ -2661,7 +2415,7 @@ They are included in the Application Profile because they form the range of prop
                                 class="class mandatory">
 <!--
                                 <td>
-				    <a href="https://github.com/SEMICeu/RRMV/issues/new?title=Issue%20for%20has unit%20in%20Frequency&body=Explain%20your%20issue%20for%20https://semiceu.github.io/RRMV/releases/0.0.2%23Frequency.hasunit" target="_blank" rel="noopener noreferrer" >
+				    <a href="https://github.com/SEMICeu/RRMV/issues/new?title=Issue%20for%20has unit%20in%20Frequency&body=Explain%20your%20issue%20for%20https://semiceu.github.io/RRMV/releases/0.1.1%23Frequency.hasunit" target="_blank" rel="noopener noreferrer" >
                                         <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
                                     </a>
                                 </td>
@@ -2714,7 +2468,7 @@ They are included in the Application Profile because they form the range of prop
                                 class="class mandatory">
 <!--
                                 <td>
-				    <a href="https://github.com/SEMICeu/RRMV/issues/new?title=Issue%20for%20value%20in%20Frequency&body=Explain%20your%20issue%20for%20https://semiceu.github.io/RRMV/releases/0.0.2%23Frequency.value" target="_blank" rel="noopener noreferrer" >
+				    <a href="https://github.com/SEMICeu/RRMV/issues/new?title=Issue%20for%20value%20in%20Frequency&body=Explain%20your%20issue%20for%20https://semiceu.github.io/RRMV/releases/0.1.1%23Frequency.value" target="_blank" rel="noopener noreferrer" >
                                         <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
                                     </a>
                                 </td>
@@ -2813,6 +2567,264 @@ They are included in the Application Profile because they form the range of prop
                 
             </dl>
         </div>
+        
+
+                   
+
+	  
+
+
+    </div>
+</section>
+
+
+
+
+
+   
+        <section>
+            <h3 id="LegalExpression">
+                <a href="http://data.europa.eu/eli/ontology#LegalExpression"
+                   data-toggle="tooltip"
+                   data-content="http://data.europa.eu/eli/ontology#LegalExpression"
+                   data-placement="right">Legal Expression</a>
+
+            </h3>
+	        <!-- XXX an image in the h3 will break the rendering of the Table Of Contents of Respec -->
+		<!-- outcomment github feedback possibility
+                <a href="https://github.com/SEMICeu/RRMV/issues/new?title=Issue%20for%20LegalExpression&body=Explain%20your%20issue"}}>
+                   <img src="html/callout.png" loading="lazy" alt="(create issue)" width="20" height="20"/>
+		</a>
+		-->
+            <dl>
+                <dt>
+                    Definition
+                </dt>
+                <dd>
+                    The intellectual realisation of a legal resource in the form of a &quot;sequence of signs&quot; (typically alpha-numeric characters in a legal context).
+For example, any version of the legal resource whose content is specified and different from others for any reason: language, versions, etc.;
+
+Note that ELI ontology accommodates different point of view on what should be considered a new legal resource, or a new legal expression of the same resource. Typically, a consolidated version can be viewed, in the context of ELI, either as separate legal resource (linked to original version and previous consolidated version using corresponding ELI relations), or as a different legal expression of the same legal resource.
+                </dd>
+                
+                
+                
+                    <dt>
+                        Properties
+                    </dt>
+                    
+                        <dd>
+                            For this entity the following properties are defined: <a href="#LegalExpression.cites">cites</a>
+                            , <a href="#LegalExpression.embodies">embodies</a>
+                            , <a href="#LegalExpression.ispartof">is part of</a>
+                            .
+                    </dd>
+                
+            </dl>
+        </div>
+        
+            <div class="u-table-overflow">
+                <table class="data-table simple" id="table-mandatory-classes">
+                    <thead>
+                        <tr class="data-table__header">
+<!--
+                            <th class="data-table__header-title--sortable" style="width:5%">
+                            </th>
+--->
+                            <th class="data-table__header-title--sortable data-table__header-title--sortable-active" style="width:12%">
+                                Property
+                            </th>
+                            <th class="data-table__header-title--sortable" style="width:12%">
+                                Range
+                            </th>
+                            <th class="data-table__header-title--sortable" style="width:6%">
+                                Card
+                            </th>
+                            <th class="data-table__header-title--sortable" style="width:30%">
+                                Definition 
+                            </th>
+                            <th class="data-table__header-title--sortable" style="width:30%">
+                                Usage
+                            </th>
+			    <!--
+                            <th class="data-table__header-title--sortable" style="width:3%">
+                                Codelist
+                            </th>
+			    -->
+			    <!--
+                            <th class="data-table__header-title--sortable" style="width:3%">
+                                DCAT
+                            </th>
+			    -->
+                            <th class="data-table__header-title--sortable" style="width:3%">
+                                Reuse
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody class="supertype">
+                        
+                            <tr id="LegalExpression.cites"
+                                typeof="rdfs:Property"
+                                resource="http://data.europa.eu/eli/ontology#cites"
+                                class="class mandatory">
+<!--
+                                <td>
+				    <a href="https://github.com/SEMICeu/RRMV/issues/new?title=Issue%20for%20cites%20in%20Legal Expression&body=Explain%20your%20issue%20for%20https://semiceu.github.io/RRMV/releases/0.1.1%23LegalExpression.cites" target="_blank" rel="noopener noreferrer" >
+                                        <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
+                                    </a>
+                                </td>
+--->
+                                <td>
+                                        <a href="http://data.europa.eu/eli/ontology#cites"
+                                           data-toggle="tooltip"
+                                           data-content="http://data.europa.eu/eli/ontology#cites"
+                                           data-placement="right">
+                                        cites</a>
+                                </td>
+                                <td>
+                                    
+                                        
+                                            <a href="#LegalExpression" data-placement="right">Legal Expression</a>
+                                        
+                                    
+                                </td>
+                                <td>
+                                    0..*
+                                </td>
+                                <td property="rdfs:comment">
+                                    Citation in the text of the legislation. This may be at the legal resource or legal expression level, as required by the implementation context. This includes verbatim citation and citations in referrals.
+                                </td>
+                                <td property="skos:scopeNote">
+                                    
+                                </td>
+				<!--
+                                <td>
+                                    
+                                </td>
+				-->
+				<!--
+                                <td>
+                                    
+                                </td>
+				-->
+                                <td>
+                                    
+                                       
+				        P
+				       
+				    
+                                </td>
+                            </tr>
+                        
+                            <tr id="LegalExpression.embodies"
+                                typeof="rdfs:Property"
+                                resource="http://data.europa.eu/eli/ontology#embodies"
+                                class="class mandatory">
+<!--
+                                <td>
+				    <a href="https://github.com/SEMICeu/RRMV/issues/new?title=Issue%20for%20embodies%20in%20Legal Expression&body=Explain%20your%20issue%20for%20https://semiceu.github.io/RRMV/releases/0.1.1%23LegalExpression.embodies" target="_blank" rel="noopener noreferrer" >
+                                        <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
+                                    </a>
+                                </td>
+--->
+                                <td>
+                                        <a href="http://data.europa.eu/eli/ontology#embodies"
+                                           data-toggle="tooltip"
+                                           data-content="http://data.europa.eu/eli/ontology#embodies"
+                                           data-placement="right">
+                                        embodies</a>
+                                </td>
+                                <td>
+                                    
+                                        
+                                            <a href="#Manifestation" data-placement="right">Manifestation</a>
+                                        
+                                    
+                                </td>
+                                <td>
+                                    0..*
+                                </td>
+                                <td property="rdfs:comment">
+                                    Relates a manifestation to the expression that it embodies. Inverse of "is_embodied_by".
+                                </td>
+                                <td property="skos:scopeNote">
+                                    
+                                </td>
+				<!--
+                                <td>
+                                    
+                                </td>
+				-->
+				<!--
+                                <td>
+                                    
+                                </td>
+				-->
+                                <td>
+                                    
+                                       
+				        P
+				       
+				    
+                                </td>
+                            </tr>
+                        
+                            <tr id="LegalExpression.ispartof"
+                                typeof="rdfs:Property"
+                                resource="http://data.europa.eu/eli/ontology#is_part_of"
+                                class="class mandatory">
+<!--
+                                <td>
+				    <a href="https://github.com/SEMICeu/RRMV/issues/new?title=Issue%20for%20is part of%20in%20Legal Expression&body=Explain%20your%20issue%20for%20https://semiceu.github.io/RRMV/releases/0.1.1%23LegalExpression.ispartof" target="_blank" rel="noopener noreferrer" >
+                                        <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
+                                    </a>
+                                </td>
+--->
+                                <td>
+                                        <a href="http://data.europa.eu/eli/ontology#is_part_of"
+                                           data-toggle="tooltip"
+                                           data-content="http://data.europa.eu/eli/ontology#is_part_of"
+                                           data-placement="right">
+                                        is part of</a>
+                                </td>
+                                <td>
+                                    
+                                        
+                                            <a href="#LegalExpression" data-placement="right">Legal Expression</a>
+                                        
+                                    
+                                </td>
+                                <td>
+                                    0..*
+                                </td>
+                                <td property="rdfs:comment">
+                                    Indicates a work in which this one is physically included. Covers the case of text included in an Official Journal, or an article included in a text.
+                                </td>
+                                <td property="skos:scopeNote">
+                                    
+                                </td>
+				<!--
+                                <td>
+                                    
+                                </td>
+				-->
+				<!--
+                                <td>
+                                    
+                                </td>
+				-->
+                                <td>
+                                    
+                                       
+				        P
+				       
+				    
+                                </td>
+                            </tr>
+                        
+                    </tbody>
+                </table>
+            </div>
         
 
                    
@@ -2959,7 +2971,7 @@ They are included in the Application Profile because they form the range of prop
                                 class="class mandatory">
 <!--
                                 <td>
-				    <a href="https://github.com/SEMICeu/RRMV/issues/new?title=Issue%20for%20is embodied by%20in%20Manifestation&body=Explain%20your%20issue%20for%20https://semiceu.github.io/RRMV/releases/0.0.2%23Manifestation.isembodiedby" target="_blank" rel="noopener noreferrer" >
+				    <a href="https://github.com/SEMICeu/RRMV/issues/new?title=Issue%20for%20is embodied by%20in%20Manifestation&body=Explain%20your%20issue%20for%20https://semiceu.github.io/RRMV/releases/0.1.1%23Manifestation.isembodiedby" target="_blank" rel="noopener noreferrer" >
                                         <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
                                     </a>
                                 </td>
@@ -2974,7 +2986,7 @@ They are included in the Application Profile because they form the range of prop
                                 <td>
                                     
                                         
-                                            <a href="#Expression" data-placement="right">Expression</a>
+                                            <a href="#LegalExpression" data-placement="right">Legal Expression</a>
                                         
                                     
                                 </td>
@@ -3173,7 +3185,7 @@ They are included in the Application Profile because they form the range of prop
                                 class="class mandatory">
 <!--
                                 <td>
-				    <a href="https://github.com/SEMICeu/RRMV/issues/new?title=Issue%20for%20duration%20in%20Period of Time&body=Explain%20your%20issue%20for%20https://semiceu.github.io/RRMV/releases/0.0.2%23PeriodofTime.duration" target="_blank" rel="noopener noreferrer" >
+				    <a href="https://github.com/SEMICeu/RRMV/issues/new?title=Issue%20for%20duration%20in%20Period of Time&body=Explain%20your%20issue%20for%20https://semiceu.github.io/RRMV/releases/0.1.1%23PeriodofTime.duration" target="_blank" rel="noopener noreferrer" >
                                         <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
                                     </a>
                                 </td>
@@ -3226,7 +3238,7 @@ They are included in the Application Profile because they form the range of prop
                                 class="class mandatory">
 <!--
                                 <td>
-				    <a href="https://github.com/SEMICeu/RRMV/issues/new?title=Issue%20for%20end time%20in%20Period of Time&body=Explain%20your%20issue%20for%20https://semiceu.github.io/RRMV/releases/0.0.2%23PeriodofTime.endtime" target="_blank" rel="noopener noreferrer" >
+				    <a href="https://github.com/SEMICeu/RRMV/issues/new?title=Issue%20for%20end time%20in%20Period of Time&body=Explain%20your%20issue%20for%20https://semiceu.github.io/RRMV/releases/0.1.1%23PeriodofTime.endtime" target="_blank" rel="noopener noreferrer" >
                                         <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
                                     </a>
                                 </td>
@@ -3279,7 +3291,7 @@ They are included in the Application Profile because they form the range of prop
                                 class="class mandatory">
 <!--
                                 <td>
-				    <a href="https://github.com/SEMICeu/RRMV/issues/new?title=Issue%20for%20has function%20in%20Period of Time&body=Explain%20your%20issue%20for%20https://semiceu.github.io/RRMV/releases/0.0.2%23PeriodofTime.hasfunction" target="_blank" rel="noopener noreferrer" >
+				    <a href="https://github.com/SEMICeu/RRMV/issues/new?title=Issue%20for%20has function%20in%20Period of Time&body=Explain%20your%20issue%20for%20https://semiceu.github.io/RRMV/releases/0.1.1%23PeriodofTime.hasfunction" target="_blank" rel="noopener noreferrer" >
                                         <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
                                     </a>
                                 </td>
@@ -3332,7 +3344,7 @@ They are included in the Application Profile because they form the range of prop
                                 class="class mandatory">
 <!--
                                 <td>
-				    <a href="https://github.com/SEMICeu/RRMV/issues/new?title=Issue%20for%20is incomplete%20in%20Period of Time&body=Explain%20your%20issue%20for%20https://semiceu.github.io/RRMV/releases/0.0.2%23PeriodofTime.isincomplete" target="_blank" rel="noopener noreferrer" >
+				    <a href="https://github.com/SEMICeu/RRMV/issues/new?title=Issue%20for%20is incomplete%20in%20Period of Time&body=Explain%20your%20issue%20for%20https://semiceu.github.io/RRMV/releases/0.1.1%23PeriodofTime.isincomplete" target="_blank" rel="noopener noreferrer" >
                                         <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
                                     </a>
                                 </td>
@@ -3385,7 +3397,7 @@ They are included in the Application Profile because they form the range of prop
                                 class="class mandatory">
 <!--
                                 <td>
-				    <a href="https://github.com/SEMICeu/RRMV/issues/new?title=Issue%20for%20start time%20in%20Period of Time&body=Explain%20your%20issue%20for%20https://semiceu.github.io/RRMV/releases/0.0.2%23PeriodofTime.starttime" target="_blank" rel="noopener noreferrer" >
+				    <a href="https://github.com/SEMICeu/RRMV/issues/new?title=Issue%20for%20start time%20in%20Period of Time&body=Explain%20your%20issue%20for%20https://semiceu.github.io/RRMV/releases/0.1.1%23PeriodofTime.starttime" target="_blank" rel="noopener noreferrer" >
                                         <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
                                     </a>
                                 </td>
@@ -3646,7 +3658,7 @@ They are included in the Application Profile because they form the range of prop
                                 class="class mandatory">
 <!--
                                 <td>
-				    <a href="https://github.com/SEMICeu/RRMV/issues/new?title=Issue%20for%20has type%20in%20Role&body=Explain%20your%20issue%20for%20https://semiceu.github.io/RRMV/releases/0.0.2%23Role.hastype" target="_blank" rel="noopener noreferrer" >
+				    <a href="https://github.com/SEMICeu/RRMV/issues/new?title=Issue%20for%20has type%20in%20Role&body=Explain%20your%20issue%20for%20https://semiceu.github.io/RRMV/releases/0.1.1%23Role.hastype" target="_blank" rel="noopener noreferrer" >
                                         <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
                                     </a>
                                 </td>
@@ -4018,7 +4030,7 @@ They are included in the Application Profile because they form the range of prop
                                 class="class mandatory">
 <!--
                                 <td>
-				    <a href="https://github.com/SEMICeu/RRMV/issues/new?title=Issue%20for%20is realized by%20in%20Work&body=Explain%20your%20issue%20for%20https://semiceu.github.io/RRMV/releases/0.0.2%23Work.isrealizedby" target="_blank" rel="noopener noreferrer" >
+				    <a href="https://github.com/SEMICeu/RRMV/issues/new?title=Issue%20for%20is realized by%20in%20Work&body=Explain%20your%20issue%20for%20https://semiceu.github.io/RRMV/releases/0.1.1%23Work.isrealizedby" target="_blank" rel="noopener noreferrer" >
                                         <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
                                     </a>
                                 </td>
@@ -4033,7 +4045,7 @@ They are included in the Application Profile because they form the range of prop
                                 <td>
                                     
                                         
-                                            <a href="#Expression" data-placement="right">Expression</a>
+                                            <a href="#LegalExpression" data-placement="right">Legal Expression</a>
                                         
                                     
                                 </td>
@@ -4071,7 +4083,7 @@ They are included in the Application Profile because they form the range of prop
                                 class="class mandatory">
 <!--
                                 <td>
-				    <a href="https://github.com/SEMICeu/RRMV/issues/new?title=Issue%20for%20is realized by%20in%20Work&body=Explain%20your%20issue%20for%20https://semiceu.github.io/RRMV/releases/0.0.2%23Work.isrealizedby" target="_blank" rel="noopener noreferrer" >
+				    <a href="https://github.com/SEMICeu/RRMV/issues/new?title=Issue%20for%20is realized by%20in%20Work&body=Explain%20your%20issue%20for%20https://semiceu.github.io/RRMV/releases/0.1.1%23Work.isrealizedby" target="_blank" rel="noopener noreferrer" >
                                         <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
                                     </a>
                                 </td>
@@ -4086,7 +4098,7 @@ They are included in the Application Profile because they form the range of prop
                                 <td>
                                     
                                         
-                                            <a href="#Expression" data-placement="right">Expression</a>
+                                            <a href="#LegalExpression" data-placement="right">Legal Expression</a>
                                         
                                     
                                 </td>
@@ -4238,8 +4250,8 @@ They are included in the Application Profile because they form the range of prop
          (non normative)
         
             <p>
-                A reusable JSON-LD context definition for this application profile is retrievable at: <a href="/RRMV/releases/0.0.2/context/rrmv.jsonld"
-    target="_blank">/RRMV/releases/0.0.2/context/rrmv.jsonld</a>
+                A reusable JSON-LD context definition for this application profile is retrievable at: <a href="/RRMV/releases/0.1.1/context/rrmv.jsonld"
+    target="_blank">/RRMV/releases/0.1.1/context/rrmv.jsonld</a>
             </p>
         
     </div>
@@ -4252,8 +4264,8 @@ They are included in the Application Profile because they form the range of prop
          (non normative)
         
             <p>
-                A reusable SHACL template for this application profile is retrievable at: <a href="/RRMV/releases/0.0.2/shacl/rrmv-SHACL.ttl"
-    target="_blank">/RRMV/releases/0.0.2/shacl/rrmv-SHACL.ttl</a>
+                A reusable SHACL template for this application profile is retrievable at: <a href="/RRMV/releases/0.1.1/shacl/rrmv-SHACL.ttl"
+    target="_blank">/RRMV/releases/0.1.1/shacl/rrmv-SHACL.ttl</a>
             </p>
         
     </div>
@@ -4576,7 +4588,7 @@ More on the validation and the provided SHACL shapes can be found in section [[[
 
 To support the assessment if the data statisfies the expressed requirements, the following SHACL templates are provided.
 
-The file <a href="/RRMV/releases/0.0.2/shacl/rrmv-SHACL.ttl">rrmv-SHACL.ttl</a> is the generated SHACL representation.
+The file <a href="/RRMV/releases/0.1.1/shacl/rrmv-SHACL.ttl">rrmv-SHACL.ttl</a> is the generated SHACL representation.
 
 
 </section>
@@ -5024,55 +5036,6 @@ The properties are grouped under headings <it>mandatory, recommended, optional</
 					
 						
 					
-						
-					
-					
-						
-					
-						
-					
-						
-					
-					
-						
-							<tr>
-								<td><a href="#Expression">Expression</a></td>
-								<td><div class="shorten">http://data.europa.eu/eli/ontology#Expression</div></td>
-								<td></td>
-								<td><a href="#Expression.cites">cites </a></td>
-								<td><div class="shorten">http://data.europa.eu/eli/ontology#cites</div></td>
-							</tr>
-						
-					
-						
-							<tr>
-								<td><a href="#Expression">Expression</a></td>
-								<td><div class="shorten">http://data.europa.eu/eli/ontology#Expression</div></td>
-								<td></td>
-								<td><a href="#Expression.embodies">embodies </a></td>
-								<td><div class="shorten">http://data.europa.eu/eli/ontology#embodies</div></td>
-							</tr>
-						
-					
-						
-							<tr>
-								<td><a href="#Expression">Expression</a></td>
-								<td><div class="shorten">http://data.europa.eu/eli/ontology#Expression</div></td>
-								<td></td>
-								<td><a href="#Expression.ispartof">is part of </a></td>
-								<td><div class="shorten">http://data.europa.eu/eli/ontology#is_part_of</div></td>
-							</tr>
-						
-					
-				
-			</tr>
-		
-				
-					
-						
-					
-						
-					
 					
 						
 					
@@ -5110,6 +5073,55 @@ The properties are grouped under headings <it>mandatory, recommended, optional</
 						<td></td>
 						<td></td>
 					</tr>
+				
+			</tr>
+		
+				
+					
+						
+					
+						
+					
+						
+					
+					
+						
+					
+						
+					
+						
+					
+					
+						
+							<tr>
+								<td><a href="#LegalExpression">Legal Expression</a></td>
+								<td><div class="shorten">http://data.europa.eu/eli/ontology#LegalExpression</div></td>
+								<td></td>
+								<td><a href="#LegalExpression.cites">cites </a></td>
+								<td><div class="shorten">http://data.europa.eu/eli/ontology#cites</div></td>
+							</tr>
+						
+					
+						
+							<tr>
+								<td><a href="#LegalExpression">Legal Expression</a></td>
+								<td><div class="shorten">http://data.europa.eu/eli/ontology#LegalExpression</div></td>
+								<td></td>
+								<td><a href="#LegalExpression.embodies">embodies </a></td>
+								<td><div class="shorten">http://data.europa.eu/eli/ontology#embodies</div></td>
+							</tr>
+						
+					
+						
+							<tr>
+								<td><a href="#LegalExpression">Legal Expression</a></td>
+								<td><div class="shorten">http://data.europa.eu/eli/ontology#LegalExpression</div></td>
+								<td></td>
+								<td><a href="#LegalExpression.ispartof">is part of </a></td>
+								<td><div class="shorten">http://data.europa.eu/eli/ontology#is_part_of</div></td>
+							</tr>
+						
+					
 				
 			</tr>
 		
