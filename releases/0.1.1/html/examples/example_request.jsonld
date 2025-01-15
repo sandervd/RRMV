@@ -1,0 +1,22 @@
+{
+  "@context": {
+    "Expression": "http://data.europa.eu/eli/ontology#Expression",
+    "Request": "http://data.europa.eu/rrmv#Request",
+    "Work": "http://data.europa.eu/eli/ontology#Work",
+    "hasURI": {
+      "@container": "@set",
+      "@id": "http://data.europa.eu/eli/ontology#hasURI",
+      "@type": "http://www.w3.org/2001/XMLSchema#anyURI"
+    },
+    "isPartOf": {
+      "@container": "@set",
+      "@id": "http://purl.org/dc/terms/isPartOf",
+      "@type": "@id"
+    }
+ 
+  },
+  "@id": "https://system.org/id/request/123",
+  "@type": "http://data.europa.eu/rrmv#Request",
+  "isPartOf": "http://data.europa.eu/eli/reg/2016/1011/oj"
+}
+

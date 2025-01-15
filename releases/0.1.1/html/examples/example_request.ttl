@@ -1,0 +1,5 @@
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+
+<https://system.org/id/request/123> a <http://data.europa.eu/rrmv#Request>;
+  dct:isPartOf <http://data.europa.eu/eli/reg/2016/1011/oj> .

@@ -1,0 +1,778 @@
+@prefix cccev: <https://semiceu.github.io/CCCEV#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix eli: <http://data.europa.eu/eli/ontology#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rrmv: <http://data.europa.eu/2qy/rrmv#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+rrmv:Request0032024R0900 a rrmv:Request ;
+    rrmv:hasAnnotation "Providers of political advertising services shall ensure that the contractual arrangements concluded for the provision of a political advertising service require the sponsor, or providers of advertising services acting on behalf of sponsors, to provide the declaration in accordance with paragraph 1 of this Article and the relevant information necessary to comply with Articles 9(1), 11(1) and 12(1). That information shall be transmitted in a complete and accurate manner and without undue delay." ;
+    rrmv:hasUri "32024R0900/007.002"^^xsd:anyURI ;
+    rrmv:produces rrmv:Action0032024R0900 ;
+    dcterms:isPartOf "32024R0900"^^xsd:anyURI .
+
+rrmv:Request0132024R0900 a rrmv:Request ;
+    rrmv:hasAnnotation "Sponsors shall provide and ensure the accuracy of the information necessary for the providers of political advertising services to comply with Article 9(1), points (a), (d), (e) and (f), Article 11(1), points (a) to (d), and Article 12(1), points (a), (b), (c), (e), (h) and (k), before or during the period of publication, delivery, or dissemination of the political advertisement. Where a sponsor, or a provider of advertising services acting on behalf of a sponsor, becomes aware that information which it has transmitted has changed, it shall ensure that updated information is transmitted to the relevant provider of political advertising services in a timely, complete and accurate manner. Where a sponsor, or a provider of advertising services acting on behalf of a sponsor, becomes aware that any information transmitted to or published by the political advertising publisher is incomplete or inaccurate, it shall contact, without undue delay, the political advertising publisher concerned and shall transmit completed or corrected information to that political advertising publisher." ;
+    rrmv:hasUri "32024R0900/007.003"^^xsd:anyURI ;
+    rrmv:produces rrmv:Action0132024R0900 ;
+    dcterms:isPartOf "32024R0900"^^xsd:anyURI .
+
+rrmv:Request0232024R0900 a rrmv:Request ;
+    rrmv:hasAnnotation "Providers of political advertising services shall ensure that the information referred to in Article 9(1) is transmitted in a timely, complete and accurate manner to political advertising publishers to enable them to comply with their obligations under this Regulation. Each provider of political advertising services shall transmit the information referred to in the first subparagraph during the provision of the relevant service and in accordance with best practice and industry standards and, where technically possible, by means of a standardised automated process. When the political advertising publisher is the only provider of political advertising services, the sponsor shall transmit the relevant information to the political advertising publisher." ;
+    rrmv:hasUri "32024R0900/010.001"^^xsd:anyURI ;
+    rrmv:produces rrmv:Action0232024R0900,
+        rrmv:Action0332024R0900 ;
+    dcterms:isPartOf "32024R0900"^^xsd:anyURI .
+
+rrmv:Request0332024R0900 a rrmv:Request ;
+    rrmv:hasAnnotation "Political advertising publishers shall ensure that the information referred to in paragraph 1 is complete. Political advertising publishers shall ensure the accuracy of the information of paragraph 1, points (d), (f), (i), (j) and (m), before and during the period of publication, delivery, or dissemination of the political advertisement. Where the provider of political advertising services becomes aware that any information transmitted to or published by the political advertising publisher is incomplete or inaccurate, it shall contact, without undue delay, the political advertising publisher concerned and shall transmit completed or corrected information to that political advertising publisher. Where the political advertising publisher becomes aware by any means that the information referred to in Article 11(1) and paragraph 1 of this Article is incomplete or inaccurate, it shall make best efforts, including by contacting the sponsor or the providers of political advertising services, to complete or correct the information without undue delay. Where the information cannot be completed or corrected without undue delay, the political advertising publisher shall not make the political advertisement available or shall without undue delay discontinue the publication, delivery or dissemination of the political advertisement. The political advertising publisher shall without undue delay inform the sponsors or the providers of political advertising services concerned about any decisions under the fifth subparagraph of this paragraph." ;
+    rrmv:hasUri "32024R0900/012.002"^^xsd:anyURI ;
+    rrmv:produces rrmv:Action0432024R0900,
+        rrmv:Action0532024R0900 ;
+    dcterms:isPartOf "32024R0900"^^xsd:anyURI .
+
+rrmv:Request0432024R0900 a rrmv:Request ;
+    rrmv:hasAnnotation "Political advertising publishers that are very large online platforms and very large online search engines shall ensure that each political advertisement, together with the information referred to in Article 12(1) of this Regulation, is made available in a repository, as referred to in Article 39 of Regulation (EU) 2022/2065. In addition, those political advertising publishers shall enable access to that information through the European repository from the moment of publication and for the entire period during which they present the political advertisement and for seven years after the political advertisement was last presented on their online interfaces." ;
+    rrmv:hasUri "32024R0900/013.002"^^xsd:anyURI ;
+    rrmv:produces rrmv:Action0632024R0900 ;
+    dcterms:isPartOf "32024R0900"^^xsd:anyURI .
+
+rrmv:Request0532024R0900 a rrmv:Request ;
+    rrmv:hasAnnotation "Political advertising publishers shall without undue delay send a confirmation of receipt of the notification received pursuant to paragraph 1 to the natural or legal person who submitted it." ;
+    rrmv:hasUri "32024R0900/015.004"^^xsd:anyURI ;
+    rrmv:produces rrmv:Action0732024R0900 ;
+    dcterms:isPartOf "32024R0900"^^xsd:anyURI .
+
+rrmv:Request0632024R0900 a rrmv:Request ;
+    rrmv:hasAnnotation "Political advertising publishers shall without undue delay inform the sponsors or providers of political advertising services concerned of any measures they take following notifications made under this Article, that affect the availability or the presentation of the political advertisement concerned." ;
+    rrmv:hasUri "32024R0900/015.009"^^xsd:anyURI ;
+    rrmv:produces rrmv:Action0832024R0900 ;
+    dcterms:isPartOf "32024R0900"^^xsd:anyURI .
+
+rrmv:Request0732024R0900 a rrmv:Request ;
+    rrmv:hasAnnotation "To verify compliance with Articles 9, 11, 12 and 14, national competent authorities shall have the power to request that providers of political advertising services transmit any necessary information. The transmitted information shall be complete, accurate and trustworthy, and shall be provided in a clear, coherent, consolidated and intelligible format. Where technically possible, the information shall be transmitted in a standardised and machine-readable format." ;
+    rrmv:hasUri "32024R0900/016.001"^^xsd:anyURI ;
+    rrmv:produces rrmv:Action0932024R0900 ;
+    dcterms:isPartOf "32024R0900"^^xsd:anyURI .
+
+rrmv:Request0832024R0900 a rrmv:Request ;
+    rrmv:hasAnnotation "Upon receipt of a request pursuant to paragraph 1 of this Article, providers of political advertising services shall, within two working days, acknowledge receipt of that request and inform the national competent authority of the steps taken to comply with it. The relevant provider of political advertising services shall provide the requested information within eight working days. However, providers of political advertising services qualifying as micro, small or medium-sized undertakings under Article 3(1), (2) and (3) of Directive 2013/34/EU shall make reasonable efforts to provide the requested information within 12 working days and thereafter, without undue delay." ;
+    rrmv:hasUri "32024R0900/016.003"^^xsd:anyURI ;
+    rrmv:produces rrmv:Action1032024R0900 ;
+    dcterms:isPartOf "32024R0900"^^xsd:anyURI .
+
+rrmv:Request0932024R0900 a rrmv:Request ;
+    rrmv:hasAnnotation "At the request of interested entities, providers of political advertising services shall transmit promptly and free of charge, and where technically possible in a machine-readable format, to those entities the information that those providers of political advertising services are required to have pursuant to Articles 9, 11 and 12." ;
+    rrmv:hasUri "32024R0900/017.001"^^xsd:anyURI ;
+    rrmv:produces rrmv:Action1132024R0900 ;
+    dcterms:isPartOf "32024R0900"^^xsd:anyURI .
+
+rrmv:Request1032024R0900 a rrmv:Request ;
+    rrmv:hasAnnotation "Where requests pursuant to paragraph 1 are manifestly unclear, excessive or concern information not within the possession of the provider of political advertising services, that provider may refuse to provide the requested information. In such cases, the provider of political advertising services shall send a reasoned response to the interested entity making the request along with information on the possibilities for redress, including, where applicable, those that exist under Directive (EU) 2020/1828." ;
+    rrmv:hasUri "32024R0900/017.005"^^xsd:anyURI ;
+    rrmv:produces rrmv:Action1232024R0900 ;
+    dcterms:isPartOf "32024R0900"^^xsd:anyURI .
+
+rrmv:Request1132024R0900 a rrmv:Request ;
+    rrmv:hasAnnotation "Where the controller is different from the political advertising publisher, the controller shall ensure that the information referred to in paragraph 1, points (c) and (e), is communicated to the political advertising publisher to enable the political advertising publisher to comply with its obligations under this Regulation. The information shall be transmitted in a timely and accurate manner, in accordance with best practice and industry standards by means of a standardised automated process, where that is technically possible." ;
+    rrmv:hasUri "32024R0900/019.002"^^xsd:anyURI ;
+    rrmv:produces rrmv:Action1332024R0900,
+        rrmv:Action1432024R0900 ;
+    dcterms:isPartOf "32024R0900"^^xsd:anyURI .
+
+rrmv:Request1232024R0900 a rrmv:Request ;
+    rrmv:hasAnnotation "Providers of political advertising services shall, as necessary, transmit to the controllers the information necessary to comply with paragraphs 1 and 2." ;
+    rrmv:hasUri "32024R0900/019.003"^^xsd:anyURI ;
+    rrmv:produces rrmv:Action1532024R0900 ;
+    dcterms:isPartOf "32024R0900"^^xsd:anyURI .
+
+rrmv:Request1332024R0900 a rrmv:Request ;
+    rrmv:hasAnnotation "Information to be provided in accordance with paragraph 1, points (c) and (e), and paragraphs 2 and 3 shall be presented in a format that is easily accessible and, where technically feasible, that is also machine-readable, clearly visible and user-friendly, including through the use of plain language." ;
+    rrmv:hasUri "32024R0900/019.004"^^xsd:anyURI ;
+    rrmv:produces rrmv:Action1632024R0900 ;
+    dcterms:isPartOf "32024R0900"^^xsd:anyURI .
+
+rrmv:Request1432024R0900 a rrmv:Request ;
+    rrmv:hasAnnotation "A service provider that provides political advertising services in the Union but does not have an establishment in the Union shall designate, in writing, a natural or legal person as its legal representative in one of the Member States where that provider offers its services. The designated legal representative shall register with the competent authority referred to in paragraph 4 in the Member State where it resides or it is established. For that purpose, service providers shall submit the name, postal address, email address and telephone number of their legal representative to that competent authority. The information submitted shall be accurate and in a machine-readable format and kept up to date." ;
+    rrmv:hasUri "32024R0900/021.001"^^xsd:anyURI ;
+    rrmv:produces rrmv:Action1732024R0900 ;
+    dcterms:isPartOf "32024R0900"^^xsd:anyURI .
+
+rrmv:Request1532024R0900 a rrmv:Request ;
+    rrmv:hasAnnotation "Where a national competent authority of a Member State has reason to suspect that this Regulation has been infringed in its territory, it shall notify the competent authority of the main establishment of the provider and request it, where appropriate, to assess the matter and to take the necessary investigatory and enforcement measures referred to in paragraph 7." ;
+    rrmv:hasUri "32024R0900/023.004"^^xsd:anyURI ;
+    rrmv:produces rrmv:Action1832024R0900 ;
+    dcterms:isPartOf "32024R0900"^^xsd:anyURI .
+
+rrmv:Request1632024R0900 a rrmv:Request ;
+    rrmv:hasAnnotation "A notification pursuant to paragraph 4 shall be substantiated, duly reasoned and proportionate and at least indicate: (a) the information allowing the identification of the sponsor or provider of political advertising services; (b) a description of the relevant facts, the relevant provisions of this Regulation and the reasons why the notifying competent authority suspects an infringement of this Regulation, including, as relevant, a description of the circumstances allowing the assessment of the criteria set out in Article 25(4); (c) information on where the relevant political advertisement or a copy of it can be retrieved; (d) any other information that the notifying competent authority considers relevant, including, where appropriate, information gathered on its own initiative." ;
+    rrmv:hasUri "32024R0900/023.005"^^xsd:anyURI ;
+    rrmv:produces rrmv:Action1932024R0900 ;
+    dcterms:isPartOf "32024R0900"^^xsd:anyURI .
+
+rrmv:Request1732024R0900 a rrmv:Request ;
+    rrmv:hasAnnotation "In carrying out a joint investigation, competent authorities shall cooperate in good faith, and exercise their investigative powers as necessary for the investigation of the alleged infringement. Competent authorities carrying out a joint investigation shall inform each other of any relevant enforcement measure which they initiate or intend to initiate." ;
+    rrmv:hasUri "32024R0900/023.010"^^xsd:anyURI ;
+    rrmv:produces rrmv:Action2032024R0900 ;
+    dcterms:isPartOf "32024R0900"^^xsd:anyURI .
+
+rrmv:Request1832024R0900 a rrmv:Request ;
+    rrmv:hasAnnotation "Without prejudice to other administrative procedures or judicial remedies, competent authorities shall duly address every notification of possible infringements of this Regulation and, upon request, inform the person or entity who made the notification of the follow up. During the last month preceding elections or referendums, any notification received in relation to those elections or referendums shall be addressed without undue delay. Competent authorities shall without undue delay transmit complaints that fall within the competence of another competent authority in another Member State to that competent authority." ;
+    rrmv:hasUri "32024R0900/art_24"^^xsd:anyURI ;
+    rrmv:produces rrmv:Action2132024R0900,
+        rrmv:Action2232024R0900 ;
+    dcterms:isPartOf "32024R0900"^^xsd:anyURI .
+
+rrmv:Request1932024R0900 a rrmv:Request ;
+    rrmv:hasAnnotation "Member States shall, by 10 January 2026, notify the Commission of those rules and of those measures and shall notify it, without delay, of any subsequent amendments affecting them." ;
+    rrmv:hasUri "32024R0900/025.003"^^xsd:anyURI ;
+    rrmv:produces rrmv:Action2332024R0900 ;
+    dcterms:isPartOf "32024R0900"^^xsd:anyURI .
+
+rrmv:Request2032024R0900 a rrmv:Request ;
+    rrmv:hasAnnotation "Member States shall report annually to the Commission on the sanctions imposed to enforce the provisions of this Regulation, in particular on the type of sanctions applied and the amount of the fines and financial penalties. The Commission shall take into account this information when drawing up the report required under Article 27." ;
+    rrmv:hasUri "32024R0900/025.008"^^xsd:anyURI ;
+    rrmv:produces rrmv:Action2432024R0900 ;
+    dcterms:isPartOf "32024R0900"^^xsd:anyURI .
+
+rrmv:Request2132024R0900 a rrmv:Request ;
+    rrmv:hasAnnotation "Member States shall publish the dates of their elections and referendums and, where applicable, of their electoral periods, in an easily accessible place, and with an appropriate reference to this Regulation." ;
+    rrmv:hasUri "32024R0900/026.001"^^xsd:anyURI ;
+    rrmv:produces rrmv:Action2532024R0900 ;
+    dcterms:isPartOf "32024R0900"^^xsd:anyURI .
+
+rrmv:Request2232024R0900 a rrmv:Request ;
+    rrmv:hasAnnotation "Within two years after each election to the European Parliament, the Commission shall submit a report on the evaluation and review of this Regulation to the European Parliament and to the Council. That report shall be made public and shall assess the need for amendment to this Regulation, in particular with regard to: (a) the scope of this Regulation and the definition of political advertising in Article 3, point 2; (b) the effectiveness of this Regulation as regards specific means of political advertising; (c) the effectiveness of the transparency measures, especially the declaration and mechanisms to identify the political nature of an advertising service or of an advertisement as provided for in Articles 7 and 8; (d) the effectiveness of the rules restricting the processing of personal data for the purposes of the targeting techniques and ad-delivery techniques; (e) the effectiveness of the supervision and enforcement structure, as well as the type and amount of sanctions imposed by the Member States; (f) the impact of this Regulation on media actors qualifying under Article 3 (1), (2) and (3) of Directive 2013/34/EU as micro, small and medium-sized undertakings; (g) the effectiveness of this Regulation in view of technological, scientific and other developments; (h) the way in which this Regulation interacts with the Union legal acts referred to in Article 2(3); (i) the progress made in establishing the European repository and its subsequent functioning." ;
+    rrmv:hasUri "32024R0900/art_27"^^xsd:anyURI ;
+    rrmv:produces rrmv:Action2632024R0900 ;
+    dcterms:isPartOf "32024R0900"^^xsd:anyURI .
+
+rrmv:Request2332024R0900 a rrmv:Request ;
+    rrmv:hasAnnotation "As soon as it adopts a delegated act, the Commission shall notify that act simultaneously to the European Parliament and to the Council." ;
+    rrmv:hasUri "32024R0900/028.005"^^xsd:anyURI ;
+    rrmv:produces rrmv:Action2732024R0900 ;
+    dcterms:isPartOf "32024R0900"^^xsd:anyURI .
+
+rrmv:Request2432024R0900 a rrmv:Request ;
+    rrmv:hasAnnotation "A delegated act adopted pursuant to Article 12(6) or Article 19(5) shall enter into force only if no objection has been expressed either by the European Parliament or by the Council within a period of two months of notification of that act to the European Parliament and the Council or if, before the expiry of that period, the European Parliament and the Council have both informed the Commission that they will not object. That period shall be extended by two months at the initiative of the European Parliament or of the Council." ;
+    rrmv:hasUri "32024R0900/028.006"^^xsd:anyURI ;
+    rrmv:produces rrmv:Action2832024R0900 ;
+    dcterms:isPartOf "32024R0900"^^xsd:anyURI .
+
+rrmv:Role rrmv:hasType rrmv:RoleType .
+
+rrmv:bearer rrmv:subClassOf rrmv:RoleType .
+
+rrmv:Action0032024R0900 a rrmv:Action ;
+    rrmv:hasActionResult rrmv:ActionResult032024R0900 ;
+    rrmv:hasAnnotation "That information shall be transmitted in a complete and accurate manner and without undue delay." .
+
+rrmv:Action0132024R0900 a rrmv:Action ;
+    rrmv:hasAnnotation "Where a sponsor, or a provider of advertising services acting on behalf of a sponsor, becomes aware that any information transmitted to or published by the political advertising publisher is incomplete or inaccurate, it shall contact, without undue delay, the political advertising publisher concerned and shall transmit completed or corrected information to that political advertising publisher." .
+
+rrmv:Action0232024R0900 a rrmv:Action ;
+    rrmv:atTime rrmv:PeriodOfTime232024R0900 ;
+    rrmv:hasActionResult rrmv:ActionResult232024R0900 ;
+    rrmv:hasAgentRole rrmv:Action2AgentRoleAddressee032024R0900,
+        rrmv:Action2AgentRoleAddressee132024R0900,
+        rrmv:Action2AgentRoleAddressee232024R0900,
+        rrmv:Action2AgentRoleAddressee332024R0900,
+        rrmv:Action2AgentRoleAddressee432024R0900,
+        rrmv:Action2AgentRoleAddressee532024R0900,
+        rrmv:Action2AgentRoleAddresser032024R0900,
+        rrmv:Action2AgentRoleAddresser132024R0900 ;
+    rrmv:hasAnnotation "Each provider of political advertising services shall transmit the information referred to in the first subparagraph during the provision of the relevant service and in accordance with best practice and industry standards and, where technically possible, by means of a standardised automated process." .
+
+rrmv:Action0332024R0900 a rrmv:Action ;
+    rrmv:hasActionResult rrmv:ActionResult332024R0900 ;
+    rrmv:hasAgentRole rrmv:Action3AgentRoleAddressee032024R0900,
+        rrmv:Action3AgentRoleAddresser032024R0900 ;
+    rrmv:hasAnnotation "When the political advertising publisher is the only provider of political advertising services, the sponsor shall transmit the relevant information to the political advertising publisher." .
+
+rrmv:Action0432024R0900 a rrmv:Action ;
+    rrmv:hasAnnotation "Where the provider of political advertising services becomes aware that any information transmitted to or published by the political advertising publisher is incomplete or inaccurate, it shall contact, without undue delay, the political advertising publisher concerned and shall transmit completed or corrected information to that political advertising publisher." .
+
+rrmv:Action0532024R0900 a rrmv:Action ;
+    rrmv:hasActionResult rrmv:ActionResult532024R0900 ;
+    rrmv:hasAgentRole rrmv:Action5AgentRoleAddresser032024R0900 ;
+    rrmv:hasAnnotation "The political advertising publisher shall without undue delay inform the sponsors or the providers of political advertising services concerned about any decisions under the fifth subparagraph of this paragraph." .
+
+rrmv:Action0632024R0900 a rrmv:Action ;
+    rrmv:atTime rrmv:PeriodOfTime632024R0900 ;
+    rrmv:hasActionResult rrmv:ActionResult632024R0900 ;
+    rrmv:hasAgentRole rrmv:Action6AgentRoleAddressee032024R0900,
+        rrmv:Action6AgentRoleAddressee132024R0900,
+        rrmv:Action6AgentRoleAddressee232024R0900,
+        rrmv:Action6AgentRoleAddressee332024R0900,
+        rrmv:Action6AgentRoleAddressee432024R0900,
+        rrmv:Action6AgentRoleAddressee532024R0900,
+        rrmv:Action6AgentRoleAddresser032024R0900 ;
+    rrmv:hasAnnotation "In addition, those political advertising publishers shall enable access to that information through the European repository from the moment of publication and for the entire period during which they present the political advertisement and for seven years after the political advertisement was last presented on their online interfaces." .
+
+rrmv:Action0732024R0900 a rrmv:Action ;
+    rrmv:hasActionResult rrmv:ActionResult732024R0900 ;
+    rrmv:hasAgentRole rrmv:Action7AgentRoleAddressee032024R0900,
+        rrmv:Action7AgentRoleAddresser032024R0900 ;
+    rrmv:hasAnnotation "Political advertising publishers shall without undue delay send a confirmation of receipt of the notification received pursuant to paragraph 1 to the natural or legal person who submitted it." .
+
+rrmv:Action0832024R0900 a rrmv:Action ;
+    rrmv:atTime rrmv:PeriodOfTime832024R0900 ;
+    rrmv:hasAgentRole rrmv:Action8AgentRoleAddressee032024R0900,
+        rrmv:Action8AgentRoleAddresser032024R0900 ;
+    rrmv:hasAnnotation "Political advertising publishers shall without undue delay inform the sponsors or providers of political advertising services concerned of any measures they take following notifications made under this Article, that affect the availability or the presentation of the political advertisement concerned." .
+
+rrmv:Action0932024R0900 a rrmv:Action ;
+    rrmv:hasActionResult rrmv:ActionResult932024R0900 ;
+    rrmv:hasAnnotation "Where technically possible, the information shall be transmitted in a standardised and machine-readable format." .
+
+rrmv:Action1032024R0900 a rrmv:Action ;
+    rrmv:atTime rrmv:PeriodOfTime1032024R0900 ;
+    rrmv:hasActionResult rrmv:ActionResult1032024R0900 ;
+    rrmv:hasAgentRole rrmv:Action10AgentRoleAddresser032024R0900,
+        rrmv:Action10AgentRoleAddresser132024R0900 ;
+    rrmv:hasAnnotation "Upon receipt of a request pursuant to paragraph 1 of this Article, providers of political advertising services shall, within two working days, acknowledge receipt of that request and inform the national competent authority of the steps taken to comply with it." .
+
+rrmv:Action10AgentRoleAddresser032024R0900 a rrmv:AgentRole ;
+    rrmv:forAgent eli:Agent2032024R0900 ;
+    rrmv:withRole rrmv:addresser .
+
+rrmv:Action10AgentRoleAddresser132024R0900 a rrmv:AgentRole ;
+    rrmv:forAgent eli:Agent132024R0900 ;
+    rrmv:withRole rrmv:addresser .
+
+rrmv:Action1132024R0900 a rrmv:Action ;
+    rrmv:hasAgentRole rrmv:Action11AgentRoleAddresser032024R0900,
+        rrmv:Action11AgentRoleAddresser132024R0900 ;
+    rrmv:hasAnnotation "At the request of interested entities, providers of political advertising services shall transmit promptly and free of charge, and where technically possible in a machine-readable format, to those entities the information that those providers of political advertising services are required to have pursuant to Articles 9, 11 and 12." .
+
+rrmv:Action11AgentRoleAddresser032024R0900 a rrmv:AgentRole ;
+    rrmv:forAgent eli:Agent2032024R0900 ;
+    rrmv:withRole rrmv:addresser .
+
+rrmv:Action11AgentRoleAddresser132024R0900 a rrmv:AgentRole ;
+    rrmv:forAgent eli:Agent132024R0900 ;
+    rrmv:withRole rrmv:addresser .
+
+rrmv:Action1232024R0900 a rrmv:Action ;
+    rrmv:hasActionResult rrmv:ActionResult1232024R0900 ;
+    rrmv:hasAgentRole rrmv:Action12AgentRoleAddressee032024R0900,
+        rrmv:Action12AgentRoleAddressee132024R0900,
+        rrmv:Action12AgentRoleAddressee232024R0900,
+        rrmv:Action12AgentRoleAddresser032024R0900,
+        rrmv:Action12AgentRoleAddresser132024R0900 ;
+    rrmv:hasAnnotation "In such cases, the provider of political advertising services shall send a reasoned response to the interested entity making the request along with information on the possibilities for redress, including, where applicable, those that exist under Directive (EU) 2020/1828." .
+
+rrmv:Action12AgentRoleAddressee032024R0900 a rrmv:AgentRole ;
+    rrmv:forAgent eli:Agent2232024R0900 ;
+    rrmv:withRole rrmv:addressee .
+
+rrmv:Action12AgentRoleAddressee132024R0900 a rrmv:AgentRole ;
+    rrmv:forAgent eli:Agent2332024R0900 ;
+    rrmv:withRole rrmv:addressee .
+
+rrmv:Action12AgentRoleAddressee232024R0900 a rrmv:AgentRole ;
+    rrmv:forAgent eli:Agent2432024R0900 ;
+    rrmv:withRole rrmv:addressee .
+
+rrmv:Action12AgentRoleAddresser032024R0900 a rrmv:AgentRole ;
+    rrmv:forAgent eli:Agent2132024R0900 ;
+    rrmv:withRole rrmv:addresser .
+
+rrmv:Action12AgentRoleAddresser132024R0900 a rrmv:AgentRole ;
+    rrmv:forAgent eli:Agent132024R0900 ;
+    rrmv:withRole rrmv:addresser .
+
+rrmv:Action1332024R0900 a rrmv:Action ;
+    rrmv:hasAgentRole rrmv:Action13AgentRoleAddresser032024R0900 ;
+    rrmv:hasAnnotation "Where the controller is different from the political advertising publisher, the controller shall ensure that the information referred to in paragraph 1, points (c) and (e), is communicated to the political advertising publisher to enable the political advertising publisher to comply with its obligations under this Regulation." .
+
+rrmv:Action13AgentRoleAddresser032024R0900 a rrmv:AgentRole ;
+    rrmv:forAgent eli:Agent2532024R0900 ;
+    rrmv:withRole rrmv:addresser .
+
+rrmv:Action1432024R0900 a rrmv:Action ;
+    rrmv:hasActionResult rrmv:ActionResult1432024R0900 ;
+    rrmv:hasAnnotation "The information shall be transmitted in a timely and accurate manner, in accordance with best practice and industry standards by means of a standardised automated process, where that is technically possible." .
+
+rrmv:Action1532024R0900 a rrmv:Action ;
+    rrmv:hasActionResult rrmv:ActionResult1532024R0900 ;
+    rrmv:hasAgentRole rrmv:Action15AgentRoleAddressee032024R0900,
+        rrmv:Action15AgentRoleAddresser032024R0900,
+        rrmv:Action15AgentRoleAddresser132024R0900 ;
+    rrmv:hasAnnotation "Providers of political advertising services shall, as necessary, transmit to the controllers the information necessary to comply with paragraphs 1 and 2." .
+
+rrmv:Action15AgentRoleAddressee032024R0900 a rrmv:AgentRole ;
+    rrmv:forAgent eli:Agent2632024R0900 ;
+    rrmv:withRole rrmv:addressee .
+
+rrmv:Action15AgentRoleAddresser032024R0900 a rrmv:AgentRole ;
+    rrmv:forAgent eli:Agent2032024R0900 ;
+    rrmv:withRole rrmv:addresser .
+
+rrmv:Action15AgentRoleAddresser132024R0900 a rrmv:AgentRole ;
+    rrmv:forAgent eli:Agent132024R0900 ;
+    rrmv:withRole rrmv:addresser .
+
+rrmv:Action1632024R0900 a rrmv:Action ;
+    rrmv:hasActionResult rrmv:ActionResult1632024R0900 ;
+    rrmv:hasAnnotation "Information to be provided in accordance with paragraph 1, points (c) and (e), and paragraphs 2 and 3 shall be presented in a format that is easily accessible and, where technically feasible, that is also machine-readable, clearly visible and user-friendly, including through the use of plain language." .
+
+rrmv:Action1732024R0900 a rrmv:Action ;
+    rrmv:hasActionResult rrmv:ActionResult1732024R0900 ;
+    rrmv:hasAgentRole rrmv:Action17AgentRoleAddressee032024R0900,
+        rrmv:Action17AgentRoleAddresser032024R0900 ;
+    rrmv:hasAnnotation "For that purpose, service providers shall submit the name, postal address, email address and telephone number of their legal representative to that competent authority." .
+
+rrmv:Action17AgentRoleAddressee032024R0900 a rrmv:AgentRole ;
+    rrmv:forAgent eli:Agent2832024R0900 ;
+    rrmv:withRole rrmv:addressee .
+
+rrmv:Action17AgentRoleAddresser032024R0900 a rrmv:AgentRole ;
+    rrmv:forAgent eli:Agent2732024R0900 ;
+    rrmv:withRole rrmv:addresser .
+
+rrmv:Action1832024R0900 a rrmv:Action ;
+    rrmv:hasActionResult rrmv:ActionResult1832024R0900 ;
+    rrmv:hasAnnotation "Where a national competent authority of a Member State has reason to suspect that this Regulation has been infringed in its territory, it shall notify the competent authority of the main establishment of the provider and request it, where appropriate, to assess the matter and to take the necessary investigatory and enforcement measures referred to in paragraph 7." .
+
+rrmv:Action1932024R0900 a rrmv:Action ;
+    rrmv:hasActionResult rrmv:ActionResult1932024R0900 ;
+    rrmv:hasAnnotation "A notification pursuant to paragraph 4 shall be substantiated, duly reasoned and proportionate and at least indicate: (a) the information allowing the identification of the sponsor or provider of political advertising services; (b) a description of the relevant facts, the relevant provisions of this Regulation and the reasons why the notifying competent authority suspects an infringement of this Regulation, including, as relevant, a description of the circumstances allowing the assessment of the criteria set out in Article 25(4); (c) information on where the relevant political advertisement or a copy of it can be retrieved; (d) any other information that the notifying competent authority considers relevant, including, where appropriate, information gathered on its own initiative." .
+
+rrmv:Action2032024R0900 a rrmv:Action ;
+    rrmv:hasActionResult rrmv:ActionResult2032024R0900 ;
+    rrmv:hasAgentRole rrmv:Action20AgentRoleAddresser032024R0900,
+        rrmv:Action20AgentRoleAddresser132024R0900 ;
+    rrmv:hasAnnotation "Competent authorities carrying out a joint investigation shall inform each other of any relevant enforcement measure which they initiate or intend to initiate." .
+
+rrmv:Action20AgentRoleAddresser032024R0900 a rrmv:AgentRole ;
+    rrmv:forAgent eli:Agent2932024R0900 ;
+    rrmv:withRole rrmv:addresser .
+
+rrmv:Action20AgentRoleAddresser132024R0900 a rrmv:AgentRole ;
+    rrmv:forAgent eli:Agent3032024R0900 ;
+    rrmv:withRole rrmv:addresser .
+
+rrmv:Action2132024R0900 a rrmv:Action ;
+    rrmv:hasActionResult rrmv:ActionResult2132024R0900 ;
+    rrmv:hasAgentRole rrmv:Action21AgentRoleAddresser032024R0900 ;
+    rrmv:hasAnnotation "Without prejudice to other administrative procedures or judicial remedies, competent authorities shall duly address every notification of possible infringements of this Regulation and, upon request, inform the person or entity who made the notification of the follow up." .
+
+rrmv:Action21AgentRoleAddresser032024R0900 a rrmv:AgentRole ;
+    rrmv:forAgent eli:Agent2932024R0900 ;
+    rrmv:withRole rrmv:addresser .
+
+rrmv:Action2232024R0900 a rrmv:Action ;
+    rrmv:atTime rrmv:PeriodOfTime2232024R0900 ;
+    rrmv:hasActionResult rrmv:ActionResult2232024R0900 ;
+    rrmv:hasAgentRole rrmv:Action22AgentRoleAddressee032024R0900,
+        rrmv:Action22AgentRoleAddresser032024R0900 ;
+    rrmv:hasAnnotation "Competent authorities shall without undue delay transmit complaints that fall within the competence of another competent authority in another Member State to that competent authority." .
+
+rrmv:Action22AgentRoleAddressee032024R0900 a rrmv:AgentRole ;
+    rrmv:forAgent eli:Agent2832024R0900 ;
+    rrmv:withRole rrmv:addressee .
+
+rrmv:Action22AgentRoleAddresser032024R0900 a rrmv:AgentRole ;
+    rrmv:forAgent eli:Agent2932024R0900 ;
+    rrmv:withRole rrmv:addresser .
+
+rrmv:Action2332024R0900 a rrmv:Action ;
+    rrmv:hasActionResult rrmv:ActionResult2332024R0900 ;
+    rrmv:hasAgentRole rrmv:Action23AgentRoleAddresser032024R0900 ;
+    rrmv:hasAnnotation "Member States shall, by 10 January 2026, notify the Commission of those rules and of those measures and shall notify it, without delay, of any subsequent amendments affecting them." .
+
+rrmv:Action23AgentRoleAddresser032024R0900 a rrmv:AgentRole ;
+    rrmv:forAgent eli:Agent3132024R0900 ;
+    rrmv:withRole rrmv:addresser .
+
+rrmv:Action2432024R0900 a rrmv:Action ;
+    rrmv:hasActionResult rrmv:ActionResult2432024R0900 ;
+    rrmv:hasAgentRole rrmv:Action24AgentRoleAddressee032024R0900,
+        rrmv:Action24AgentRoleAddresser032024R0900 ;
+    rrmv:hasAnnotation "Member States shall report annually to the Commission on the sanctions imposed to enforce the provisions of this Regulation, in particular on the type of sanctions applied and the amount of the fines and financial penalties." .
+
+rrmv:Action24AgentRoleAddressee032024R0900 a rrmv:AgentRole ;
+    rrmv:forAgent eli:Agent3232024R0900 ;
+    rrmv:withRole rrmv:addressee .
+
+rrmv:Action24AgentRoleAddresser032024R0900 a rrmv:AgentRole ;
+    rrmv:forAgent eli:Agent3132024R0900 ;
+    rrmv:withRole rrmv:addresser .
+
+rrmv:Action2532024R0900 a rrmv:Action ;
+    rrmv:hasActionResult rrmv:ActionResult2532024R0900 ;
+    rrmv:hasAgentRole rrmv:Action25AgentRoleAddressee032024R0900,
+        rrmv:Action25AgentRoleAddresser032024R0900 ;
+    rrmv:hasAnnotation "Member States shall publish the dates of their elections and referendums and, where applicable, of their electoral periods, in an easily accessible place, and with an appropriate reference to this Regulation." .
+
+rrmv:Action25AgentRoleAddressee032024R0900 a rrmv:AgentRole ;
+    rrmv:forAgent eli:Agent3332024R0900 ;
+    rrmv:withRole rrmv:addressee .
+
+rrmv:Action25AgentRoleAddresser032024R0900 a rrmv:AgentRole ;
+    rrmv:forAgent eli:Agent3132024R0900 ;
+    rrmv:withRole rrmv:addresser .
+
+rrmv:Action2632024R0900 a rrmv:Action ;
+    rrmv:atTime rrmv:PeriodOfTime2632024R0900 ;
+    rrmv:hasActionResult rrmv:ActionResult2632024R0900 ;
+    rrmv:hasAgentRole rrmv:Action26AgentRoleAddressee032024R0900,
+        rrmv:Action26AgentRoleAddressee132024R0900,
+        rrmv:Action26AgentRoleAddresser032024R0900 ;
+    rrmv:hasAnnotation "Within two years after each election to the European Parliament, the Commission shall submit a report on the evaluation and review of this Regulation to the European Parliament and to the Council." .
+
+rrmv:Action26AgentRoleAddressee032024R0900 a rrmv:AgentRole ;
+    rrmv:forAgent eli:Agent3432024R0900 ;
+    rrmv:withRole rrmv:addressee .
+
+rrmv:Action26AgentRoleAddressee132024R0900 a rrmv:AgentRole ;
+    rrmv:forAgent eli:Agent3532024R0900 ;
+    rrmv:withRole rrmv:addressee .
+
+rrmv:Action26AgentRoleAddresser032024R0900 a rrmv:AgentRole ;
+    rrmv:forAgent eli:Agent3232024R0900 ;
+    rrmv:withRole rrmv:addresser .
+
+rrmv:Action2732024R0900 a rrmv:Action ;
+    rrmv:hasActionResult rrmv:ActionResult2732024R0900 ;
+    rrmv:hasAgentRole rrmv:Action27AgentRoleAddressee032024R0900,
+        rrmv:Action27AgentRoleAddressee132024R0900,
+        rrmv:Action27AgentRoleAddresser032024R0900 ;
+    rrmv:hasAnnotation "As soon as it adopts a delegated act, the Commission shall notify that act simultaneously to the European Parliament and to the Council." .
+
+rrmv:Action27AgentRoleAddressee032024R0900 a rrmv:AgentRole ;
+    rrmv:forAgent eli:Agent3432024R0900 ;
+    rrmv:withRole rrmv:addressee .
+
+rrmv:Action27AgentRoleAddressee132024R0900 a rrmv:AgentRole ;
+    rrmv:forAgent eli:Agent3532024R0900 ;
+    rrmv:withRole rrmv:addressee .
+
+rrmv:Action27AgentRoleAddresser032024R0900 a rrmv:AgentRole ;
+    rrmv:forAgent eli:Agent3232024R0900 ;
+    rrmv:withRole rrmv:addresser .
+
+rrmv:Action2832024R0900 a rrmv:Action ;
+    rrmv:atTime rrmv:PeriodOfTime2832024R0900 ;
+    rrmv:hasAgentRole rrmv:Action28AgentRoleAddressee032024R0900,
+        rrmv:Action28AgentRoleAddressee132024R0900,
+        rrmv:Action28AgentRoleAddressee232024R0900,
+        rrmv:Action28AgentRoleAddresser032024R0900 ;
+    rrmv:hasAnnotation "A delegated act adopted pursuant to Article 12(6) or Article 19(5) shall enter into force only if no objection has been expressed either by the European Parliament or by the Council within a period of two months of notification of that act to the European Parliament and the Council or if, before the expiry of that period, the European Parliament and the Council have both informed the Commission that they will not object." .
+
+rrmv:Action28AgentRoleAddressee032024R0900 a rrmv:AgentRole ;
+    rrmv:forAgent eli:Agent3732024R0900 ;
+    rrmv:withRole rrmv:addressee .
+
+rrmv:Action28AgentRoleAddressee132024R0900 a rrmv:AgentRole ;
+    rrmv:forAgent eli:Agent3832024R0900 ;
+    rrmv:withRole rrmv:addressee .
+
+rrmv:Action28AgentRoleAddressee232024R0900 a rrmv:AgentRole ;
+    rrmv:forAgent eli:Agent3732024R0900 ;
+    rrmv:withRole rrmv:addressee .
+
+rrmv:Action28AgentRoleAddresser032024R0900 a rrmv:AgentRole ;
+    rrmv:forAgent eli:Agent3632024R0900 ;
+    rrmv:withRole rrmv:addresser .
+
+rrmv:Action2AgentRoleAddressee032024R0900 a rrmv:AgentRole ;
+    rrmv:forAgent eli:Agent232024R0900 ;
+    rrmv:withRole rrmv:addressee .
+
+rrmv:Action2AgentRoleAddressee132024R0900 a rrmv:AgentRole ;
+    rrmv:forAgent eli:Agent332024R0900 ;
+    rrmv:withRole rrmv:addressee .
+
+rrmv:Action2AgentRoleAddressee232024R0900 a rrmv:AgentRole ;
+    rrmv:forAgent eli:Agent432024R0900 ;
+    rrmv:withRole rrmv:addressee .
+
+rrmv:Action2AgentRoleAddressee332024R0900 a rrmv:AgentRole ;
+    rrmv:forAgent eli:Agent532024R0900 ;
+    rrmv:withRole rrmv:addressee .
+
+rrmv:Action2AgentRoleAddressee432024R0900 a rrmv:AgentRole ;
+    rrmv:forAgent eli:Agent632024R0900 ;
+    rrmv:withRole rrmv:addressee .
+
+rrmv:Action2AgentRoleAddressee532024R0900 a rrmv:AgentRole ;
+    rrmv:forAgent eli:Agent732024R0900 ;
+    rrmv:withRole rrmv:addressee .
+
+rrmv:Action2AgentRoleAddresser032024R0900 a rrmv:AgentRole ;
+    rrmv:forAgent eli:Agent032024R0900 ;
+    rrmv:withRole rrmv:addresser .
+
+rrmv:Action2AgentRoleAddresser132024R0900 a rrmv:AgentRole ;
+    rrmv:forAgent eli:Agent132024R0900 ;
+    rrmv:withRole rrmv:addresser .
+
+rrmv:Action3AgentRoleAddressee032024R0900 a rrmv:AgentRole ;
+    rrmv:forAgent eli:Agent932024R0900 ;
+    rrmv:withRole rrmv:addressee .
+
+rrmv:Action3AgentRoleAddresser032024R0900 a rrmv:AgentRole ;
+    rrmv:forAgent eli:Agent832024R0900 ;
+    rrmv:withRole rrmv:addresser .
+
+rrmv:Action5AgentRoleAddresser032024R0900 a rrmv:AgentRole ;
+    rrmv:forAgent eli:Agent932024R0900 ;
+    rrmv:withRole rrmv:addresser .
+
+rrmv:Action6AgentRoleAddressee032024R0900 a rrmv:AgentRole ;
+    rrmv:forAgent eli:Agent1132024R0900 ;
+    rrmv:withRole rrmv:addressee .
+
+rrmv:Action6AgentRoleAddressee132024R0900 a rrmv:AgentRole ;
+    rrmv:forAgent eli:Agent1232024R0900 ;
+    rrmv:withRole rrmv:addressee .
+
+rrmv:Action6AgentRoleAddressee232024R0900 a rrmv:AgentRole ;
+    rrmv:forAgent eli:Agent1332024R0900 ;
+    rrmv:withRole rrmv:addressee .
+
+rrmv:Action6AgentRoleAddressee332024R0900 a rrmv:AgentRole ;
+    rrmv:forAgent eli:Agent1432024R0900 ;
+    rrmv:withRole rrmv:addressee .
+
+rrmv:Action6AgentRoleAddressee432024R0900 a rrmv:AgentRole ;
+    rrmv:forAgent eli:Agent1532024R0900 ;
+    rrmv:withRole rrmv:addressee .
+
+rrmv:Action6AgentRoleAddressee532024R0900 a rrmv:AgentRole ;
+    rrmv:forAgent eli:Agent1632024R0900 ;
+    rrmv:withRole rrmv:addressee .
+
+rrmv:Action6AgentRoleAddresser032024R0900 a rrmv:AgentRole ;
+    rrmv:forAgent eli:Agent1032024R0900 ;
+    rrmv:withRole rrmv:addresser .
+
+rrmv:Action7AgentRoleAddressee032024R0900 a rrmv:AgentRole ;
+    rrmv:forAgent eli:Agent1832024R0900 ;
+    rrmv:withRole rrmv:addressee .
+
+rrmv:Action7AgentRoleAddresser032024R0900 a rrmv:AgentRole ;
+    rrmv:forAgent eli:Agent1732024R0900 ;
+    rrmv:withRole rrmv:addresser .
+
+rrmv:Action8AgentRoleAddressee032024R0900 a rrmv:AgentRole ;
+    rrmv:forAgent eli:Agent1932024R0900 ;
+    rrmv:withRole rrmv:addressee .
+
+rrmv:Action8AgentRoleAddresser032024R0900 a rrmv:AgentRole ;
+    rrmv:forAgent eli:Agent1732024R0900 ;
+    rrmv:withRole rrmv:addresser .
+
+rrmv:ActionResult032024R0900 a rrmv:ActionResult ;
+    rrmv:hasAnnotation "That information" .
+
+rrmv:ActionResult1032024R0900 a rrmv:ActionResult ;
+    rrmv:hasAnnotation "the national competent authority of the steps taken to comply with it" .
+
+rrmv:ActionResult1232024R0900 a rrmv:ActionResult ;
+    rrmv:hasAnnotation "a reasoned response on the possibilities for redress, including, where applicable, those that exist under Directive (EU) 2020/1828" .
+
+rrmv:ActionResult1432024R0900 a rrmv:ActionResult ;
+    rrmv:hasAnnotation "The information" .
+
+rrmv:ActionResult1532024R0900 a rrmv:ActionResult ;
+    rrmv:hasAnnotation "the information necessary to comply with paragraphs 1 and 2" .
+
+rrmv:ActionResult1632024R0900 a rrmv:ActionResult ;
+    rrmv:hasAnnotation "Information" .
+
+rrmv:ActionResult1732024R0900 a rrmv:ActionResult ;
+    rrmv:hasAnnotation "the name, postal address, email address and telephone number of their legal representative" .
+
+rrmv:ActionResult1832024R0900 a rrmv:ActionResult ;
+    rrmv:hasAnnotation "the competent authority of the main establishment of the provider" .
+
+rrmv:ActionResult1932024R0900 a rrmv:ActionResult ;
+    rrmv:hasAnnotation "A notification pursuant to paragraph 4" .
+
+rrmv:ActionResult2032024R0900 a rrmv:ActionResult ;
+    rrmv:hasAnnotation "each other of any relevant enforcement measure which they initiate or intend to initiate" .
+
+rrmv:ActionResult2132024R0900 a rrmv:ActionResult ;
+    rrmv:hasAnnotation "every notification of possible infringements of this Regulation and" .
+
+rrmv:ActionResult2232024R0900 a rrmv:ActionResult ;
+    rrmv:hasAnnotation "complaints that fall within the competence of another competent authority in another Member State" .
+
+rrmv:ActionResult232024R0900 a rrmv:ActionResult ;
+    rrmv:hasAnnotation "the information referred" .
+
+rrmv:ActionResult2332024R0900 a rrmv:ActionResult ;
+    rrmv:hasAnnotation "the Commission of those rules" .
+
+rrmv:ActionResult2432024R0900 a rrmv:ActionResult ;
+    rrmv:hasAnnotation "on the sanctions imposed to enforce the provisions of this Regulation, in particular on the type of sanctions applied and the amount of the fines and financial penalties" .
+
+rrmv:ActionResult2532024R0900 a rrmv:ActionResult ;
+    rrmv:hasAnnotation "the dates of their elections and referendums and, where applicable, of their electoral periods, in an easily accessible place, and with an appropriate reference" .
+
+rrmv:ActionResult2632024R0900 a rrmv:ActionResult ;
+    rrmv:hasAnnotation "a report on the evaluation and review of this Regulation" .
+
+rrmv:ActionResult2732024R0900 a rrmv:ActionResult ;
+    rrmv:hasAnnotation "that act" .
+
+rrmv:ActionResult332024R0900 a rrmv:ActionResult ;
+    rrmv:hasAnnotation "the relevant information" .
+
+rrmv:ActionResult532024R0900 a rrmv:ActionResult ;
+    rrmv:hasAnnotation "the sponsors or the providers of political advertising services" .
+
+rrmv:ActionResult632024R0900 a rrmv:ActionResult ;
+    rrmv:hasAnnotation "access" .
+
+rrmv:ActionResult732024R0900 a rrmv:ActionResult ;
+    rrmv:hasAnnotation "a confirmation of receipt of the notification received pursuant" .
+
+rrmv:ActionResult932024R0900 a rrmv:ActionResult ;
+    rrmv:hasAnnotation "the information" .
+
+rrmv:PeriodOfTime1032024R0900 a cccev:PeriodOfTime ;
+    rrmv:hasAnnotation "within two working days" .
+
+rrmv:PeriodOfTime2232024R0900 a cccev:PeriodOfTime ;
+    rrmv:hasAnnotation "within the competence of another competent authority in another Member State" .
+
+rrmv:PeriodOfTime232024R0900 a cccev:PeriodOfTime ;
+    rrmv:hasAnnotation "during the provision of the relevant service and in accordance with best practice and industry standards and , where technically possible" .
+
+rrmv:PeriodOfTime2632024R0900 a cccev:PeriodOfTime ;
+    rrmv:hasAnnotation "Within two years after each election to the European Parliament" .
+
+rrmv:PeriodOfTime2832024R0900 a cccev:PeriodOfTime ;
+    rrmv:hasAnnotation "within a period of two months of notification of that act to the European Parliament and the Council or before the expiry of that period" .
+
+rrmv:PeriodOfTime632024R0900 a cccev:PeriodOfTime ;
+    rrmv:hasAnnotation "for the entire period during which they present the political advertisement and for seven years after" .
+
+rrmv:PeriodOfTime832024R0900 a cccev:PeriodOfTime ;
+    rrmv:hasAnnotation "following notifications made under this Article" .
+
+eli:Agent032024R0900 a eli:Agent ;
+    eli:hasAnnotation "each_provider" .
+
+eli:Agent1032024R0900 a eli:Agent ;
+    eli:hasAnnotation "those_political_advertising_publishers" .
+
+eli:Agent1132024R0900 a eli:Agent ;
+    eli:hasAnnotation "that_information" .
+
+eli:Agent1232024R0900 a eli:Agent ;
+    eli:hasAnnotation "the_european_repository" .
+
+eli:Agent1332024R0900 a eli:Agent ;
+    eli:hasAnnotation "the_moment" .
+
+eli:Agent1432024R0900 a eli:Agent ;
+    eli:hasAnnotation "publication" .
+
+eli:Agent1532024R0900 a eli:Agent ;
+    eli:hasAnnotation "the_entire_period" .
+
+eli:Agent1632024R0900 a eli:Agent ;
+    eli:hasAnnotation "the_political_advertisement" .
+
+eli:Agent1832024R0900 a eli:Agent ;
+    eli:hasAnnotation "the_natural_or_legal_person" .
+
+eli:Agent1932024R0900 a eli:Agent ;
+    eli:hasAnnotation "undue_delay" .
+
+eli:Agent2132024R0900 a eli:Agent ;
+    eli:hasAnnotation "the_provider" .
+
+eli:Agent2232024R0900 a eli:Agent ;
+    eli:hasAnnotation "the_interested_entity" .
+
+eli:Agent232024R0900 a eli:Agent ;
+    eli:hasAnnotation "the_first_subparagraph" .
+
+eli:Agent2332024R0900 a eli:Agent ;
+    eli:hasAnnotation "the_request" .
+
+eli:Agent2432024R0900 a eli:Agent ;
+    eli:hasAnnotation "information" .
+
+eli:Agent2532024R0900 a eli:Agent ;
+    eli:hasAnnotation "the_controller" .
+
+eli:Agent2632024R0900 a eli:Agent ;
+    eli:hasAnnotation "the_controllers" .
+
+eli:Agent2732024R0900 a eli:Agent ;
+    eli:hasAnnotation "service_providers" .
+
+eli:Agent3032024R0900 a eli:Agent ;
+    eli:hasAnnotation "a_joint_investigation" .
+
+eli:Agent332024R0900 a eli:Agent ;
+    eli:hasAnnotation "the_provision" .
+
+eli:Agent3332024R0900 a eli:Agent ;
+    eli:hasAnnotation "this_regulation" .
+
+eli:Agent3632024R0900 a eli:Agent ;
+    eli:hasAnnotation "a_delegated_act" .
+
+eli:Agent3832024R0900 a eli:Agent ;
+    eli:hasAnnotation "12(6" .
+
+eli:Agent432024R0900 a eli:Agent ;
+    eli:hasAnnotation "the_relevant_service" .
+
+eli:Agent532024R0900 a eli:Agent ;
+    eli:hasAnnotation "accordance" .
+
+eli:Agent632024R0900 a eli:Agent ;
+    eli:hasAnnotation "best_practice" .
+
+eli:Agent732024R0900 a eli:Agent ;
+    eli:hasAnnotation "industry_standards" .
+
+eli:Agent832024R0900 a eli:Agent ;
+    eli:hasAnnotation "the_sponsor" .
+
+eli:Agent1732024R0900 a eli:Agent ;
+    eli:hasAnnotation "political_advertising_publishers" .
+
+eli:Agent2832024R0900 a eli:Agent ;
+    eli:hasAnnotation "that_competent_authority" .
+
+eli:Agent3432024R0900 a eli:Agent ;
+    eli:hasAnnotation "the_european_parliament" .
+
+eli:Agent3532024R0900 a eli:Agent ;
+    eli:hasAnnotation "the_council" .
+
+eli:Agent3732024R0900 a eli:Agent ;
+    eli:hasAnnotation "article" .
+
+eli:Agent932024R0900 a eli:Agent ;
+    eli:hasAnnotation "the_political_advertising_publisher" .
+
+eli:Agent2032024R0900 a eli:Agent ;
+    eli:hasAnnotation "providers" .
+
+eli:Agent2932024R0900 a eli:Agent ;
+    eli:hasAnnotation "competent_authorities" .
+
+eli:Agent3132024R0900 a eli:Agent ;
+    eli:hasAnnotation "member_states" .
+
+eli:Agent3232024R0900 a eli:Agent ;
+    eli:hasAnnotation "the_commission" .
+
+eli:Agent132024R0900 a eli:Agent ;
+    eli:hasAnnotation "political_advertising_services" .
+
+rrmv:addresser rdfs:subClassOf rrmv:RoleType .
+
+rrmv:addressee rdfs:subClassOf rrmv:RoleType .
+

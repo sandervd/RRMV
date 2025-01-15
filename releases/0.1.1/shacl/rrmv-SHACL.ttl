@@ -1,0 +1,648 @@
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix shacl: <http://www.w3.org/ns/shacl#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://semiceu.github.io/RRMV/releases/0.0.2> rdfs:member <https://semiceu.github.io/RRMV/releases/0.0.2#ActionShape>,
+    <https://semiceu.github.io/RRMV/releases/0.0.2#ActionResultShape>,
+    <https://semiceu.github.io/RRMV/releases/0.0.2#AgentRoleShape>,
+    <https://semiceu.github.io/RRMV/releases/0.0.2#AgentTypeShape>,
+    <https://semiceu.github.io/RRMV/releases/0.0.2#FrequencyShape>,
+    <https://semiceu.github.io/RRMV/releases/0.0.2#RequestShape>,
+    <https://semiceu.github.io/RRMV/releases/0.0.2#ResultTypeShape>,
+    <https://semiceu.github.io/RRMV/releases/0.0.2#RoleShape>,
+    <https://semiceu.github.io/RRMV/releases/0.0.2#RoleTypeShape>,
+    <https://semiceu.github.io/RRMV/releases/0.0.2#StatusShape>,
+    <https://semiceu.github.io/RRMV/releases/0.0.2#TemporalFunctionShape>,
+    <https://semiceu.github.io/RRMV/releases/0.0.2#AgentShape>,
+    <https://semiceu.github.io/RRMV/releases/0.0.2#ExpressionShape>,
+    <https://semiceu.github.io/RRMV/releases/0.0.2#ManifestationShape>,
+    <https://semiceu.github.io/RRMV/releases/0.0.2#OrganizationShape>,
+    <https://semiceu.github.io/RRMV/releases/0.0.2#PersonShape>,
+    <https://semiceu.github.io/RRMV/releases/0.0.2#WorkShape>,
+    <https://semiceu.github.io/RRMV/releases/0.0.2#LangStringShape>,
+    <https://semiceu.github.io/RRMV/releases/0.0.2#rdfs:LiteralShape>,
+    <https://semiceu.github.io/RRMV/releases/0.0.2#xsd:anyURIShape>,
+    <https://semiceu.github.io/RRMV/releases/0.0.2#xsd:booleanShape>,
+    <https://semiceu.github.io/RRMV/releases/0.0.2#xsd:stringShape>,
+    <https://semiceu.github.io/RRMV/releases/0.0.2#skos:ConceptShape>,
+    <https://semiceu.github.io/RRMV/releases/0.0.2#InstantShape>,
+    <https://semiceu.github.io/RRMV/releases/0.0.2#PeriodOfTimeShape>,
+    <https://semiceu.github.io/RRMV/releases/0.0.2#TemporalDurationShape> .
+
+<https://semiceu.github.io/RRMV/releases/0.0.2#ActionResultShape> a shacl:NodeShape;
+  shacl:closed false;
+  shacl:property <https://semiceu.github.io/RRMV/releases/0.0.2#ActionResultShape/26de3103378473bd7e70743bb33391753f1e6cbd>,
+    <https://semiceu.github.io/RRMV/releases/0.0.2#ActionResultShape/42b85e7761355839394a64b53dfe84ad3337e468>,
+    <https://semiceu.github.io/RRMV/releases/0.0.2#ActionResultShape/50ecc5949fdf82de52aadf3da1bdb127a673ccda>,
+    <https://semiceu.github.io/RRMV/releases/0.0.2#ActionResultShape/6bbe3fb4d478d3b403f521e6015063374b5b20f5>,
+    <https://semiceu.github.io/RRMV/releases/0.0.2#ActionResultShape/73346d19590bfb11fb7f63af0fad3072e2df1f68>;
+  shacl:targetClass <http://data.europa.eu/2qy/rrmv#ActionResult> .
+
+<https://semiceu.github.io/RRMV/releases/0.0.2#ActionResultShape/26de3103378473bd7e70743bb33391753f1e6cbd> rdfs:seeAlso "https://semiceu.github.io/RRMV/releases/0.0.2#ActionResult.hastype";
+  shacl:description "A kind of result "@en;
+  shacl:name "has type"@en;
+  shacl:nodeKind shacl:BlankNodeOrIRI;
+  shacl:path <http://data.europa.eu/2qy/rrmv#hasType> .
+
+<https://semiceu.github.io/RRMV/releases/0.0.2#ActionResultShape/42b85e7761355839394a64b53dfe84ad3337e468> rdfs:seeAlso "https://semiceu.github.io/RRMV/releases/0.0.2#ActionResult.hastitle";
+  shacl:description "Title of the action result"@en;
+  shacl:name "has title"@en;
+  shacl:path dc:title;
+  shacl:uniqueLang true .
+
+<https://semiceu.github.io/RRMV/releases/0.0.2#ActionResultShape/50ecc5949fdf82de52aadf3da1bdb127a673ccda> rdfs:seeAlso "https://semiceu.github.io/RRMV/releases/0.0.2#ActionResult.hastitle";
+  shacl:datatype rdf:langString;
+  shacl:description "Title of the action result"@en;
+  shacl:name "has title"@en;
+  shacl:path dc:title .
+
+<https://semiceu.github.io/RRMV/releases/0.0.2#ActionResultShape/6bbe3fb4d478d3b403f521e6015063374b5b20f5> rdfs:seeAlso "https://semiceu.github.io/RRMV/releases/0.0.2#ActionResult.hastitle";
+  shacl:description "Title of the action result"@en;
+  shacl:name "has title"@en;
+  shacl:nodeKind shacl:Literal;
+  shacl:path dc:title .
+
+<https://semiceu.github.io/RRMV/releases/0.0.2#ActionResultShape/73346d19590bfb11fb7f63af0fad3072e2df1f68> rdfs:seeAlso "https://semiceu.github.io/RRMV/releases/0.0.2#ActionResult.hastype";
+  shacl:class <http://data.europa.eu/2qy/rrmv#ResultType>;
+  shacl:description "A kind of result "@en;
+  shacl:name "has type"@en;
+  shacl:path <http://data.europa.eu/2qy/rrmv#hasType> .
+
+<https://semiceu.github.io/RRMV/releases/0.0.2#ActionShape> a shacl:NodeShape;
+  shacl:closed false;
+  shacl:property <https://semiceu.github.io/RRMV/releases/0.0.2#ActionShape/05d4136f69e729e883bf0a5148835708a27c3654>,
+    <https://semiceu.github.io/RRMV/releases/0.0.2#ActionShape/12d5122ea7d1db1a9282c128f9b1489c699aa76d>,
+    <https://semiceu.github.io/RRMV/releases/0.0.2#ActionShape/1b985546f308cffd31c56410dc5d8bdc383f3baa>,
+    <https://semiceu.github.io/RRMV/releases/0.0.2#ActionShape/3a9a6ee9942ec68c7f8e474de016891d3bfb2f61>,
+    <https://semiceu.github.io/RRMV/releases/0.0.2#ActionShape/4a6a9fcb318700b82ae41e86937a5e3081db0428>,
+    <https://semiceu.github.io/RRMV/releases/0.0.2#ActionShape/4f81f96d0d72e653cb6e4fea26c87354a8eccd1f>,
+    <https://semiceu.github.io/RRMV/releases/0.0.2#ActionShape/597c548982e1e92750a3cb4b5d331297595d2b9a>,
+    <https://semiceu.github.io/RRMV/releases/0.0.2#ActionShape/6537da8b51b86aada02d4df1e430d8e20c1b1d4e>,
+    <https://semiceu.github.io/RRMV/releases/0.0.2#ActionShape/67a37d46605206e8cd18ac245816a79bad5ec0ab>,
+    <https://semiceu.github.io/RRMV/releases/0.0.2#ActionShape/71370aa71c2cc663675602b05c87fbdff12aff59>,
+    <https://semiceu.github.io/RRMV/releases/0.0.2#ActionShape/8fe3ff2da55fb4298b1f1979e5ccea3459728cd8>,
+    <https://semiceu.github.io/RRMV/releases/0.0.2#ActionShape/93d00bcfd5ffae09c4360fa2a155c210bef0724b>,
+    <https://semiceu.github.io/RRMV/releases/0.0.2#ActionShape/fb8742fc5b67909250a08324b722838e2fb7996d>;
+  shacl:targetClass <http://data.europa.eu/2qy/rrmv#Action> .
+
+<https://semiceu.github.io/RRMV/releases/0.0.2#ActionShape/05d4136f69e729e883bf0a5148835708a27c3654> rdfs:seeAlso "https://semiceu.github.io/RRMV/releases/0.0.2#Action.hasagentrole";
+  shacl:description "The involvement of an agent in a role within this action."@en;
+  shacl:name "has agent role"@en;
+  shacl:nodeKind shacl:BlankNodeOrIRI;
+  shacl:path <http://data.europa.eu/2qy/rrmv#hasAgentRole> .
+
+<https://semiceu.github.io/RRMV/releases/0.0.2#ActionShape/12d5122ea7d1db1a9282c128f9b1489c699aa76d> rdfs:seeAlso "https://semiceu.github.io/RRMV/releases/0.0.2#Action.hasannotation";
+  shacl:description "A note added by way of comment or explanation."@en;
+  shacl:name "has annotation"@en;
+  shacl:nodeKind shacl:Literal;
+  shacl:path <http://data.europa.eu/2qy/rrmv#hasAnnotation> .
+
+<https://semiceu.github.io/RRMV/releases/0.0.2#ActionShape/1b985546f308cffd31c56410dc5d8bdc383f3baa> rdfs:seeAlso "https://semiceu.github.io/RRMV/releases/0.0.2#Action.relatedto";
+  shacl:class <http://data.europa.eu/2qy/rrmv#Action>;
+  shacl:description "Indicates a somehow related other document, not necessarily a legal resource."@en;
+  shacl:name "related to"@en;
+  shacl:path <http://data.europa.eu/eli/ontology#related_to> .
+
+<https://semiceu.github.io/RRMV/releases/0.0.2#ActionShape/3a9a6ee9942ec68c7f8e474de016891d3bfb2f61> rdfs:seeAlso "https://semiceu.github.io/RRMV/releases/0.0.2#Action.hasnext";
+  shacl:description "A succeeding action "@en;
+  shacl:name "has next"@en;
+  shacl:nodeKind shacl:BlankNodeOrIRI;
+  shacl:path <http://data.europa.eu/2qy/rrmv#hasNext> .
+
+<https://semiceu.github.io/RRMV/releases/0.0.2#ActionShape/4a6a9fcb318700b82ae41e86937a5e3081db0428> rdfs:seeAlso "https://semiceu.github.io/RRMV/releases/0.0.2#Action.hasagentrole";
+  shacl:class <http://data.europa.eu/2qy/rrmv#AgentRole>;
+  shacl:description "The involvement of an agent in a role within this action."@en;
+  shacl:name "has agent role"@en;
+  shacl:path <http://data.europa.eu/2qy/rrmv#hasAgentRole> .
+
+<https://semiceu.github.io/RRMV/releases/0.0.2#ActionShape/4f81f96d0d72e653cb6e4fea26c87354a8eccd1f> rdfs:seeAlso "https://semiceu.github.io/RRMV/releases/0.0.2#Action.hasnext";
+  shacl:class <http://data.europa.eu/2qy/rrmv#Action>;
+  shacl:description "A succeeding action "@en;
+  shacl:name "has next"@en;
+  shacl:path <http://data.europa.eu/2qy/rrmv#hasNext> .
+
+<https://semiceu.github.io/RRMV/releases/0.0.2#ActionShape/597c548982e1e92750a3cb4b5d331297595d2b9a> rdfs:seeAlso "https://semiceu.github.io/RRMV/releases/0.0.2#Action.hasresult";
+  shacl:class <http://data.europa.eu/2qy/rrmv#ActionResult>;
+  shacl:description "A result of an action."@en;
+  shacl:name "has result"@en;
+  shacl:path <http://data.europa.eu/2qy/rrmv#hasResult> .
+
+<https://semiceu.github.io/RRMV/releases/0.0.2#ActionShape/6537da8b51b86aada02d4df1e430d8e20c1b1d4e> rdfs:seeAlso "https://semiceu.github.io/RRMV/releases/0.0.2#Action.hasannotation";
+  shacl:description "A note added by way of comment or explanation."@en;
+  shacl:name "has annotation"@en;
+  shacl:path <http://data.europa.eu/2qy/rrmv#hasAnnotation>;
+  shacl:uniqueLang true .
+
+<https://semiceu.github.io/RRMV/releases/0.0.2#ActionShape/67a37d46605206e8cd18ac245816a79bad5ec0ab> rdfs:seeAlso "https://semiceu.github.io/RRMV/releases/0.0.2#Action.hasresult";
+  shacl:description "A result of an action."@en;
+  shacl:name "has result"@en;
+  shacl:nodeKind shacl:BlankNodeOrIRI;
+  shacl:path <http://data.europa.eu/2qy/rrmv#hasResult> .
+
+<https://semiceu.github.io/RRMV/releases/0.0.2#ActionShape/71370aa71c2cc663675602b05c87fbdff12aff59> rdfs:seeAlso "https://semiceu.github.io/RRMV/releases/0.0.2#Action.hasstatus";
+  shacl:description "A status of this Action."@en;
+  shacl:name "has status"@en;
+  shacl:nodeKind shacl:BlankNodeOrIRI;
+  shacl:path <http://data.europa.eu/2qy/rrmv#hasStatus> .
+
+<https://semiceu.github.io/RRMV/releases/0.0.2#ActionShape/8fe3ff2da55fb4298b1f1979e5ccea3459728cd8> rdfs:seeAlso "https://semiceu.github.io/RRMV/releases/0.0.2#Action.relatedto";
+  shacl:description "Indicates a somehow related other document, not necessarily a legal resource."@en;
+  shacl:name "related to"@en;
+  shacl:nodeKind shacl:BlankNodeOrIRI;
+  shacl:path <http://data.europa.eu/eli/ontology#related_to> .
+
+<https://semiceu.github.io/RRMV/releases/0.0.2#ActionShape/93d00bcfd5ffae09c4360fa2a155c210bef0724b> rdfs:seeAlso "https://semiceu.github.io/RRMV/releases/0.0.2#Action.hasannotation";
+  shacl:datatype rdf:langString;
+  shacl:description "A note added by way of comment or explanation."@en;
+  shacl:name "has annotation"@en;
+  shacl:path <http://data.europa.eu/2qy/rrmv#hasAnnotation> .
+
+<https://semiceu.github.io/RRMV/releases/0.0.2#ActionShape/fb8742fc5b67909250a08324b722838e2fb7996d> rdfs:seeAlso "https://semiceu.github.io/RRMV/releases/0.0.2#Action.hasstatus";
+  shacl:class <http://data.europa.eu/2qy/rrmv#Status>;
+  shacl:description "A status of this Action."@en;
+  shacl:name "has status"@en;
+  shacl:path <http://data.europa.eu/2qy/rrmv#hasStatus> .
+
+<https://semiceu.github.io/RRMV/releases/0.0.2#AgentRoleShape> a shacl:NodeShape;
+  shacl:closed false;
+  shacl:property <https://semiceu.github.io/RRMV/releases/0.0.2#AgentRoleShape/8b02fcd051692945b0bfe772172c84c4354dc27c>,
+    <https://semiceu.github.io/RRMV/releases/0.0.2#AgentRoleShape/e661e9cf1e190828d410fd2ab59d81b83cb3c62f>;
+  shacl:targetClass <http://data.europa.eu/2qy/rrmv#AgentRole> .
+
+<https://semiceu.github.io/RRMV/releases/0.0.2#AgentRoleShape/8b02fcd051692945b0bfe772172c84c4354dc27c> rdfs:seeAlso "https://semiceu.github.io/RRMV/releases/0.0.2#AgentRole.withrole";
+  shacl:description "The property linking an Agent to Role."@en;
+  shacl:name "with role"@en;
+  shacl:nodeKind shacl:BlankNodeOrIRI;
+  shacl:path <http://data.europa.eu/2qy/rrmv#withRole> .
+
+<https://semiceu.github.io/RRMV/releases/0.0.2#AgentRoleShape/e661e9cf1e190828d410fd2ab59d81b83cb3c62f> rdfs:seeAlso "https://semiceu.github.io/RRMV/releases/0.0.2#AgentRole.withrole";
+  shacl:class <http://data.europa.eu/2qy/rrmv#Role>;
+  shacl:description "The property linking an Agent to Role."@en;
+  shacl:name "with role"@en;
+  shacl:path <http://data.europa.eu/2qy/rrmv#withRole> .
+
+<https://semiceu.github.io/RRMV/releases/0.0.2#AgentShape> a shacl:NodeShape;
+  shacl:closed false;
+  shacl:property <https://semiceu.github.io/RRMV/releases/0.0.2#AgentShape/26de3103378473bd7e70743bb33391753f1e6cbd>,
+    <https://semiceu.github.io/RRMV/releases/0.0.2#AgentShape/73346d19590bfb11fb7f63af0fad3072e2df1f68>;
+  shacl:targetClass <http://data.europa.eu/eli/ontology#Agent> .
+
+<https://semiceu.github.io/RRMV/releases/0.0.2#AgentShape/26de3103378473bd7e70743bb33391753f1e6cbd> rdfs:seeAlso "https://semiceu.github.io/RRMV/releases/0.0.2#Agent.hastype";
+  shacl:description "A kind of agent"@en;
+  shacl:name "has type"@en;
+  shacl:nodeKind shacl:BlankNodeOrIRI;
+  shacl:path <http://data.europa.eu/2qy/rrmv#hasType> .
+
+<https://semiceu.github.io/RRMV/releases/0.0.2#AgentShape/73346d19590bfb11fb7f63af0fad3072e2df1f68> rdfs:seeAlso "https://semiceu.github.io/RRMV/releases/0.0.2#Agent.hastype";
+  shacl:class <http://data.europa.eu/2qy/rrmv#AgentType>;
+  shacl:description "A kind of agent"@en;
+  shacl:name "has type"@en;
+  shacl:path <http://data.europa.eu/2qy/rrmv#hasType> .
+
+<https://semiceu.github.io/RRMV/releases/0.0.2#AgentTypeShape> a shacl:NodeShape;
+  shacl:closed false;
+  shacl:targetClass <http://data.europa.eu/2qy/rrmv#AgentType> .
+
+<https://semiceu.github.io/RRMV/releases/0.0.2#ExpressionShape> a shacl:NodeShape;
+  shacl:closed false;
+  shacl:property <https://semiceu.github.io/RRMV/releases/0.0.2#ExpressionShape/28d4860d1ad14d789ffc09b841dfc4f9b27a0f4d>,
+    <https://semiceu.github.io/RRMV/releases/0.0.2#ExpressionShape/5d3b501368b0e6230133103390ac50e7385e214a>,
+    <https://semiceu.github.io/RRMV/releases/0.0.2#ExpressionShape/842604dcbbe4917bc9cdefa599b788f17745f307>,
+    <https://semiceu.github.io/RRMV/releases/0.0.2#ExpressionShape/c1dd7db4d0fe9532aeac071ed27b1ab7295bd438>,
+    <https://semiceu.github.io/RRMV/releases/0.0.2#ExpressionShape/c9662e1437a7dae8f9dd84bb54b1d9ddf1cb0fc4>,
+    <https://semiceu.github.io/RRMV/releases/0.0.2#ExpressionShape/cbdb40c27622b1c3cc24afbbccdfb6bb131af212>;
+  shacl:targetClass <http://data.europa.eu/eli/ontology#Expression> .
+
+<https://semiceu.github.io/RRMV/releases/0.0.2#ExpressionShape/28d4860d1ad14d789ffc09b841dfc4f9b27a0f4d> rdfs:seeAlso "https://semiceu.github.io/RRMV/releases/0.0.2#Expression.ispartof";
+  shacl:description "Indicates a work in which this one is physically included. Covers the case of text included in an Official Journal, or an article included in a text."@en;
+  shacl:name "is part of"@en;
+  shacl:nodeKind shacl:BlankNodeOrIRI;
+  shacl:path <http://data.europa.eu/eli/ontology#is_part_of> .
+
+<https://semiceu.github.io/RRMV/releases/0.0.2#ExpressionShape/5d3b501368b0e6230133103390ac50e7385e214a> rdfs:seeAlso "https://semiceu.github.io/RRMV/releases/0.0.2#Expression.ispartof";
+  shacl:class <http://data.europa.eu/eli/ontology#Expression>;
+  shacl:description "Indicates a work in which this one is physically included. Covers the case of text included in an Official Journal, or an article included in a text."@en;
+  shacl:name "is part of"@en;
+  shacl:path <http://data.europa.eu/eli/ontology#is_part_of> .
+
+<https://semiceu.github.io/RRMV/releases/0.0.2#ExpressionShape/842604dcbbe4917bc9cdefa599b788f17745f307> rdfs:seeAlso "https://semiceu.github.io/RRMV/releases/0.0.2#Expression.cites";
+  shacl:description "Citation in the text of the legislation. This may be at the legal resource or legal expression level, as required by the implementation context. This includes verbatim citation and citations in referrals."@en;
+  shacl:name "cites"@en;
+  shacl:nodeKind shacl:BlankNodeOrIRI;
+  shacl:path <http://data.europa.eu/eli/ontology#cites> .
+
+<https://semiceu.github.io/RRMV/releases/0.0.2#ExpressionShape/c1dd7db4d0fe9532aeac071ed27b1ab7295bd438> rdfs:seeAlso "https://semiceu.github.io/RRMV/releases/0.0.2#Expression.cites";
+  shacl:class <http://data.europa.eu/eli/ontology#Expression>;
+  shacl:description "Citation in the text of the legislation. This may be at the legal resource or legal expression level, as required by the implementation context. This includes verbatim citation and citations in referrals."@en;
+  shacl:name "cites"@en;
+  shacl:path <http://data.europa.eu/eli/ontology#cites> .
+
+<https://semiceu.github.io/RRMV/releases/0.0.2#ExpressionShape/c9662e1437a7dae8f9dd84bb54b1d9ddf1cb0fc4> rdfs:seeAlso "https://semiceu.github.io/RRMV/releases/0.0.2#Expression.embodies";
+  shacl:class <http://data.europa.eu/eli/ontology#Manifestation>;
+  shacl:description "Relates a manifestation to the expression that it embodies. Inverse of \"is_embodied_by\"."@en;
+  shacl:name "embodies"@en;
+  shacl:path <http://data.europa.eu/eli/ontology#embodies> .
+
+<https://semiceu.github.io/RRMV/releases/0.0.2#ExpressionShape/cbdb40c27622b1c3cc24afbbccdfb6bb131af212> rdfs:seeAlso "https://semiceu.github.io/RRMV/releases/0.0.2#Expression.embodies";
+  shacl:description "Relates a manifestation to the expression that it embodies. Inverse of \"is_embodied_by\"."@en;
+  shacl:name "embodies"@en;
+  shacl:nodeKind shacl:BlankNodeOrIRI;
+  shacl:path <http://data.europa.eu/eli/ontology#embodies> .
+
+<https://semiceu.github.io/RRMV/releases/0.0.2#FrequencyShape> a shacl:NodeShape;
+  shacl:closed false;
+  shacl:property <https://semiceu.github.io/RRMV/releases/0.0.2#FrequencyShape/3ae7580c4039ed7af240c19ddf9bdc57c8fba687>,
+    <https://semiceu.github.io/RRMV/releases/0.0.2#FrequencyShape/5805d2a5e7dc08a7d51ce46400a90a5f4f3d0bab>,
+    <https://semiceu.github.io/RRMV/releases/0.0.2#FrequencyShape/6698df8a2d713cf66720d7a2b1f4037f7f58d708>,
+    <https://semiceu.github.io/RRMV/releases/0.0.2#FrequencyShape/d6979a925fe55dfff828a2b49a43d8dc817fac76>,
+    <https://semiceu.github.io/RRMV/releases/0.0.2#FrequencyShape/db15b7df9d94d285bd33d0966a4d2357f8333c31>;
+  shacl:targetClass <http://data.europa.eu/2qy/rrmv#Frequency> .
+
+<https://semiceu.github.io/RRMV/releases/0.0.2#FrequencyShape/3ae7580c4039ed7af240c19ddf9bdc57c8fba687> rdfs:seeAlso "https://semiceu.github.io/RRMV/releases/0.0.2#Frequency.value";
+  shacl:description "The value of the frequency."@en;
+  shacl:name "value"@en;
+  shacl:nodeKind shacl:Literal;
+  shacl:path <http://data.europa.eu/2qy/rrmv#value> .
+
+<https://semiceu.github.io/RRMV/releases/0.0.2#FrequencyShape/5805d2a5e7dc08a7d51ce46400a90a5f4f3d0bab> rdfs:seeAlso "https://semiceu.github.io/RRMV/releases/0.0.2#Frequency.hasunit";
+  shacl:description "The unit of the Frequency"@en;
+  shacl:maxCount 1;
+  shacl:name "has unit"@en;
+  shacl:path <http://data.europa.eu/2qy/rrmv#hasUnit> .
+
+<https://semiceu.github.io/RRMV/releases/0.0.2#FrequencyShape/6698df8a2d713cf66720d7a2b1f4037f7f58d708> rdfs:seeAlso "https://semiceu.github.io/RRMV/releases/0.0.2#Frequency.hasunit";
+  shacl:class skos:Concept;
+  shacl:description "The unit of the Frequency"@en;
+  shacl:name "has unit"@en;
+  shacl:path <http://data.europa.eu/2qy/rrmv#hasUnit> .
+
+<https://semiceu.github.io/RRMV/releases/0.0.2#FrequencyShape/d6979a925fe55dfff828a2b49a43d8dc817fac76> rdfs:seeAlso "https://semiceu.github.io/RRMV/releases/0.0.2#Frequency.hasunit";
+  shacl:description "The unit of the Frequency"@en;
+  shacl:name "has unit"@en;
+  shacl:nodeKind shacl:BlankNodeOrIRI;
+  shacl:path <http://data.europa.eu/2qy/rrmv#hasUnit> .
+
+<https://semiceu.github.io/RRMV/releases/0.0.2#FrequencyShape/db15b7df9d94d285bd33d0966a4d2357f8333c31> rdfs:seeAlso "https://semiceu.github.io/RRMV/releases/0.0.2#Frequency.value";
+  shacl:description "The value of the frequency."@en;
+  shacl:maxCount 1;
+  shacl:name "value"@en;
+  shacl:path <http://data.europa.eu/2qy/rrmv#value> .
+
+<https://semiceu.github.io/RRMV/releases/0.0.2#InstantShape> a shacl:NodeShape;
+  shacl:closed false;
+  shacl:targetClass <http://www.w3.org/2006/time#Instant> .
+
+<https://semiceu.github.io/RRMV/releases/0.0.2#LangStringShape> a shacl:NodeShape;
+  shacl:closed false;
+  shacl:targetClass rdf:langString .
+
+<https://semiceu.github.io/RRMV/releases/0.0.2#ManifestationShape> a shacl:NodeShape;
+  shacl:closed false;
+  shacl:property <https://semiceu.github.io/RRMV/releases/0.0.2#ManifestationShape/79040c0b97b43ae95559b7c15f481545e6667de4>,
+    <https://semiceu.github.io/RRMV/releases/0.0.2#ManifestationShape/a84e6717e411e965dc1f44b06215051b597b6c12>;
+  shacl:targetClass <http://data.europa.eu/eli/ontology#Manifestation> .
+
+<https://semiceu.github.io/RRMV/releases/0.0.2#ManifestationShape/79040c0b97b43ae95559b7c15f481545e6667de4> rdfs:seeAlso "https://semiceu.github.io/RRMV/releases/0.0.2#Manifestation.isembodiedby";
+  shacl:description "Relates an expression to a manifestation of that expression."@en;
+  shacl:name "is embodied by"@en;
+  shacl:nodeKind shacl:BlankNodeOrIRI;
+  shacl:path <http://data.europa.eu/eli/ontology#is_embodied_by> .
+
+<https://semiceu.github.io/RRMV/releases/0.0.2#ManifestationShape/a84e6717e411e965dc1f44b06215051b597b6c12> rdfs:seeAlso "https://semiceu.github.io/RRMV/releases/0.0.2#Manifestation.isembodiedby";
+  shacl:class <http://data.europa.eu/eli/ontology#Expression>;
+  shacl:description "Relates an expression to a manifestation of that expression."@en;
+  shacl:name "is embodied by"@en;
+  shacl:path <http://data.europa.eu/eli/ontology#is_embodied_by> .
+
+<https://semiceu.github.io/RRMV/releases/0.0.2#OrganizationShape> a shacl:NodeShape;
+  shacl:closed false;
+  shacl:targetClass <http://data.europa.eu/eli/ontology#Organization> .
+
+<https://semiceu.github.io/RRMV/releases/0.0.2#PeriodOfTimeShape> a shacl:NodeShape;
+  shacl:closed false;
+  shacl:property <https://semiceu.github.io/RRMV/releases/0.0.2#PeriodOfTimeShape/13958b9c87e7ef8b6b97b68c3e5e6484f0c21d74>,
+    <https://semiceu.github.io/RRMV/releases/0.0.2#PeriodOfTimeShape/216733e60cf76eb13e2bf5fef830494087a03581>,
+    <https://semiceu.github.io/RRMV/releases/0.0.2#PeriodOfTimeShape/265f957ce190027dce96d41d40b673fc8c23a3a5>,
+    <https://semiceu.github.io/RRMV/releases/0.0.2#PeriodOfTimeShape/2f5052783899352bc03d3bb65c6a4cc2693a05af>,
+    <https://semiceu.github.io/RRMV/releases/0.0.2#PeriodOfTimeShape/4f33002877d322578899db2b23a912572755b823>,
+    <https://semiceu.github.io/RRMV/releases/0.0.2#PeriodOfTimeShape/62f13fb5322e914470370f6829b63796f1fb592d>,
+    <https://semiceu.github.io/RRMV/releases/0.0.2#PeriodOfTimeShape/a3200c5de5dd81b397b20646ca0b534d506d9380>,
+    <https://semiceu.github.io/RRMV/releases/0.0.2#PeriodOfTimeShape/bcfdfe1aaf259e3616a2ee6b35401a2e67ef2a78>,
+    <https://semiceu.github.io/RRMV/releases/0.0.2#PeriodOfTimeShape/c96b66f9d4eb38c74850d441cdd16f5aae3f7e75>,
+    <https://semiceu.github.io/RRMV/releases/0.0.2#PeriodOfTimeShape/cee1f50f736e99d611db359c3085c1f3f31d959d>,
+    <https://semiceu.github.io/RRMV/releases/0.0.2#PeriodOfTimeShape/e0f451a883f0a9ffd8a4ab55aaf0d89555b626de>,
+    <https://semiceu.github.io/RRMV/releases/0.0.2#PeriodOfTimeShape/e6d4e21bf5642e6443beb278b26ff238306ce664>,
+    <https://semiceu.github.io/RRMV/releases/0.0.2#PeriodOfTimeShape/f26773a2b00df0b2bc11a71a0009143ddc3936cf>,
+    <https://semiceu.github.io/RRMV/releases/0.0.2#PeriodOfTimeShape/f3b3fe103292b4de4cd8ebe4846ded1dfe63cffd>;
+  shacl:targetClass <http://www.w3.org/2006/time#ProperInterval> .
+
+<https://semiceu.github.io/RRMV/releases/0.0.2#PeriodOfTimeShape/13958b9c87e7ef8b6b97b68c3e5e6484f0c21d74> rdfs:seeAlso "https://semiceu.github.io/RRMV/releases/0.0.2#PeriodofTime.endtime";
+  shacl:class <http://www.w3.org/2006/time#Instant>;
+  shacl:description "Time instant at which the Period was terminated. "@en;
+  shacl:name "end time"@en;
+  shacl:path <http://www.w3.org/2006/time#hasEnd> .
+
+<https://semiceu.github.io/RRMV/releases/0.0.2#PeriodOfTimeShape/216733e60cf76eb13e2bf5fef830494087a03581> rdfs:seeAlso "https://semiceu.github.io/RRMV/releases/0.0.2#PeriodofTime.starttime";
+  shacl:description "Time instant at which the Period was initiated"@en;
+  shacl:name "start time"@en;
+  shacl:nodeKind shacl:BlankNodeOrIRI;
+  shacl:path <http://www.w3.org/2006/time#hasBeginning> .
+
+<https://semiceu.github.io/RRMV/releases/0.0.2#PeriodOfTimeShape/265f957ce190027dce96d41d40b673fc8c23a3a5> rdfs:seeAlso "https://semiceu.github.io/RRMV/releases/0.0.2#PeriodofTime.endtime";
+  shacl:description "Time instant at which the Period was terminated. "@en;
+  shacl:maxCount 1;
+  shacl:name "end time"@en;
+  shacl:path <http://www.w3.org/2006/time#hasEnd> .
+
+<https://semiceu.github.io/RRMV/releases/0.0.2#PeriodOfTimeShape/2f5052783899352bc03d3bb65c6a4cc2693a05af> rdfs:seeAlso "https://semiceu.github.io/RRMV/releases/0.0.2#PeriodofTime.isincomplete";
+  shacl:description "The temporal information is incomplete."@en;
+  shacl:maxCount 1;
+  shacl:name "is incomplete"@en;
+  shacl:path <http://data.europa.eu/2qy/rrmv#isIncomplete> .
+
+<https://semiceu.github.io/RRMV/releases/0.0.2#PeriodOfTimeShape/4f33002877d322578899db2b23a912572755b823> rdfs:seeAlso "https://semiceu.github.io/RRMV/releases/0.0.2#PeriodofTime.hasfunction";
+  shacl:description "The function the temporal infomation plays "@en;
+  shacl:name "has function"@en;
+  shacl:nodeKind shacl:BlankNodeOrIRI;
+  shacl:path <http://data.europa.eu/2qy/rrmv#hasFunction> .
+
+<https://semiceu.github.io/RRMV/releases/0.0.2#PeriodOfTimeShape/62f13fb5322e914470370f6829b63796f1fb592d> rdfs:seeAlso "https://semiceu.github.io/RRMV/releases/0.0.2#PeriodofTime.duration";
+  shacl:description "Duration of a temporal entity"@en;
+  shacl:name "duration"@en;
+  shacl:nodeKind shacl:BlankNodeOrIRI;
+  shacl:path <http://www.w3.org/2006/time#hasTemporalDuration> .
+
+<https://semiceu.github.io/RRMV/releases/0.0.2#PeriodOfTimeShape/a3200c5de5dd81b397b20646ca0b534d506d9380> rdfs:seeAlso "https://semiceu.github.io/RRMV/releases/0.0.2#PeriodofTime.hasfunction";
+  shacl:class <http://data.europa.eu/2qy/rrmv#TemporalFunction>;
+  shacl:description "The function the temporal infomation plays "@en;
+  shacl:name "has function"@en;
+  shacl:path <http://data.europa.eu/2qy/rrmv#hasFunction> .
+
+<https://semiceu.github.io/RRMV/releases/0.0.2#PeriodOfTimeShape/bcfdfe1aaf259e3616a2ee6b35401a2e67ef2a78> rdfs:seeAlso "https://semiceu.github.io/RRMV/releases/0.0.2#PeriodofTime.isincomplete";
+  shacl:description "The temporal information is incomplete."@en;
+  shacl:name "is incomplete"@en;
+  shacl:nodeKind shacl:Literal;
+  shacl:path <http://data.europa.eu/2qy/rrmv#isIncomplete> .
+
+<https://semiceu.github.io/RRMV/releases/0.0.2#PeriodOfTimeShape/c96b66f9d4eb38c74850d441cdd16f5aae3f7e75> rdfs:seeAlso "https://semiceu.github.io/RRMV/releases/0.0.2#PeriodofTime.duration";
+  shacl:description "Duration of a temporal entity"@en;
+  shacl:maxCount 1;
+  shacl:name "duration"@en;
+  shacl:path <http://www.w3.org/2006/time#hasTemporalDuration> .
+
+<https://semiceu.github.io/RRMV/releases/0.0.2#PeriodOfTimeShape/cee1f50f736e99d611db359c3085c1f3f31d959d> rdfs:seeAlso "https://semiceu.github.io/RRMV/releases/0.0.2#PeriodofTime.endtime";
+  shacl:description "Time instant at which the Period was terminated. "@en;
+  shacl:name "end time"@en;
+  shacl:nodeKind shacl:BlankNodeOrIRI;
+  shacl:path <http://www.w3.org/2006/time#hasEnd> .
+
+<https://semiceu.github.io/RRMV/releases/0.0.2#PeriodOfTimeShape/e0f451a883f0a9ffd8a4ab55aaf0d89555b626de> rdfs:seeAlso "https://semiceu.github.io/RRMV/releases/0.0.2#PeriodofTime.isincomplete";
+  shacl:datatype xsd:boolean;
+  shacl:description "The temporal information is incomplete."@en;
+  shacl:name "is incomplete"@en;
+  shacl:path <http://data.europa.eu/2qy/rrmv#isIncomplete> .
+
+<https://semiceu.github.io/RRMV/releases/0.0.2#PeriodOfTimeShape/e6d4e21bf5642e6443beb278b26ff238306ce664> rdfs:seeAlso "https://semiceu.github.io/RRMV/releases/0.0.2#PeriodofTime.starttime";
+  shacl:description "Time instant at which the Period was initiated"@en;
+  shacl:maxCount 1;
+  shacl:name "start time"@en;
+  shacl:path <http://www.w3.org/2006/time#hasBeginning> .
+
+<https://semiceu.github.io/RRMV/releases/0.0.2#PeriodOfTimeShape/f26773a2b00df0b2bc11a71a0009143ddc3936cf> rdfs:seeAlso "https://semiceu.github.io/RRMV/releases/0.0.2#PeriodofTime.duration";
+  shacl:class <http://www.w3.org/2006/time#TemporalDuration>;
+  shacl:description "Duration of a temporal entity"@en;
+  shacl:name "duration"@en;
+  shacl:path <http://www.w3.org/2006/time#hasTemporalDuration> .
+
+<https://semiceu.github.io/RRMV/releases/0.0.2#PeriodOfTimeShape/f3b3fe103292b4de4cd8ebe4846ded1dfe63cffd> rdfs:seeAlso "https://semiceu.github.io/RRMV/releases/0.0.2#PeriodofTime.starttime";
+  shacl:class <http://www.w3.org/2006/time#Instant>;
+  shacl:description "Time instant at which the Period was initiated"@en;
+  shacl:name "start time"@en;
+  shacl:path <http://www.w3.org/2006/time#hasBeginning> .
+
+<https://semiceu.github.io/RRMV/releases/0.0.2#PersonShape> a shacl:NodeShape;
+  shacl:closed false;
+  shacl:targetClass <http://data.europa.eu/eli/ontology#Person> .
+
+<https://semiceu.github.io/RRMV/releases/0.0.2#RequestShape> a shacl:NodeShape;
+  shacl:closed false;
+  shacl:property <https://semiceu.github.io/RRMV/releases/0.0.2#RequestShape/12d5122ea7d1db1a9282c128f9b1489c699aa76d>,
+    <https://semiceu.github.io/RRMV/releases/0.0.2#RequestShape/19f6de267036c30c67819273f5e8a4eedb68e228>,
+    <https://semiceu.github.io/RRMV/releases/0.0.2#RequestShape/1b985546f308cffd31c56410dc5d8bdc383f3baa>,
+    <https://semiceu.github.io/RRMV/releases/0.0.2#RequestShape/2056bea37b18598fc6a6529d49c69e54a0c09536>,
+    <https://semiceu.github.io/RRMV/releases/0.0.2#RequestShape/2401ba322eff52565884b486cfcc9b2096afabf8>,
+    <https://semiceu.github.io/RRMV/releases/0.0.2#RequestShape/25124db62d4f81ecbe0a2898b504e00893d72533>,
+    <https://semiceu.github.io/RRMV/releases/0.0.2#RequestShape/28d4860d1ad14d789ffc09b841dfc4f9b27a0f4d>,
+    <https://semiceu.github.io/RRMV/releases/0.0.2#RequestShape/3b4bb2f2cb5fc1278944e948cbeb9ee739f10a19>,
+    <https://semiceu.github.io/RRMV/releases/0.0.2#RequestShape/465d45838e770ff9a70a996c3cf34973ee605f0a>,
+    <https://semiceu.github.io/RRMV/releases/0.0.2#RequestShape/4a0116bdf45cf259a510bea7f2df520f2a470afb>,
+    <https://semiceu.github.io/RRMV/releases/0.0.2#RequestShape/53bd38e3d33ba488ee41d290d32c1df211accc84>,
+    <https://semiceu.github.io/RRMV/releases/0.0.2#RequestShape/5d3b501368b0e6230133103390ac50e7385e214a>,
+    <https://semiceu.github.io/RRMV/releases/0.0.2#RequestShape/6537da8b51b86aada02d4df1e430d8e20c1b1d4e>,
+    <https://semiceu.github.io/RRMV/releases/0.0.2#RequestShape/87fc4ba3a56d2c8bc011755fa5e97cd3c1713084>,
+    <https://semiceu.github.io/RRMV/releases/0.0.2#RequestShape/8fe3ff2da55fb4298b1f1979e5ccea3459728cd8>,
+    <https://semiceu.github.io/RRMV/releases/0.0.2#RequestShape/93d00bcfd5ffae09c4360fa2a155c210bef0724b>,
+    <https://semiceu.github.io/RRMV/releases/0.0.2#RequestShape/c90e5c04bef13b3fd1b18723bae26a49b7b704c1>,
+    <https://semiceu.github.io/RRMV/releases/0.0.2#RequestShape/eefa546b377f13c9023494cd371dba05ab5e1db5>;
+  shacl:targetClass <http://data.europa.eu/2qy/rrmv#Request> .
+
+<https://semiceu.github.io/RRMV/releases/0.0.2#RequestShape/12d5122ea7d1db1a9282c128f9b1489c699aa76d> rdfs:seeAlso "https://semiceu.github.io/RRMV/releases/0.0.2#Request.hasannotation";
+  shacl:description "A note added by way of comment or explanation."@en;
+  shacl:name "has annotation"@en;
+  shacl:nodeKind shacl:Literal;
+  shacl:path <http://data.europa.eu/2qy/rrmv#hasAnnotation> .
+
+<https://semiceu.github.io/RRMV/releases/0.0.2#RequestShape/19f6de267036c30c67819273f5e8a4eedb68e228> rdfs:seeAlso "https://semiceu.github.io/RRMV/releases/0.0.2#Request.ispartof";
+  shacl:description """ 	A related resource in which the described resource is physically or logically included."""@en;
+  shacl:maxCount 1;
+  shacl:name "is part of"@en;
+  shacl:path dc:isPartOf .
+
+<https://semiceu.github.io/RRMV/releases/0.0.2#RequestShape/1b985546f308cffd31c56410dc5d8bdc383f3baa> rdfs:seeAlso "https://semiceu.github.io/RRMV/releases/0.0.2#Request.relatedto";
+  shacl:class <http://data.europa.eu/2qy/rrmv#Request>;
+  shacl:description "Indicates a somehow related other document, not necessarily a legal resource."@en;
+  shacl:name "related to"@en;
+  shacl:path <http://data.europa.eu/eli/ontology#related_to> .
+
+<https://semiceu.github.io/RRMV/releases/0.0.2#RequestShape/2056bea37b18598fc6a6529d49c69e54a0c09536> rdfs:seeAlso "https://semiceu.github.io/RRMV/releases/0.0.2#Request.changes";
+  shacl:class <http://data.europa.eu/2qy/rrmv#Request>;
+  shacl:description "Indicates that this work or expression legally changes another. This encompasses the notions of amendment, replacement, repeal, or other types of change. This may be a direct change (textual or non-textual amendment) or a consequential or indirect change."@en;
+  shacl:name "changes"@en;
+  shacl:path <http://data.europa.eu/eli/ontology#changes> .
+
+<https://semiceu.github.io/RRMV/releases/0.0.2#RequestShape/2401ba322eff52565884b486cfcc9b2096afabf8> rdfs:seeAlso "https://semiceu.github.io/RRMV/releases/0.0.2#Request.changes";
+  shacl:description "Indicates that this work or expression legally changes another. This encompasses the notions of amendment, replacement, repeal, or other types of change. This may be a direct change (textual or non-textual amendment) or a consequential or indirect change."@en;
+  shacl:name "changes"@en;
+  shacl:nodeKind shacl:BlankNodeOrIRI;
+  shacl:path <http://data.europa.eu/eli/ontology#changes> .
+
+<https://semiceu.github.io/RRMV/releases/0.0.2#RequestShape/25124db62d4f81ecbe0a2898b504e00893d72533> rdfs:seeAlso "https://semiceu.github.io/RRMV/releases/0.0.2#Request.hastopic";
+  shacl:description "The topic of the request."@en;
+  shacl:name "has topic"@en;
+  shacl:nodeKind shacl:BlankNodeOrIRI;
+  shacl:path <http://data.europa.eu/2qy/rrmv#hasTopic> .
+
+<https://semiceu.github.io/RRMV/releases/0.0.2#RequestShape/28d4860d1ad14d789ffc09b841dfc4f9b27a0f4d> rdfs:seeAlso "https://semiceu.github.io/RRMV/releases/0.0.2#Request.ispartof";
+  shacl:description """ 	A related resource in which the described resource is physically or logically included."""@en;
+  shacl:name "is part of"@en;
+  shacl:nodeKind shacl:BlankNodeOrIRI;
+  shacl:path dc:isPartOf .
+
+<https://semiceu.github.io/RRMV/releases/0.0.2#RequestShape/3b4bb2f2cb5fc1278944e948cbeb9ee739f10a19> rdfs:seeAlso "https://semiceu.github.io/RRMV/releases/0.0.2#Request.hasURI";
+  shacl:description "URI of the Request."@en;
+  shacl:name "has URI"@en;
+  shacl:nodeKind shacl:Literal;
+  shacl:path <http://data.europa.eu/2qy/rrmv#hasURI> .
+
+<https://semiceu.github.io/RRMV/releases/0.0.2#RequestShape/465d45838e770ff9a70a996c3cf34973ee605f0a> rdfs:seeAlso "https://semiceu.github.io/RRMV/releases/0.0.2#Request.hasURI";
+  shacl:datatype xsd:anyURI;
+  shacl:description "URI of the Request."@en;
+  shacl:name "has URI"@en;
+  shacl:path <http://data.europa.eu/2qy/rrmv#hasURI> .
+
+<https://semiceu.github.io/RRMV/releases/0.0.2#RequestShape/4a0116bdf45cf259a510bea7f2df520f2a470afb> rdfs:seeAlso "https://semiceu.github.io/RRMV/releases/0.0.2#Request.hasfrequency";
+  shacl:class <http://data.europa.eu/2qy/rrmv#Frequency>;
+  shacl:description "The frequency in which the request is to be executed in case of repetitive mandate."@en;
+  shacl:name "has frequency"@en;
+  shacl:path <http://data.europa.eu/2qy/rrmv#hasFrequency> .
+
+<https://semiceu.github.io/RRMV/releases/0.0.2#RequestShape/53bd38e3d33ba488ee41d290d32c1df211accc84> rdfs:seeAlso "https://semiceu.github.io/RRMV/releases/0.0.2#Request.produces";
+  shacl:class <http://data.europa.eu/2qy/rrmv#Action>;
+  shacl:description "The action that is produced by a request."@en;
+  shacl:name "produces"@en;
+  shacl:path <http://data.europa.eu/2qy/rrmv#produces> .
+
+<https://semiceu.github.io/RRMV/releases/0.0.2#RequestShape/5d3b501368b0e6230133103390ac50e7385e214a> rdfs:seeAlso "https://semiceu.github.io/RRMV/releases/0.0.2#Request.ispartof";
+  shacl:class <http://data.europa.eu/eli/ontology#Expression>;
+  shacl:description """ 	A related resource in which the described resource is physically or logically included."""@en;
+  shacl:name "is part of"@en;
+  shacl:path dc:isPartOf .
+
+<https://semiceu.github.io/RRMV/releases/0.0.2#RequestShape/6537da8b51b86aada02d4df1e430d8e20c1b1d4e> rdfs:seeAlso "https://semiceu.github.io/RRMV/releases/0.0.2#Request.hasannotation";
+  shacl:description "A note added by way of comment or explanation."@en;
+  shacl:name "has annotation"@en;
+  shacl:path <http://data.europa.eu/2qy/rrmv#hasAnnotation>;
+  shacl:uniqueLang true .
+
+<https://semiceu.github.io/RRMV/releases/0.0.2#RequestShape/87fc4ba3a56d2c8bc011755fa5e97cd3c1713084> rdfs:seeAlso "https://semiceu.github.io/RRMV/releases/0.0.2#Request.hastopic";
+  shacl:class skos:Concept;
+  shacl:description "The topic of the request."@en;
+  shacl:name "has topic"@en;
+  shacl:path <http://data.europa.eu/2qy/rrmv#hasTopic> .
+
+<https://semiceu.github.io/RRMV/releases/0.0.2#RequestShape/8fe3ff2da55fb4298b1f1979e5ccea3459728cd8> rdfs:seeAlso "https://semiceu.github.io/RRMV/releases/0.0.2#Request.relatedto";
+  shacl:description "Indicates a somehow related other document, not necessarily a legal resource."@en;
+  shacl:name "related to"@en;
+  shacl:nodeKind shacl:BlankNodeOrIRI;
+  shacl:path <http://data.europa.eu/eli/ontology#related_to> .
+
+<https://semiceu.github.io/RRMV/releases/0.0.2#RequestShape/93d00bcfd5ffae09c4360fa2a155c210bef0724b> rdfs:seeAlso "https://semiceu.github.io/RRMV/releases/0.0.2#Request.hasannotation";
+  shacl:datatype rdf:langString;
+  shacl:description "A note added by way of comment or explanation."@en;
+  shacl:name "has annotation"@en;
+  shacl:path <http://data.europa.eu/2qy/rrmv#hasAnnotation> .
+
+<https://semiceu.github.io/RRMV/releases/0.0.2#RequestShape/c90e5c04bef13b3fd1b18723bae26a49b7b704c1> rdfs:seeAlso "https://semiceu.github.io/RRMV/releases/0.0.2#Request.produces";
+  shacl:description "The action that is produced by a request."@en;
+  shacl:name "produces"@en;
+  shacl:nodeKind shacl:BlankNodeOrIRI;
+  shacl:path <http://data.europa.eu/2qy/rrmv#produces> .
+
+<https://semiceu.github.io/RRMV/releases/0.0.2#RequestShape/eefa546b377f13c9023494cd371dba05ab5e1db5> rdfs:seeAlso "https://semiceu.github.io/RRMV/releases/0.0.2#Request.hasfrequency";
+  shacl:description "The frequency in which the request is to be executed in case of repetitive mandate."@en;
+  shacl:name "has frequency"@en;
+  shacl:nodeKind shacl:BlankNodeOrIRI;
+  shacl:path <http://data.europa.eu/2qy/rrmv#hasFrequency> .
+
+<https://semiceu.github.io/RRMV/releases/0.0.2#ResultTypeShape> a shacl:NodeShape;
+  shacl:closed false;
+  shacl:targetClass <http://data.europa.eu/2qy/rrmv#ResultType> .
+
+<https://semiceu.github.io/RRMV/releases/0.0.2#RoleShape> a shacl:NodeShape;
+  shacl:closed false;
+  shacl:property <https://semiceu.github.io/RRMV/releases/0.0.2#RoleShape/26de3103378473bd7e70743bb33391753f1e6cbd>,
+    <https://semiceu.github.io/RRMV/releases/0.0.2#RoleShape/73346d19590bfb11fb7f63af0fad3072e2df1f68>;
+  shacl:targetClass <http://data.europa.eu/2qy/rrmv#Role> .
+
+<https://semiceu.github.io/RRMV/releases/0.0.2#RoleShape/26de3103378473bd7e70743bb33391753f1e6cbd> rdfs:seeAlso "https://semiceu.github.io/RRMV/releases/0.0.2#Role.hastype";
+  shacl:description "A kind of Role "@en;
+  shacl:name "has type"@en;
+  shacl:nodeKind shacl:BlankNodeOrIRI;
+  shacl:path <http://data.europa.eu/2qy/rrmv#hasType> .
+
+<https://semiceu.github.io/RRMV/releases/0.0.2#RoleShape/73346d19590bfb11fb7f63af0fad3072e2df1f68> rdfs:seeAlso "https://semiceu.github.io/RRMV/releases/0.0.2#Role.hastype";
+  shacl:class <http://data.europa.eu/2qy/rrmv#RoleType>;
+  shacl:description "A kind of Role "@en;
+  shacl:name "has type"@en;
+  shacl:path <http://data.europa.eu/2qy/rrmv#hasType> .
+
+<https://semiceu.github.io/RRMV/releases/0.0.2#RoleTypeShape> a shacl:NodeShape;
+  shacl:closed false;
+  shacl:targetClass <http://data.europa.eu/2qy/rrmv#RoleType> .
+
+<https://semiceu.github.io/RRMV/releases/0.0.2#StatusShape> a shacl:NodeShape;
+  shacl:closed false;
+  shacl:targetClass <http://data.europa.eu/2qy/rrmv#Status> .
+
+<https://semiceu.github.io/RRMV/releases/0.0.2#TemporalDurationShape> a shacl:NodeShape;
+  shacl:closed false;
+  shacl:targetClass <http://www.w3.org/2006/time#TemporalDuration> .
+
+<https://semiceu.github.io/RRMV/releases/0.0.2#TemporalFunctionShape> a shacl:NodeShape;
+  shacl:closed false;
+  shacl:targetClass <http://data.europa.eu/2qy/rrmv#TemporalFunction> .
+
+<https://semiceu.github.io/RRMV/releases/0.0.2#WorkShape> a shacl:NodeShape;
+  shacl:closed false;
+  shacl:property <https://semiceu.github.io/RRMV/releases/0.0.2#WorkShape/88a90c213534ac8c4fba6c8b5dfa167be7b35cf1>,
+    <https://semiceu.github.io/RRMV/releases/0.0.2#WorkShape/be09b1185e7618f97fa7aee26b523e3b69f359ff>;
+  shacl:targetClass <http://data.europa.eu/eli/ontology#Work> .
+
+<https://semiceu.github.io/RRMV/releases/0.0.2#WorkShape/88a90c213534ac8c4fba6c8b5dfa167be7b35cf1> rdfs:seeAlso "https://semiceu.github.io/RRMV/releases/0.0.2#Work.isrealizedby";
+  shacl:description "Relates an expression to a work realised through that expression. Inverse of \"is_realized_by\"."@en;
+  shacl:name "is realized by"@en;
+  shacl:nodeKind shacl:BlankNodeOrIRI;
+  shacl:path <http://data.europa.eu/eli/ontology#is_realized_by> .
+
+<https://semiceu.github.io/RRMV/releases/0.0.2#WorkShape/be09b1185e7618f97fa7aee26b523e3b69f359ff> rdfs:seeAlso "https://semiceu.github.io/RRMV/releases/0.0.2#Work.isrealizedby";
+  shacl:class <http://data.europa.eu/eli/ontology#Expression>;
+  shacl:description "Relates an expression to a work realised through that expression. Inverse of \"is_realized_by\"."@en;
+  shacl:name "is realized by"@en;
+  shacl:path <http://data.europa.eu/eli/ontology#is_realized_by> .
+
+<https://semiceu.github.io/RRMV/releases/0.0.2#rdfs:LiteralShape> a shacl:NodeShape;
+  shacl:closed false;
+  shacl:targetClass rdfs:Literal .
+
+<https://semiceu.github.io/RRMV/releases/0.0.2#skos:ConceptShape> a shacl:NodeShape;
+  shacl:closed false;
+  shacl:property <https://semiceu.github.io/RRMV/releases/0.0.2#skos:ConceptShape/6cd0f0f5e19a1c8dce362ecbe8a196575b9cd85f>,
+    <https://semiceu.github.io/RRMV/releases/0.0.2#skos:ConceptShape/e4d44fb0d3c41df2a4042ee73fec8d83fc141a60>;
+  shacl:targetClass skos:Concept .
+
+<https://semiceu.github.io/RRMV/releases/0.0.2#skos:ConceptShape/6cd0f0f5e19a1c8dce362ecbe8a196575b9cd85f> rdfs:seeAlso "https://semiceu.github.io/RRMV/releases/0.0.2#Concept.preferredlabel";
+  shacl:description "A preferred label of the concept."@en;
+  shacl:name "preferred label"@en;
+  shacl:nodeKind shacl:Literal;
+  shacl:path skos:prefLabel .
+
+<https://semiceu.github.io/RRMV/releases/0.0.2#skos:ConceptShape/e4d44fb0d3c41df2a4042ee73fec8d83fc141a60> rdfs:seeAlso "https://semiceu.github.io/RRMV/releases/0.0.2#Concept.preferredlabel";
+  shacl:description "A preferred label of the concept."@en;
+  shacl:minCount 1;
+  shacl:name "preferred label"@en;
+  shacl:path skos:prefLabel .
+
+<https://semiceu.github.io/RRMV/releases/0.0.2#xsd:anyURIShape> a shacl:NodeShape;
+  shacl:closed false;
+  shacl:targetClass xsd:anyURI .
+
+<https://semiceu.github.io/RRMV/releases/0.0.2#xsd:booleanShape> a shacl:NodeShape;
+  shacl:closed false;
+  shacl:targetClass xsd:boolean .
+
+<https://semiceu.github.io/RRMV/releases/0.0.2#xsd:stringShape> a shacl:NodeShape;
+  shacl:closed false;
+  shacl:targetClass xsd:string .

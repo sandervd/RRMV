@@ -1,0 +1,164 @@
+@prefix skos:      <http://www.w3.org/2004/02/skos/core#> .
+@prefix dct:       <http://purl.org/dc/terms/> .
+@prefix rdfs:      <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rrmv: <http://data.europa.eu/2qy/rrmv#> .
+@prefix rrmv-codes: <http://data.europa.eu/2qy/rrmv-codes/> .
+@prefix rrmv-codes-cs: <http://data.europa.eu/2qy/rrmv-codes/conceptscheme/> .
+@prefix rrmv-codes-c: <http://data.europa.eu/2qy/rrmv-codes/concept/> .
+@prefix roletype-c: <http://data.europa.eu/2qy/rrmv-codes/concept/roletype/> .
+@prefix status-c: <http://data.europa.eu/2qy/rrmv-codes/concept/status/> .
+@prefix resulttype-c: <http://data.europa.eu/2qy/rrmv-codes/concept/resulttype/> .
+@prefix function-c: <http://data.europa.eu/2qy/rrmv-codes/concept/function/> .
+
+rrmv-codes-cs:roletype
+   a skos:ConceptScheme ;
+   skos:definition "The kind of role of the agent as is described in the legal resource."@en;
+   skos:prefLabel "Role Type"@en .
+
+roletype-c:addressee
+   a skos:Concept ;
+   skos:prefLabel "addressee"@en ;
+   skos:definition "An agent that is the destination of an action."@en ;
+   skos:topConceptOf  rrmv-codes-cs:roletype ;
+   skos:inScheme  rrmv-codes-cs:roletype .
+
+roletype-c:addresser
+   a skos:Concept ;
+   skos:prefLabel "addresser"@en ;
+   skos:definition "An agent that is the producer of an action."@en ;
+   skos:topConceptOf  rrmv-codes-cs:roletype ;
+   skos:inScheme  rrmv-codes-cs:roletype .
+
+roletype-c:bearer
+   a skos:Concept ;
+   skos:prefLabel "bearer"@en ;
+   skos:definition "An agent that is the commander of an action."@en ;
+   skos:topConceptOf  rrmv-codes-cs:roletype ;
+   skos:inScheme  rrmv-codes-cs:roletype .
+
+roletype-c:implementor
+   a skos:Concept ;
+   skos:prefLabel "implementor"@en ;
+   skos:definition "An agent that is the implementor of an action."@en ;
+   skos:topConceptOf  rrmv-codes-cs:roletype ;
+   skos:inScheme  rrmv-codes-cs:roletype .
+
+roletype-c:proposer
+   a skos:Concept ;
+   skos:prefLabel "proposer"@en ;
+   skos:definition "An agent that is the proposer of an action."@en ;
+   skos:topConceptOf  rrmv-codes-cs:roletype ;
+   skos:inScheme  rrmv-codes-cs:roletype .
+
+rrmv-codes-cs:status
+   a skos:ConceptScheme ;
+   skos:definition "Status of Action."@en ;
+   skos:prefLabel "Status"@en .
+
+status-c:activated
+   a skos:Concept ;
+   skos:prefLabel "activated"@en ;
+   skos:topConceptOf  rrmv-codes-cs:status ;
+   skos:inScheme  rrmv-codes-cs:status .
+
+status-c:completed
+   a skos:Concept ;
+   skos:prefLabel "completed"@en ;
+   skos:topConceptOf  rrmv-codes-cs:status ;
+   skos:inScheme  rrmv-codes-cs:status .
+
+status-c:deleted
+   a skos:Concept ;
+   skos:prefLabel "deleted"@en ;
+   skos:topConceptOf  rrmv-codes-cs:status ;
+   skos:inScheme  rrmv-codes-cs:status .
+
+status-c:partiallyAchieved
+   a skos:Concept ;
+   skos:prefLabel "partially achieved"@en ;
+   skos:topConceptOf  rrmv-codes-cs:status ;
+   skos:inScheme  rrmv-codes-cs:status .
+
+status-c:postponed
+   a skos:Concept ;
+   skos:prefLabel "postponed"@en ;
+   skos:topConceptOf  rrmv-codes-cs:status ;
+   skos:inScheme  rrmv-codes-cs:status .
+
+status-c:reiterated
+   a skos:Concept ;
+   skos:prefLabel "reiterated"@en ;
+   skos:topConceptOf  rrmv-codes-cs:status ;
+   skos:inScheme  rrmv-codes-cs:status .
+
+status-c:implemented
+   a skos:Concept ;
+   skos:prefLabel "implemented"@en ;
+   skos:topConceptOf  rrmv-codes-cs:status ;
+   skos:inScheme  rrmv-codes-cs:status .
+
+status-c:suspended
+   a skos:Concept ;
+   skos:prefLabel "suspended"@en ;
+   skos:topConceptOf  rrmv-codes-cs:status ;
+   skos:inScheme  rrmv-codes-cs:status .
+
+rrmv-codes-cs:function
+   a skos:ConceptScheme ;
+   skos:definition "Function of the temporal infomation in legislation. "@en;
+   skos:prefLabel "Function"@en .
+
+function-c:deadline
+   a skos:Concept ;
+   skos:prefLabel "deadline"@en ;
+   skos:topConceptOf  rrmv-codes-cs:function ;
+   skos:inScheme  rrmv-codes-cs:function .
+
+function-c:validity
+   a skos:Concept ;
+   skos:prefLabel "validity"@en ;
+   skos:topConceptOf  rrmv-codes-cs:function ;
+   skos:inScheme  rrmv-codes-cs:function .
+
+
+rrmv-codes-cs:resulttype
+   a skos:ConceptScheme ;
+   skos:definition "A kind of Result"@en;
+   skos:prefLabel "Result Type"@en .
+
+resulttype-c:framework
+   a skos:Concept ;
+   skos:prefLabel "framework"@en ;
+   skos:topConceptOf  rrmv-codes-cs:resulttype;
+   skos:inScheme  rrmv-codes-cs:resulttype .
+
+resulttype-c:action
+   a skos:Concept ;
+   skos:prefLabel "action"@en ;
+   skos:topConceptOf  rrmv-codes-cs:resulttype;
+   skos:inScheme  rrmv-codes-cs:resulttype .
+
+resulttype-c:meeting
+   a skos:Concept ;
+   skos:prefLabel "meeting"@en ;
+   skos:topConceptOf  rrmv-codes-cs:resulttype;
+   skos:inScheme  rrmv-codes-cs:resulttype .
+
+resulttype-c:plan
+   a skos:Concept ;
+   skos:prefLabel "plan"@en ;
+   skos:topConceptOf  rrmv-codes-cs:resulttype;
+   skos:inScheme  rrmv-codes-cs:resulttype .
+
+resulttype-c:report
+   a skos:Concept ;
+   skos:prefLabel "report"@en ;
+   skos:topConceptOf  rrmv-codes-cs:resulttype;
+   skos:inScheme  rrmv-codes-cs:resulttype .
+
+resulttype-c:standard
+   a skos:Concept ;
+   skos:prefLabel "standard"@en ;
+   skos:topConceptOf  rrmv-codes-cs:resulttype;
+   skos:inScheme  rrmv-codes-cs:resulttype .
+
