@@ -1,0 +1,424 @@
+@prefix agg: <http://jena.apache.org/ARQ/function/aggregate#> .
+@prefix : <http://data.europa.eu/2qy/rrmv#> .
+@prefix grddl: <http://www.w3.org/2003/g/data-view#> .
+@prefix sail: <http://www.openrdf.org/config/sail#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix geof: <http://www.opengis.net/def/function/geosparql/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix fn: <http://www.w3.org/2005/xpath-functions> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix spif: <http://spinrdf.org/spif#> .
+@prefix path: <http://www.ontotext.com/path#> .
+@prefix array: <http://www.w3.org/2005/xpath-functions/array> .
+@prefix cccev: <https://semiceu.github.io/CCCEV#> .
+@prefix apf: <http://jena.apache.org/ARQ/property#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rep: <http://www.openrdf.org/config/repository#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix map: <http://www.w3.org/2005/xpath-functions/map> .
+@prefix sr: <http://www.openrdf.org/config/repository/sail#> .
+@prefix rdf4j: <http://rdf4j.org/schema/rdf4j#> .
+@prefix wgs: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix eli: <http://data.europa.eu/eli/ontology#> .
+@prefix gn: <http://www.geonames.org/ontology#> .
+@prefix afn: <http://jena.apache.org/ARQ/function#> .
+@prefix list: <http://jena.apache.org/ARQ/list#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix ofn: <http://www.ontotext.com/sparql/functions/> .
+@prefix geoext: <http://rdf.useekm.com/ext#> .
+@prefix graphdb: <http://www.ontotext.com/config/graphdb#> .
+@prefix sesame: <http://www.openrdf.org/schema/sesame#> .
+@prefix math: <http://www.w3.org/2005/xpath-functions/math> .
+@prefix luc: <http://www.ontotext.com/owlim/lucene#> .
+@prefix omgeo: <http://www.ontotext.com/owlim/geo#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix frbroo: <http://iflastandards.info/ns/fr/frbr/frbroo/> .
+
+dc:description a owl:AnnotationProperty .
+
+rdf:List a owl:Class .
+
+<http://data.europa.eu/2qy/rrmv> a owl:Ontology;
+  dc:description "This portal presents  RRMV ontology (Regulatory Reporting Metadata Vocabulary) for modelling and representing the Requests inside of the European Legislation.This ontology is developed inside of the project SORTIS (Study On Regulatory reporTIng Standards) coordinated by the Digital-ready Policymaking and SEMIC teams of the DIGIT.B2 Interoperability and Digital Government Unit of the European Commission. The initial version of the ontology was developed within an expert contract with the JRC-funded expert, Monica Palmirani, from the University of Bologna."@en;
+  rdfs:comment "An ontology to describe REQUEST present inside of the legislation with the aim to track these peculiar normative prescriptions. A REQUEST is an obligation-to-do something, defined by AGENT, playing a given ROLE in a specific interval of TIME. The REQUEST produces ACTION, in a given period of TIME. ACTION has RESULT (e.g., report, plan, ripetitive event, etc.).";
+  owl:versionInfo "0.1.0";
+  dc:rights "This work is distributed under a EUPL 1.2 License (https://interoperable-europe.ec.europa.eu/sites/default/files/custom-page/attachment/2020-03/EUPL-1.2%20EN.txt)."@en;
+  dcterms:contributor "Andrea Giovanni Nuzzolese, CNR", "Alessio Nardin, DIGIT.B2"@en,
+    "Cecile Guasch, DIGIT.B2"@en, "Davide Audrito, DIGIT.B2"@en, "Bert Van Nuffelen, SEMIC"@en;
+  dcterms:creator "Monica Palmirani, University of Bologna";
+  dcterms:title "Reporting Requirements Metadata Vocabulary";
+  dcterms:modified "2024-12-19T11:44:25"^^xsd:dateTime .
+
+dcterms:isPartOf a owl:ObjectProperty;
+  rdfs:domain :Request;
+  rdfs:range eli:Expression;
+  rdfs:comment "A related resource in which the described resource is physically or logically included. "@en;
+  dcterms:modified "2024-12-11T12:07:07"^^xsd:dateTime .
+
+eli:Agent a owl:Class;
+  rdfs:label "Agent"@en;
+  rdfs:comment "Individual people or groups of people, like an institution with a legal recognition, who have the potential to perform intentional actions for which they can be held responsible. "@en;
+  dcterms:modified "2024-12-19T11:32:42"^^xsd:dateTime .
+
+cccev:PeriodOfTime a owl:Class;
+  rdfs:label "PeriodOfTime"@en;
+  rdfs:comment "A temporal entity with non-zero extent or duration."@en .
+
+dc:rights a owl:AnnotationProperty .
+
+dcterms:contributor a owl:AnnotationProperty .
+
+dcterms:creator a owl:AnnotationProperty .
+
+dcterms:description a owl:AnnotationProperty .
+
+dcterms:title a owl:AnnotationProperty .
+
+skos:topConceptOf a owl:AnnotationProperty .
+
+xsd:gYear a rdfs:Datatype .
+
+xsd:gYearMonth a rdfs:Datatype .
+
+eli:changes a owl:ObjectProperty;
+  rdfs:domain :Request;
+  rdfs:range :Request;
+  rdfs:comment """ 	Indicates that this work or expression legally changes another. This encompasses the notions of amendment, replacement, repeal, or other types of change. This may be a direct change (textual or non-textual amendment) or a consequential or indirect change. """@en;
+  dcterms:modified "2024-12-11T12:02:14"^^xsd:dateTime .
+
+:Request a owl:Class;
+  rdfs:label "Request"@en;
+  rdfs:comment "A portion of legal source expression including a mandate that produces at least one Action."@en .
+
+eli:cites a owl:ObjectProperty;
+  rdfs:domain eli:Expression;
+  rdfs:range eli:Expression;
+  rdfs:comment "Citation in the text of the legislation. This may be at the legal resource or legal expression level, as required by the implementation context. This includes verbatim citation and citations in referrals. "@en;
+  dcterms:modified "2024-12-11T12:11:42"^^xsd:dateTime .
+
+eli:Expression a owl:Class;
+  rdfs:label "Expression"@en;
+  rdfs:comment "The intellectual realisation of a Work in the form of identifiable immaterial objects, such as, but not limited to, text. "@en;
+  dcterms:modified "2024-12-19T11:32:23"^^xsd:dateTime .
+
+eli:is_embodied_by a owl:ObjectProperty;
+  rdfs:domain eli:Manifestation;
+  rdfs:range eli:Expression;
+  rdfs:comment " Relates an expression to a manifestation of that expression."@en;
+  dcterms:modified "2024-12-11T12:14:07"^^xsd:dateTime .
+
+eli:Manifestation a owl:Class;
+  rdfs:label "Manifestation"@en;
+  rdfs:comment "The physical embodiment of an Expression, either on paper or in any electronic format."@en;
+  dcterms:modified "2024-12-19T11:32:04"^^xsd:dateTime .
+
+eli:is_realized_by a owl:ObjectProperty;
+  rdfs:domain eli:Expression;
+  rdfs:range eli:Work;
+  rdfs:comment "Relates a work to an expression of this work in the form of a \"sequence of signs\" (typically alpha-numeric characters in a legal context)."@en;
+  dcterms:modified "2024-12-19T11:29:42"^^xsd:dateTime .
+
+eli:Work a owl:Class;
+  rdfs:label "Work"@en;
+  rdfs:comment "Any distinct intellectual creation (i.e., the intellectual content), in the context of ELI. "@en;
+  dcterms:modified "2024-12-19T11:31:34"^^xsd:dateTime .
+
+eli:related_to a owl:ObjectProperty;
+  rdfs:domain :Request;
+  rdfs:range :Request;
+  rdfs:comment "Indicates a somehow related other document, not necessarily a legal resource. "@en;
+  dcterms:modified "2024-12-18T17:46:54"^^xsd:dateTime .
+
+:hasFunction a owl:ObjectProperty;
+  rdfs:domain :Action;
+  rdfs:range cccev:PeriodOfTime;
+  rdfs:label "has function"@en;
+  rdfs:comment "A property that links one Period of Time with its Function inside of the Request (e.g., deadeline, term, enter into force)."@en;
+  dcterms:modified "2024-12-18T09:51:18"^^xsd:dateTime .
+
+:Action a owl:Class;
+  rdfs:label "Action"@en;
+  rdfs:comment "An event with at least one agent that is participant in it in a given time."@en .
+
+:hasNext a owl:ObjectProperty;
+  rdfs:domain :Action;
+  rdfs:range :Action;
+  rdfs:label "has next"@en;
+  rdfs:comment "A succeeding action "@en;
+  dcterms:modified "2024-12-18T09:51:34"^^xsd:dateTime .
+
+:hasStatus a owl:ObjectProperty;
+  rdfs:domain :Action;
+  rdfs:range :Status;
+  rdfs:label "has status"@en;
+  rdfs:comment "A status of this Action."@en;
+  dcterms:modified "2024-12-18T09:52:02"^^xsd:dateTime .
+
+:Status a owl:Class;
+  rdfs:subClassOf skos:Concept;
+  rdfs:label "Status"@en;
+  rdfs:comment "Status of Action."@en .
+
+:hasTopic a owl:ObjectProperty;
+  rdfs:domain :Request;
+  rdfs:range skos:Concept;
+  rdfs:label "has topic"@en;
+  rdfs:comment "The topic of the Request."@en;
+  dcterms:modified "2024-12-18T09:53:31"^^xsd:dateTime .
+
+skos:Concept a owl:Class;
+  rdfs:label "Concept"@en;
+  rdfs:comment "An idea or notion; a unit of thought. "@en;
+  dcterms:modified "2024-12-19T11:31:19"^^xsd:dateTime .
+
+:hasType a owl:ObjectProperty;
+  rdfs:domain _:ed84c1a1c506469cb9bb3830ae1fc3812200;
+  rdfs:range _:ed84c1a1c506469cb9bb3830ae1fc3812229;
+  rdfs:label "has type"@en;
+  rdfs:comment "A kind of result "@en, "A kind of agent."@en, "a kind of role"@en;
+  dcterms:modified "2024-12-18T13:23:39"^^xsd:dateTime .
+
+:ActionResult a owl:Class;
+  rdfs:label "ActionResult"@en;
+  rdfs:comment "The outcome of an Action"@en;
+  dcterms:modified "2024-12-18T09:34:40"^^xsd:dateTime .
+
+:Role a owl:Class;
+  rdfs:label "Role"@en;
+  rdfs:comment "Function played by an Agent involved in a Request."@en;
+  dcterms:modified "2024-12-19T11:21:54"^^xsd:dateTime .
+
+:AgentType a owl:Class;
+  rdfs:subClassOf skos:Concept;
+  rdfs:label "Agent Type"@en;
+  rdfs:comment "Kind of Agent."@en;
+  dcterms:modified "2024-12-18T17:55:17"^^xsd:dateTime .
+
+:ResultType a owl:Class;
+  rdfs:subClassOf skos:Concept;
+  rdfs:label "Result Type"@en;
+  rdfs:comment "A kind of Result"@en;
+  dcterms:modified "2024-12-19T11:23:40"^^xsd:dateTime .
+
+:AgentRole a owl:Class;
+  rdfs:label "Agent Role"@en;
+  rdfs:comment "A supportive class connecting agents with a role they play."@en;
+  dcterms:modified "2024-12-18T09:34:51"^^xsd:dateTime .
+
+:isIncomplete a owl:DatatypeProperty;
+  rdfs:domain cccev:PeriodOfTime;
+  rdfs:range xsd:boolean;
+  rdfs:label "is incomplete"@en;
+  rdfs:comment "Data property that track the incompleteness of the temporal parameters."@en;
+  dcterms:modified "2024-12-18T09:43:44"^^xsd:dateTime .
+
+cccev:duration a owl:DatatypeProperty;
+  rdfs:domain cccev:PeriodOfTime;
+  rdfs:range xsd:gYearMonth;
+  rdfs:comment "Extent of the Period of Time."@en;
+  owl:deprecated true;
+  dcterms:modified "2024-12-18T09:45:47"^^xsd:dateTime .
+
+cccev:endtime a owl:DatatypeProperty;
+  rdfs:domain cccev:PeriodOfTime;
+  rdfs:range xsd:gYear, xsd:gYearMonth, xsd:dateTime;
+  rdfs:comment "Time instant at which the Period was terminated."@en;
+  owl:deprecated true;
+  dcterms:modified "2024-12-18T09:45:55"^^xsd:dateTime .
+
+cccev:stattime a owl:DatatypeProperty;
+  rdfs:domain cccev:PeriodOfTime;
+  rdfs:range xsd:gYear, xsd:gYearMonth, xsd:dateTime;
+  rdfs:label "starttime"@en;
+  rdfs:comment "Time instant at which the Period was initiated."@en;
+  owl:deprecated true;
+  dcterms:modified "2024-12-18T09:45:59"^^xsd:dateTime .
+
+eli:Organization a owl:Class;
+  rdfs:subClassOf eli:Agent;
+  rdfs:comment "Institutions or groups of people that have obtained a legal recognition as a group and can act collectively as agents. "@en;
+  dcterms:modified "2024-12-11T12:16:24"^^xsd:dateTime .
+
+eli:Person a owl:Class;
+  rdfs:subClassOf eli:Agent;
+  rdfs:comment "A real person who live or has lived. "@en;
+  dcterms:modified "2024-12-11T12:15:51"^^xsd:dateTime .
+
+:Function a owl:Class;
+  rdfs:subClassOf skos:Concept;
+  rdfs:label "Temporal Function"@en;
+  rdfs:comment "Function of the temporal infomation in legislation. "@en;
+  dcterms:modified "2024-12-19T09:05:18"^^xsd:dateTime .
+
+:RoleType a owl:Class;
+  rdfs:subClassOf skos:Concept;
+  rdfs:label "Role Type"@en;
+  rdfs:comment "The kind of role of the agent as is described in the legal resource."@en;
+  dcterms:modified "2024-12-19T09:06:40"^^xsd:dateTime .
+
+
+:hasFrequency a owl:ObjectProperty;
+  rdfs:domain :Request;
+  rdfs:range :Frequency;
+  rdfs:label "has frequency"@en;
+  rdfs:comment "The frequency in which the request is to be executed in case of repetitive mandate. "@en;
+  dcterms:modified "2024-12-18T09:51:06"^^xsd:dateTime .
+
+:value a owl:DatatypeProperty;
+  rdfs:domain :Frequency;
+  rdfs:range rdf:PlainLiteral;
+  rdfs:label "value"@en;
+  rdfs:comment "Value of the Frequency of Request."@en;
+  dcterms:modified "2024-12-19T12:03:00"^^xsd:dateTime .
+
+:Frequency a owl:Class;
+  rdfs:label "Frequency"@en;
+  rdfs:comment "Frequency of an Request over time (e.g., every 6 months, each quarter)."@en .
+
+:atTime a owl:ObjectProperty;
+  rdfs:domain _:ed84c1a1c506469cb9bb3830ae1fc3812924;
+  rdfs:range cccev:PeriodOfTime;
+  rdfs:label "at time"@en;
+  rdfs:comment "An Action or a Role is valid within a time interval."@en;
+  dcterms:modified "2024-12-19T09:55:58"^^xsd:dateTime .
+
+:forAgent a owl:ObjectProperty;
+  rdfs:domain :AgentRole;
+  rdfs:range eli:Agent;
+  rdfs:label "for Agent"@en;
+  rdfs:comment "The property linking a particular Role to Agent."@en;
+  dcterms:modified "2024-12-19T09:19:54"^^xsd:dateTime .
+
+:hasAgentRole a owl:ObjectProperty;
+  rdfs:domain :Action;
+  rdfs:range :AgentRole;
+  rdfs:label "has agent role"@en;
+  rdfs:comment "The involvement of an agent in a role within this action. "@en;
+  dcterms:modified "2024-12-18T09:50:07"^^xsd:dateTime .
+
+:hasDocument a owl:ObjectProperty;
+  rdfs:domain :ActionResult;
+  rdfs:range eli:Expression;
+  rdfs:label "has document"@en;
+  rdfs:comment "A property that links a Result of an Action with an Expression, usually wen the result is a document."@en;
+  dcterms:modified "2024-12-18T09:50:44"^^xsd:dateTime .
+
+:hasResult a owl:ObjectProperty;
+  rdfs:domain :Action;
+  rdfs:range :ActionResult;
+  rdfs:label "has result"@en;
+  rdfs:comment "A result of an action. "@en;
+  dcterms:modified "2024-12-18T09:51:43"^^xsd:dateTime .
+
+:isRelatedTo a owl:ObjectProperty;
+  rdfs:domain :Action;
+  rdfs:range :Action;
+  rdfs:label "is related to"@en;
+  rdfs:comment "A property that links one Action with another Action related by a semantic connection."@en;
+  dcterms:modified "2024-12-18T09:43:59"^^xsd:dateTime .
+
+:produces a owl:ObjectProperty;
+  rdfs:domain :Request;
+  rdfs:range :Action;
+  rdfs:label "produces"@en;
+  rdfs:comment "The action that is produced by a request. "@en;
+  dcterms:modified "2024-12-11T12:07:39"^^xsd:dateTime .
+
+:withRole a owl:ObjectProperty;
+  rdfs:domain :AgentRole;
+  rdfs:range :Role;
+  rdfs:label "with role"@en;
+  rdfs:comment "The property linking a Agent to Role."@en;
+  dcterms:modified "2024-12-18T13:44:49"^^xsd:dateTime .
+
+:hasAnnotation a owl:DatatypeProperty;
+  rdfs:domain _:ed84c1a1c506469cb9bb3830ae1fc3812220;
+  rdfs:range xsd:string, rdf:langString;
+  rdfs:label "has annotation"@en;
+  rdfs:comment "A note added by way of comment or explanation. "@en;
+  dcterms:modified "2024-12-18T11:18:49"^^xsd:dateTime .
+
+:hasUri a owl:DatatypeProperty;
+  rdfs:domain :Request;
+  rdfs:range xsd:anyURI;
+  rdfs:label "has URI"@en;
+  rdfs:comment "URI of the Request. "@en;
+  dcterms:modified "2024-12-18T09:54:14"^^xsd:dateTime .
+
+:hasUnit a rdf:Property;
+  rdfs:domain :Frequency;
+  rdfs:range skos:Concept;
+  rdfs:label "has unit"@en;
+  rdfs:comment "The unit of the Frequency"@en;
+  dcterms:modified "2024-12-18T09:53:58"^^xsd:dateTime;
+  dcterms:created "2024-12-11T12:13:38"^^xsd:dateTime .
+
+_:ed84c1a1c506469cb9bb3830ae1fc3812200 a owl:Class;
+  owl:unionOf _:ed84c1a1c506469cb9bb3830ae1fc3812201 .
+
+_:ed84c1a1c506469cb9bb3830ae1fc3812201 a rdf:List;
+  rdf:first :ActionResult;
+  rdf:rest _:ed84c1a1c506469cb9bb3830ae1fc3812202 .
+
+_:ed84c1a1c506469cb9bb3830ae1fc3812202 a rdf:List;
+  rdf:first eli:Agent;
+  rdf:rest _:ed84c1a1c506469cb9bb3830ae1fc3812203 .
+
+_:ed84c1a1c506469cb9bb3830ae1fc3812203 a rdf:List;
+  rdf:first :Role;
+  rdf:rest rdf:nil .
+
+_:ed84c1a1c506469cb9bb3830ae1fc3812220 a owl:Class;
+  owl:unionOf _:ed84c1a1c506469cb9bb3830ae1fc3812221 .
+
+_:ed84c1a1c506469cb9bb3830ae1fc3812221 a rdf:List;
+  rdf:first :Action;
+  rdf:rest _:ed84c1a1c506469cb9bb3830ae1fc3812222 .
+
+_:ed84c1a1c506469cb9bb3830ae1fc3812222 a rdf:List;
+  rdf:first :Request;
+  rdf:rest rdf:nil .
+
+_:ed84c1a1c506469cb9bb3830ae1fc3812229 a owl:Class;
+  owl:unionOf _:ed84c1a1c506469cb9bb3830ae1fc3812230 .
+
+_:ed84c1a1c506469cb9bb3830ae1fc3812230 a rdf:List;
+  rdf:first :ResultType;
+  rdf:rest _:ed84c1a1c506469cb9bb3830ae1fc3812231 .
+
+_:ed84c1a1c506469cb9bb3830ae1fc3812231 a rdf:List;
+  rdf:first :AgentType;
+  rdf:rest _:ed84c1a1c506469cb9bb3830ae1fc3812232 .
+
+_:ed84c1a1c506469cb9bb3830ae1fc3812232 a rdf:List;
+  rdf:first :RoleType;
+  rdf:rest rdf:nil .
+
+_:ed84c1a1c506469cb9bb3830ae1fc3812924 a owl:Class;
+  owl:unionOf _:ed84c1a1c506469cb9bb3830ae1fc3812925 .
+
+_:ed84c1a1c506469cb9bb3830ae1fc3812925 a rdf:List;
+  rdf:first :Action;
+  rdf:rest _:ed84c1a1c506469cb9bb3830ae1fc3812926 .
+
+_:ed84c1a1c506469cb9bb3830ae1fc3812926 a rdf:List;
+  rdf:first :AgentRole;
+  rdf:rest rdf:nil .
+
+frbroo:F10_Person rdfs:comment "F10 FRBROO Person"@en .
+
+frbroo:F11_Corporate_Body rdfs:comment "F11 FRBROO Corporate"@en .
+
+frbroo:F1_Work rdfs:comment "F1 - FRBROO Work"@en .
+
+frbroo:F22_Self-Contained_Expression rdfs:comment "F22 - FRBROO - Expression"@en .
+
+frbroo:F3_Manifestation_Product_Type rdfs:comment "F3 - FRBROO- Manifestation"@en .
+
+<http://www.cidoc-crm.org/cidoc-crm/E39_Actor> rdfs:comment "E39 FRBROO - Actor"@en .
+
+rdf:type dcterms:modified "2024-12-18T09:45:18"^^xsd:dateTime .
+
+:hasTitile dcterms:modified "2024-12-18T09:52:36"^^xsd:dateTime .
