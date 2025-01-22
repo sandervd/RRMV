@@ -43,75 +43,37 @@ prefixes:
 
   
 classes:
-  Agent:
-    class_uri: eli:Agent
-    description: "Individual people or groups of people, like an institution with a legal recognition, who have the potential to perform intentional actions for which they can be held responsible. "
-    attributes:
-      hasUri:
-        description: "A URI that identifies the agent."
-        range: string
-      hasAnnotation:
-        description: "Annotations for the agent."
-        range: string
   Request:
-    description: "Represents a request within the system."
+    description: "A portion of legal source expression including a mandate that produces at least one Action."
     attributes:
-      isIncomplete:
-        description: "Indicates whether the request is incomplete."
-        range: boolean
-      hasDocument:
-        description: "A related document for the request."
-        range: string
-      hasAgentRole:
-        description: "Roles associated with the agent in the request."
-        range: string
-  Action:
-    description: "Represents an action taken within the model."
-    attributes:
-      atTime:
-        description: "The time the action occurred."
-        range: datetime
-      produces:
-        description: "The result produced by the action."
-        range: string
-  Status:
-    description: "Indicates the status of an entity in the system."
-    attributes:
-      hasType:
-        description: "The type of status."
-        range: string
-  Frequency:
-    description: "Defines the frequency of an event or occurrence."
-    attributes:
+      related_to:
+        slot_uri: eli:related_to
+        description: "Indicates a somehow related other document, not necessarily a legal resource."
+        title: "related to"
+        range: Request
+      hasTopic:
+        title: "has topic"
+        #range: skos:Concept
+        description: "The topic of the Request."
       hasFrequency:
-        description: "Frequency value."
-        range: string
-slots:
-  hasFunction:
-    description: "Defines the function associated with a role or entity."
-    range: string
-  hasNext:
-    description: "Defines the next related action or event."
-    range: string
-  hasResult:
-    description: "Links an action to its result."
-    range: string
-  hasTopic:
-    description: "The topic associated with an action or entity."
-    range: string
-  forAgent:
-    description: "Defines the agent related to an action."
-    range: Agent
-  hasAgentRole:
-    description: "Roles assigned to the agent."
-    range: string
-  hasDocument:
-    description: "Links to associated documents."
-    range: string
-types:
-  string:
-    base: str
-  boolean:
-    base: bool
-  datetime:
-    base: datetime
+        title: "has frequency"
+        #range: Frequency
+        description: "The frequency in which the request is to be executed in case of repetitive mandate."
+      produces:
+        title: "produces"
+        #range: Action
+        description: "The action that is produced by a request."
+      hasUri:
+        title: "has URI"
+        #range: xsd:anyURI
+        description: "URI of the Request."
+      isPartOf:
+        slot_uri: dcterms:isPartOf
+        #range: eli:Expression
+        description: "A related resource in which the described resource is physically or logically included."
+      changes:
+        slot_uri: eli:changes
+        range: Request
+        description: "Indicates that this work or expression legally changes another. This encompasses the notions of amendment, replacement, repeal, or other types of change. This may be a direct change (textual or non-textual amendment) or a consequential or indirect change."
+## CRAP
+    

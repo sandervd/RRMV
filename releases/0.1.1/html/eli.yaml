@@ -1,0 +1,75 @@
+  Agent:
+    class_uri: eli:Agent
+    description: "Individual people or groups of people, like an institution with a legal recognition, who have the potential to perform intentional actions for which they can be held responsible. "
+    attributes:
+      hasUri:
+        description: "A URI that identifies the agent."
+        range: string
+      hasAnnotation:
+        description: "Annotations for the agent."
+        range: string
+
+
+
+
+
+
+  isIncomplete:
+        description: "Indicates whether the request is incomplete."
+        range: boolean
+      hasDocument:
+        description: "A related document for the request."
+        range: string
+      hasAgentRole:
+        description: "Roles associated with the agent in the request."
+        range: string
+  Action:
+    description: "Represents an action taken within the model."
+    attributes:
+      atTime:
+        description: "The time the action occurred."
+        range: datetime
+      produces:
+        description: "The result produced by the action."
+        range: string
+  Status:
+    description: "Indicates the status of an entity in the system."
+    attributes:
+      hasType:
+        description: "The type of status."
+        range: string
+  Frequency:
+    description: "Defines the frequency of an event or occurrence."
+    attributes:
+      hasFrequency:
+        description: "Frequency value."
+        range: string
+slots:
+  hasFunction:
+    description: "Defines the function associated with a role or entity."
+    range: string
+  hasNext:
+    description: "Defines the next related action or event."
+    range: string
+  hasResult:
+    description: "Links an action to its result."
+    range: string
+  hasTopic:
+    description: "The topic associated with an action or entity."
+    range: string
+  forAgent:
+    description: "Defines the agent related to an action."
+    range: Agent
+  hasAgentRole:
+    description: "Roles assigned to the agent."
+    range: string
+  hasDocument:
+    description: "Links to associated documents."
+    range: string
+types:
+  string:
+    base: str
+  boolean:
+    base: bool
+  datetime:
+    base: datetime
